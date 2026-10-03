@@ -32,7 +32,7 @@ Seguir la [guía Windows → WSL 2 → Ubuntu-26.04](docs/instalacion-wsl.md): l
 ## Recursos actuales
 
 - [Guía práctica de pandas](docs/manual-pandas.md): versiones, rutas, inspección, filtros, consultas y operaciones sobre los CSV de DIVIPOLA, EVA y AGROSAVIA.
-- [Tres ejercicios de pandas para cuatro horas](soluciones/README.md#ejercicios-de-pandas--cuatro-horas), con notebooks para completar en `soluciones/` sobre AGROSAVIA, EVA y DIVIPOLA.
+- [Tres ejercicios de pandas para cuatro horas](ejercicios/README.md), con enunciados y plantillas en `ejercicios/` y entrega de los notebooks resueltos en `soluciones/`.
 - [Soluciones comentadas en Jupyter de P01, P02 y P03](soluciones/README.md).
 - [Índice completo de talleres](talleres/README.md), con descargas, tamaños y criterios.
 - [Kit base](kit/LEEME.txt), [manifesto agroambiental](kit/fuentes.json) y [manifiesto PQRS](kit/pqrs_fuentes.json).

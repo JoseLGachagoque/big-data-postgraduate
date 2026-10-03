@@ -1,29 +1,20 @@
-# Soluciones y ejercicios de pandas
+# Soluciones
 
-Esta carpeta contiene los ejercicios de pandas PD01–PD03 para completar en el repositorio de cada estudiante y las soluciones comentadas de referencia P01–P03 sobre PQRS.
+Esta carpeta es el destino de las soluciones desarrolladas por cada estudiante. También contiene las soluciones comentadas de referencia P01–P03 sobre PQRS.
 
-## Ejercicios de pandas · cuatro horas
+## Entregas de los ejercicios de pandas
 
-Los ejercicios utilizan únicamente `agrosavia.csv`, `eva.csv` y `divipola.csv`, descargados con `kit/00_datos.py` y ubicados en `kit/data/raw/`. Se parte del entorno del curso operativo y de los archivos ya descargados. La [guía práctica de pandas](../docs/manual-pandas.md) sirve como apoyo durante el desarrollo.
+Los enunciados y las plantillas de PD01, PD02 y PD03 están en [`ejercicios/`](../ejercicios/README.md), junto con la distribución de las cuatro horas. Cada plantilla debe copiarse a esta carpeta antes de comenzar el desarrollo en el repositorio del estudiante.
 
-| Actividad | Notebook | Tiempo |
-|---|---|---:|
-| Preparación y comprobación de rutas | Selección del kernel y revisión de entradas | 20 min |
-| PD01 · Explorar y preparar AGROSAVIA | [PD01_exploracion_agrosavia.ipynb](PD01_exploracion_agrosavia.ipynb) | 60 min |
-| PD02 · Consultar y resumir EVA | [PD02_consultas_eva.ipynb](PD02_consultas_eva.ipynb) | 70 min |
-| PD03 · Integrar EVA con DIVIPOLA | [PD03_integracion_territorial.ipynb](PD03_integracion_territorial.ipynb) | 70 min |
-| Reejecución y entrega | Reinicio del kernel, ejecución en orden y revisión de evidencias | 20 min |
-| **Total** | | **240 min** |
+| Ejercicio | Nombre obligatorio del notebook resuelto en esta carpeta |
+|---|---|
+| [PD01 · Explorar y preparar AGROSAVIA](../ejercicios/PD01_exploracion_agrosavia.ipynb) | `PD01_exploracion_agrosavia.ipynb` |
+| [PD02 · Consultar y resumir EVA](../ejercicios/PD02_consultas_eva.ipynb) | `PD02_consultas_eva.ipynb` |
+| [PD03 · Integrar EVA con DIVIPOLA](../ejercicios/PD03_integracion_territorial.ipynb) | `PD03_integracion_territorial.ipynb` |
 
-Cada notebook es independiente e incluye una celda inicial de rutas y carga, instrucciones en Markdown, celdas de código para completar y espacios para interpretar los resultados. Las actividades tienen tiempos asignados y comprobaciones explícitas. La entrega consiste en completar estos tres archivos dentro de `soluciones/` del repositorio de cada estudiante.
+Cada solución debe incluir el código completado, las comprobaciones y la interpretación de los resultados. Antes de entregar, se reinicia el kernel y se ejecutan todas las celdas en orden.
 
 Las tablas CSV se generan en `kit/salidas/soluciones/PD01/`, `PD02/` y `PD03/`. Esas carpetas están excluidas de Git: las tablas deben poder regenerarse al ejecutar el notebook. Las entradas originales se conservan en `kit/data/raw/`.
-
-Si falta alguna entrada, la descarga se realiza desde la terminal, en la raíz del repositorio y con el entorno del curso activo:
-
-```bash
-python kit/00_datos.py --descargar divipola eva agrosavia
-```
 
 ## Soluciones comentadas de referencia PQRS
 
@@ -60,6 +51,6 @@ python 00_datos.py --descargar divipola
 
 ## Validación
 
-En PD01, PD02 y PD03 se validaron el formato de notebook, la sintaxis de las celdas, los enlaces y los tiempos asignados. Las celdas iniciales se ejecutaron con pandas 2.2.3 desde una carpeta `soluciones/` temporal con únicamente los tres CSV del manifiesto. El código de desarrollo y sus conclusiones quedan pendientes del estudiante; esta comprobación valida las plantillas y su carga de datos.
+La validación de las plantillas PD01–PD03 se documenta en el [índice de ejercicios](../ejercicios/README.md#validación-de-las-plantillas). Cada estudiante debe comprobar la ejecución completa de sus soluciones antes de entregar.
 
 Se validó el formato de las soluciones P01, P02 y P03 y se ejecutaron todas sus celdas con las muestras locales: 3.000 filas y 38 columnas originales, proyección de 16 columnas, 8 archivos particionados, estabilidad de la reejecución, rechazo de una columna ausente y equivalencia de consultas de 2024 sobre 2.000 filas. Los notebooks se distribuyen sin salidas guardadas para que cada estudiante produzca su propia evidencia. Esta comprobación no equivale a una instalación real en Windows/WSL.
