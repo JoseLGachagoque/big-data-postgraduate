@@ -31,6 +31,7 @@ Seguir la [guía Windows → WSL 2 → Ubuntu-26.04](docs/instalacion-wsl.md): l
 
 ## Recursos actuales
 
+- [Soluciones comentadas en Jupyter de P01, P02 y P03](soluciones/README.md).
 - [Índice completo de talleres](talleres/README.md), con descargas, tamaños y criterios.
 - [Kit base](kit/LEEME.txt), [manifesto agroambiental](kit/fuentes.json) y [manifiesto PQRS](kit/pqrs_fuentes.json).
 - [Descargador PQRS](kit/pqrs_descarga.py) y [prácticas reproducibles PQRS](kit/pqrs_talleres.py).
