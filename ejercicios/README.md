@@ -23,6 +23,16 @@ Se parte del entorno del curso operativo y de los tres CSV ya descargados. La [g
 
 ## Preparación y desarrollo
 
+La **raíz del repositorio** es la carpeta `big-data-postgraduate` que contiene `README.md`, `kit/`, `ejercicios/` y `soluciones/`. En la instalación WSL del curso se accede a ella desde la terminal con:
+
+```bash
+cd /mnt/c/Users/TUPTC/bigdata/big-data-postgraduate
+pwd
+ls
+```
+
+Si la copia del repositorio está en otra ubicación, se utiliza su ruta real. Cada notebook incluye la celda **«Ubicación de trabajo: la raíz del repositorio»**, con un esquema de carpetas, ejemplos de `cd ..` y la explicación de cómo comprobar o cambiar el directorio del kernel de Python. Esta orientación forma parte de los 20 minutos de preparación.
+
 1. Abrir JupyterLab desde la raíz del repositorio con el entorno `.venv` del curso activo.
 2. Duplicar cada plantilla de `ejercicios/` y mover la copia a `soluciones/`, conservando el nombre de la tabla anterior. Si ya existe una solución, se continúa sobre ella.
 3. Abrir la copia de `soluciones/` y seleccionar el kernel del entorno del curso.
