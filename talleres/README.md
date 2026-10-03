@@ -20,3 +20,7 @@
 - [P02 Parquet, contrato y reejecución](P02.md)
 - [P03 Calidad de reportes y consulta diferida](P03.md)
 - [P04 Escala real y comparación de motores](P04.md)
+
+## Soluciones de referencia
+
+Las [soluciones de P01, P02 y P03](../soluciones/README.md) incluyen un notebook por taller, con desarrollo de cada tarea, controles e interpretación.
