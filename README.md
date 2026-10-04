@@ -4,7 +4,7 @@ Preparado por el PhD Esteban Hernández, CyberColombia.
 
 **64 horas efectivas de clase en línea**, del **2 de octubre al 7 de noviembre de 2026**. Doce encuentros en seis fines de semana. Los recesos y almuerzos se excluyen; el trabajo autónomo no integra el cómputo.
 
-[Programa](docs/programa.md) · [Calendario contractual](docs/calendario.md) · [Guía por sesiones](docs/agenda.md) · [Metodología](docs/metodologia.md) · [Datasets](docs/datasets.md) · [Entorno y descargas](docs/entorno.md) · [Controles docentes](docs/controles-docente.md)
+[Programa](docs/programa.md) · [Calendario contractual](docs/calendario.md) · [Guía por sesiones](docs/agenda.md) · [Metodología](docs/metodologia.md) · [Datasets](docs/datasets.md) · [Entorno y descargas](docs/entorno.md) · [Controles docentes](docs/controles-docente.md) · [Guías complementarias](#guías-complementarias)
 
 El curso emplea dos dominios abiertos: PQRS/PQRD de Supersalud y datos agroambientales de suelo, territorio, rendimiento agrícola y clima. Los dominios conservan sus unidades; no se unen filas de reportes de salud con muestras de suelo.
 
@@ -29,9 +29,16 @@ Seguir la [guía Windows → WSL 2 → Ubuntu-26.04](docs/instalacion-wsl.md): l
 | Viernes 06/11/2026 | [Clínica de proyectos y ensayo de defensa](clases/11-clinica-de-proyectos/README.md) | 18:00–21:15 | 3 h |
 | Sábado 07/11/2026 | [Sustentación y cierre contractual](clases/12-sustentacion-y-cierre/README.md) | 08:00–16:30 | 7 h |
 
+## Guías complementarias
+
+Material de consulta y práctica para acompañar los ejercicios del curso.
+
+- [Git y GitHub: flujo de trabajo de los ejercicios](docs/guia-git/README.md): guía ilustrada sobre clones, forks, ramas, commits, PR, trabajo compartido y resolución de conflictos. Incluye seis escenarios y un desafío integrador. La [versión HTML](docs/guia-git/index.html) puede abrirse en el navegador después de clonar o descargar el repositorio; sus imágenes están incluidas en la misma carpeta.
+- [Guía práctica de pandas](docs/manual-pandas.md): inspección, filtros, consultas y operaciones sobre los CSV del curso.
+- [Preparación del entorno con WSL y Ubuntu](docs/instalacion-wsl.md): instalación y configuración del equipo de trabajo.
+
 ## Recursos actuales
 
-- [Guía práctica de pandas](docs/manual-pandas.md): versiones, rutas, inspección, filtros, consultas y operaciones sobre los CSV de DIVIPOLA, EVA y AGROSAVIA.
 - [Tres ejercicios de pandas para cuatro horas](ejercicios/README.md), con enunciados y plantillas en `ejercicios/` y entrega de los notebooks resueltos en `soluciones/`.
 - [Soluciones comentadas en Jupyter de P01, P02 y P03](soluciones/README.md).
 - [Índice completo de talleres](talleres/README.md), con descargas, tamaños y criterios.
