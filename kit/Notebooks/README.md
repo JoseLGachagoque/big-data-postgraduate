@@ -10,6 +10,8 @@ Los notebooks históricos se conservan en `supersalud/`, con su procedencia y li
 
 ## Índice y propósito
 
+Como referencia durante las prácticas, consultar la [guía práctica de pandas](../../docs/manual-pandas.md), con ejemplos sobre los CSV de DIVIPOLA, EVA y AGROSAVIA descargados con `kit/00_datos.py`.
+
 | Notebook | Talleres y clases | Evidencia |
 |---|---|---|
 | [01 Perfil PQRS](01_Perfil_PQRS.ipynb) | P01 · clase 2 | Conteos, esquema, hashes y memoria por tamaño de bloque |

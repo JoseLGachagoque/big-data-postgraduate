@@ -23,4 +23,6 @@
 
 ## Soluciones de referencia
 
+Los [ejercicios de apoyo con pandas](../ejercicios/README.md) reúnen tres prácticas sobre AGROSAVIA, EVA y DIVIPOLA para cuatro horas. Sus plantillas están en `ejercicios/`; los notebooks resueltos se entregan en `soluciones/` con los nombres indicados en cada enunciado.
+
 Las [soluciones de P01, P02 y P03](../soluciones/README.md) incluyen un notebook por taller, con desarrollo de cada tarea, controles e interpretación.
