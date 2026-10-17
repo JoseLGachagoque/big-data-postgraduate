@@ -1,0 +1,8 @@
+# Ampliación opcional en .venv-gpu: solo Linux/WSL 2 con NVIDIA y CUDA Toolkit 12 compatible.
+# Preparar ANTES controlador y Toolkit: ../docs/polars-gpu.md
+# Este archivo NO instala prerrequisitos del sistema ni se usa en el entorno CPU.
+# Mantener restricciones del curso; el backend queda pendiente de fijar tras validar en GPU.
+-c requirements.txt
+-r requirements_pqrs.txt
+-r requirements_notebooks.txt
+cudf-polars-cu12
