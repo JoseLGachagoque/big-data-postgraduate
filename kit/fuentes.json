@@ -7,6 +7,8 @@
       "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,PRECTOTCORR&community=AG&longitude=-73.36&latitude=5.54&start=20250101&end=20250131&format=JSON",
       "bytes": 1555,
       "sha256": "75afac1b833d0a070185a179db271eff476b42ba1f526beaa4248d3287d348c1",
+      "normalizacion": "nasa_power",
+      "sha256_contenido": "375fee9c716a1ea6dba94a4620edbc1d39b7b8169375dd54e7d29f53962262bd",
       "metodo": "http",
       "alcance": "muestra"
     },

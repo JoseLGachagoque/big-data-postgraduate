@@ -41,6 +41,23 @@ def sha256_archivo(path):
             huella.update(bloque)
     return huella.hexdigest()
 
+def sha256_contenido(path, fuente):
+    """Normaliza metadatos volátiles cuando la fuente los incorpora."""
+    if fuente.get('normalizacion') == 'nasa_power':
+        contenido = json.loads(path.read_text(encoding='utf-8'))
+        contenido.pop('times', None)
+        contenido.get('header', {}).get('api', {}).pop('version', None)
+        estable = json.dumps(
+            contenido, ensure_ascii=False, sort_keys=True, separators=(',', ':')
+        ).encode('utf-8')
+        return hashlib.sha256(estable).hexdigest()
+    return sha256_archivo(path)
+
+def coincide_fuente(path, fuente):
+    """Compara bytes exactos o contenido normalizado, según la fuente."""
+    esperado = fuente.get('sha256_contenido', fuente['sha256'])
+    return sha256_contenido(path, fuente) == esperado
+
 def seleccionar(ids):
     conocidos = {f['id'] for f in catalogo} | {'pqrs', 'pqrs-completos'}
     desconocidos = set(ids) - conocidos
@@ -74,10 +91,10 @@ if args.respaldo:
         src = args.respaldo/f['archivo']; dst = RAW/f['archivo']
         if src.resolve() == dst.resolve(): continue
         if not src.exists(): raise SystemExit(f'Falta {src}')
-        if sha256_archivo(src) != f['sha256']:
+        if not coincide_fuente(src, f):
             raise SystemExit(f'El respaldo no coincide con la versión docente: {src}')
         if dst.exists():
-            if sha256_archivo(dst) != f['sha256']:
+            if not coincide_fuente(dst, f):
                 raise SystemExit(f'No se sobrescribe una versión diferente: {dst}')
         else: shutil.copy2(src, dst)
 if args.descargar:
@@ -85,7 +102,7 @@ if args.descargar:
         dst = destino(f)
         dst.parent.mkdir(parents=True, exist_ok=True)
         if dst.exists():
-            if sha256_archivo(dst) != f['sha256']:
+            if not coincide_fuente(dst, f):
                 fallos_descarga.append(f['id'])
                 print(f"Versión distinta: {dst}. No se sobrescribe; revisar o conservar aparte antes de descargar.")
             else:
@@ -124,7 +141,7 @@ if args.descargar:
                         n += len(chunk)
                         if n > limit: raise ValueError(f'Descarga supera el límite docente de {limit/1e6:.1f} MB')
                         w.write(chunk)
-                if temp.stat().st_size != expected_bytes or sha256_archivo(temp) != expected_sha:
+                if ('sha256_contenido' not in f and temp.stat().st_size != expected_bytes) or not coincide_fuente(temp, f):
                     changed=download.with_suffix(download.suffix+'.nueva'); temp.replace(changed)
                     raise ValueError(f'La fuente cambió; se conserva en {changed.name}. Revisar esquema y controles antes de sustituir el corte docente.')
                 temp.replace(download)
@@ -153,7 +170,9 @@ if args.verificar is not None:
         else:
             r['bytes']=file.stat().st_size
             r['sha256']=sha256_archivo(file)
-            r['estado']='coincide' if r['sha256']==f['sha256'] else 'version_distinta'
+            if 'sha256_contenido' in f:
+                r['sha256_contenido']=sha256_contenido(file, f)
+            r['estado']='coincide' if coincide_fuente(file, f) else 'version_distinta'
             if file.suffix=='.csv':
                 with file.open(encoding='utf-8-sig',newline='') as stream:
                     reader=csv.reader(stream, delimiter=f.get('separador', ','))
