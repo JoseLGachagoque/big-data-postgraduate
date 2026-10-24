@@ -68,21 +68,20 @@ Las dependencias se instalan según la guía [WSL](instalacion-wsl.md) o [Linux/
 
 ```
 python pqrs_descarga.py --listar
-python pqrs_talleres.py perfil
-python pqrs_talleres.py formatos
+python 00_datos.py --descargar pqrs-completos
+python 00_datos.py --verificar pqrs-completos
 ```
 
-Las tres muestras incluidas en `data/pqrs_muestras` también se preparan desde `kit/` con `python 00_datos.py --descargar pqrs` y se comprueban con `python 00_datos.py --verificar pqrs`. El [taller P01, actividad 0](../talleres/P01.md) detalla este procedimiento. Los archivos existentes que coinciden se conservan; una versión distinta produce error sin sobrescritura. Para los completos se mantiene `pqrs_descarga.py`, como se muestra a continuación.
+Las tres muestras incluidas en `data/pqrs_muestras` se preparan desde `kit/` con `python 00_datos.py --descargar pqrs` y se comprueban con `python 00_datos.py --verificar pqrs`. El [taller P01, actividad 0](../talleres/P01.md) detalla este procedimiento. Los archivos existentes que coinciden se conservan; una versión distinta produce error sin sobrescritura. El grupo `pqrs-completos` descarga los seis cortes semestrales de 2023–2025. También puede usarse `pqrs_descarga.py` para seleccionar cortes concretos:
 
 ```
-python pqrs_descarga.py --descargar 2024_I
-python pqrs_descarga.py --verificar
-python pqrs_talleres.py perfil --completo --datos data/pqrs_completos
+python pqrs_descarga.py --descargar 2025_I 2025_II
+python pqrs_descarga.py --verificar 2025_I 2025_II
 ```
 
-La verificación completa requiere los tres cortes; si solo se descargó uno, la comprobación informará los que faltan. Para probar un único CSV con pandas, usar su separador y chunksize según P01. Los scripts de prácticas completas están diseñados para los tres cortes. La descarga rechaza HTML, limita cada archivo a 1,5 veces el tamaño de referencia y conserva como .nueva una fuente cuyo hash cambió.
+La verificación completa requiere los seis cortes; si solo se descargó una selección, verificar explícitamente esos periodos. Para 2025-II, el descargador conserva el ZIP original, extrae el TXT y lo presenta a los motores como `PQRD_2025_II.csv`. La descarga rechaza HTML, limita el tamaño, comprueba SHA-256 y conserva como `.nueva` una fuente cuyo contenido cambió.
 
-Espacio: 5 GB para la ruta de muestras y datos agroambientales; reservar 8 GB para los tres CSV PQRS, Parquet, temporales y salidas. Con herramientas instaladas, planificar 15–20 GB libres para la ruta completa. Son presupuestos preventivos, no tamaños de instalación medidos. Usar SSD y bloques de 25.000 filas; bajar a 5.000–10.000 si la RAM es limitada. Con 8 GB se recomienda mantener el benchmark pandas en muestras y ampliar completos con DuckDB/Polars.
+Espacio: 5 GB para la ruta de muestras y datos agroambientales; reservar al menos 12 GB para los seis CSV PQRS, el ZIP de 2025-II, Parquet, temporales y salidas. Con herramientas instaladas, planificar 20–25 GB libres para la ruta completa. Son presupuestos preventivos, no tamaños de instalación medidos. Usar SSD y bloques de 25.000 filas; bajar a 5.000–10.000 si la RAM es limitada.
 
 ## Notebooks actuales
 

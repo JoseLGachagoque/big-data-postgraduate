@@ -7,22 +7,30 @@ P = argparse.ArgumentParser(description=__doc__)
 P.add_argument('--listar', action='store_true')
 P.add_argument('--descargar', nargs='+', metavar='ID')
 P.add_argument('--respaldo', type=Path, help='Carpeta raw de una copia del kit')
-P.add_argument('--verificar', nargs='*', metavar='ID', help='Sin IDs: 12 fuentes agroambientales; pqrs: tres muestras; pqrs-completos: tres CSV completos')
+P.add_argument('--verificar', nargs='*', metavar='ID', help='Sin IDs: 12 fuentes agroambientales; pqrs: tres muestras; pqrs-completos: seis cortes CSV de 2023 a 2025')
 args = P.parse_args()
 fuentes = json.loads((ROOT/'fuentes.json').read_text(encoding='utf-8'))['fuentes']
 muestras = []
 completos = []
-for f in json.loads((ROOT/'pqrs_fuentes.json').read_text(encoding='utf-8')):
+pqrs_base = json.loads((ROOT/'pqrs_fuentes.json').read_text(encoding='utf-8'))
+pqrs_adicionales = json.loads((ROOT/'pqrs_fuentes_adicionales_2023_2025.json').read_text(encoding='utf-8'))
+for f in pqrs_base:
     nombre = 'Muestra_1000_' + f['periodo'] + '.csv'
     muestras.append({'id': 'pqrs_' + f['periodo'], 'archivo': nombre,
         'url': 'https://raw.githubusercontent.com/eshernan/big-data-postgraduate/main/kit/data/pqrs_muestras/' + nombre,
         'bytes': f['bytes_muestra'], 'sha256': f['sha256_muestra'],
         'metodo': 'http', 'alcance': 'muestra', 'carpeta': 'pqrs_muestras',
         'separador': f['separador'], 'columnas': f['columnas'], 'filas': f['filas_muestra']})
-    completos.append({'id': 'pqrs_completo_' + f['periodo'], 'archivo': f['archivo'],
+for f in pqrs_base + pqrs_adicionales:
+    item = {'id': 'pqrs_completo_' + f['periodo'], 'archivo': f['archivo'],
         'url': f['url'], 'bytes': f['bytes'], 'sha256': f['sha256'],
         'metodo': 'http', 'alcance': 'completo', 'carpeta': 'pqrs_completos',
-        'separador': f['separador'], 'columnas': f['columnas'], 'filas': f['filas']})
+        'separador': f['separador'], 'columnas': f['columnas'], 'filas': f['filas'],
+        'contenedor': f.get('contenedor', 'csv')}
+    for key in ['archivo_descarga', 'miembro_zip', 'bytes_descarga', 'sha256_descarga']:
+        if key in f: item[key] = f[key]
+    completos.append(item)
+completos.sort(key=lambda fuente: fuente['id'])
 catalogo = fuentes + muestras + completos
 
 def sha256_archivo(path):
@@ -45,14 +53,20 @@ def seleccionar(ids):
 def destino(f):
     return ROOT/'data'/f.get('carpeta', 'raw')/f['archivo']
 
+def destino_descarga(f):
+    if f.get('contenedor') == 'zip':
+        return destino(f).parent/'originales'/f['archivo_descarga']
+    return destino(f)
+
 seleccion_descarga = seleccionar(args.descargar) if args.descargar else []
 seleccion_verificacion = seleccionar(args.verificar) if args.verificar else fuentes
 fallos_descarga = []
 RAW.mkdir(parents=True, exist_ok=True)
 if args.listar:
     print('pqrs: grupo de tres muestras (3.000 filas), destino data/pqrs_muestras; no descarga completos')
-    print(f"pqrs-completos: {len(completos)} CSV completos, {sum(f['filas'] for f in completos):,} reportes, "
-          f"{sum(f['bytes'] for f in completos)/1e9:.3f} GB; destino data/pqrs_completos")
+    print(f"pqrs-completos: {len(completos)} cortes completos de 2023 a 2025, "
+          f"{sum(f['filas'] for f in completos):,} reportes, "
+          f"{sum(f['bytes'] for f in completos)/1e9:.3f} GB descomprimidos; destino data/pqrs_completos")
     for f in catalogo:
         print(f"{f['id']:20} {f['bytes']/1e6:8.3f} MB  {f['alcance']:8} {f['metodo']}")
 if args.respaldo:
@@ -75,30 +89,61 @@ if args.descargar:
                 fallos_descarga.append(f['id'])
                 print(f"Versión distinta: {dst}. No se sobrescribe; revisar o conservar aparte antes de descargar.")
             else:
-                print(f"Ya existe y coincide: {dst.name}. No se descarga ni sobrescribe.")
-            continue
+                archive = destino_descarga(f)
+                archive_ok = (f.get('contenedor') != 'zip' or
+                              (archive.exists() and archive.stat().st_size == f['bytes_descarga'] and
+                               sha256_archivo(archive) == f['sha256_descarga']))
+                if archive_ok:
+                    print(f"Ya existe y coincide: {dst.name}. No se descarga ni sobrescribe.")
+                    continue
+                print(f"El CSV coincide, pero falta recuperar su fuente comprimida: {archive}")
+            if f['id'] in fallos_descarga: continue
         if f['metodo'] == 'manual':
             print(f"Descarga DANE mediante navegador; guardar como {dst}\n{f['url']}"); continue
-        temp = dst.with_suffix(dst.suffix+'.part')
-        limit = max(f['bytes']*3, 2_000_000)
+        download = destino_descarga(f)
+        download.parent.mkdir(parents=True, exist_ok=True)
+        expected_bytes = f.get('bytes_descarga', f['bytes'])
+        expected_sha = f.get('sha256_descarga', f['sha256'])
+        temp = download.with_suffix(download.suffix+'.part')
+        extracted = dst.with_suffix(dst.suffix+'.part')
+        limit = max(expected_bytes*3, 2_000_000)
         try:
-            print('Descargando:', f['archivo'], f['url'], flush=True)
-            with urllib.request.urlopen(f['url'], timeout=60) as response, temp.open('wb') as w:
-                ct = response.headers.get('Content-Type','').lower(); n=0
-                if 'text/html' in ct: raise ValueError('El servidor entregó HTML en lugar de datos')
-                while True:
-                    chunk = response.read(1024*1024)
-                    if not chunk: break
-                    n += len(chunk)
-                    if n > limit: raise ValueError(f'Descarga supera el límite docente de {limit/1e6:.1f} MB')
-                    w.write(chunk)
-            if sha256_archivo(temp) != f['sha256']:
-                changed=dst.with_suffix(dst.suffix+'.nueva'); temp.replace(changed)
-                raise ValueError(f'La fuente cambió; se conserva en {changed.name}. Revisar esquema y controles antes de sustituir el corte docente.')
-            temp.replace(dst); print('Descargado:',dst.name)
+            if download.exists():
+                if download.stat().st_size != expected_bytes or sha256_archivo(download) != expected_sha:
+                    raise ValueError(f'La descarga existente no coincide: {download}')
+                print('Fuente ya descargada y verificada:', download.name)
+            else:
+                print('Descargando:', f['archivo'], f['url'], flush=True)
+                req = urllib.request.Request(f['url'], headers={'User-Agent':'Curso-BigData/1.0'})
+                with urllib.request.urlopen(req, timeout=60) as response, temp.open('wb') as w:
+                    ct = response.headers.get('Content-Type','').lower(); n=0
+                    if 'text/html' in ct: raise ValueError('El servidor entregó HTML en lugar de datos')
+                    while True:
+                        chunk = response.read(1024*1024)
+                        if not chunk: break
+                        n += len(chunk)
+                        if n > limit: raise ValueError(f'Descarga supera el límite docente de {limit/1e6:.1f} MB')
+                        w.write(chunk)
+                if temp.stat().st_size != expected_bytes or sha256_archivo(temp) != expected_sha:
+                    changed=download.with_suffix(download.suffix+'.nueva'); temp.replace(changed)
+                    raise ValueError(f'La fuente cambió; se conserva en {changed.name}. Revisar esquema y controles antes de sustituir el corte docente.')
+                temp.replace(download)
+            if f.get('contenedor') == 'zip':
+                with zipfile.ZipFile(download) as z:
+                    info = z.getinfo(f['miembro_zip'])
+                    if info.file_size != f['bytes']:
+                        raise ValueError('El miembro comprimido cambió de tamaño')
+                    with z.open(info) as source, extracted.open('wb') as target:
+                        shutil.copyfileobj(source, target, length=1024*1024)
+                if extracted.stat().st_size != f['bytes'] or sha256_archivo(extracted) != f['sha256']:
+                    changed=dst.with_suffix(dst.suffix+'.nueva'); extracted.replace(changed)
+                    raise ValueError(f'El CSV extraído cambió; se conserva en {changed.name}.')
+                extracted.replace(dst)
+            print('Preparado:',dst.name)
         except Exception as e:
             fallos_descarga.append(f['id'])
             temp.unlink(missing_ok=True)
+            extracted.unlink(missing_ok=True)
             print(f"No se incorporó {f['id']}: {e}\nUsar el respaldo fechado; no reintentar en bucle.")
 if args.verificar is not None:
     report=[]
@@ -128,6 +173,16 @@ if args.verificar is not None:
             elif file.suffix=='.json':
                 d=json.loads(file.read_text()); r['error_api']=d.get('error')
                 if 'features' in d:r['elementos']=len(d['features'])
+            if f.get('contenedor') == 'zip':
+                archive = destino_descarga(f)
+                r['archivo_fuente'] = str(archive.relative_to(ROOT))
+                if not archive.exists():
+                    r['estado']='archivo_fuente_ausente'
+                else:
+                    r['sha256_fuente']=sha256_archivo(archive)
+                    r['fuente_coincide']=(archive.stat().st_size==f['bytes_descarga'] and
+                                         r['sha256_fuente']==f['sha256_descarga'])
+                    if not r['fuente_coincide']:r['estado']='archivo_fuente_distinto'
         report.append(r); print(r['id'],r['estado'],r.get('filas',r.get('elementos','')))
     out=ROOT/'salidas';out.mkdir(exist_ok=True)
     (out/'verificacion.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))

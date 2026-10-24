@@ -54,6 +54,7 @@ Material de consulta y práctica para acompañar los ejercicios del curso.
 - [Guía de línea de comandos de Linux](docs/guia-cli-linux/README.md): se anexó como apoyo para personas con poca experiencia en la CLI de Linux. Incluye navegación, manejo de archivos, `grep`, `wc`, AWK, verificaciones rápidas y un cheat sheet de 100 comandos con sus opciones habituales. Disponible en [PDF](docs/guia-cli-linux/Guia_Linea_de_Comandos.pdf) y [HTML](docs/guia-cli-linux/index.html).
 
 - [Git y GitHub: flujo de trabajo de los ejercicios](docs/guia-git/README.md): guía ilustrada sobre clones, forks, ramas, commits, PR, trabajo compartido y resolución de conflictos. Incluye seis escenarios y un desafío integrador. La [versión HTML](docs/guia-git/index.html) puede abrirse en el navegador después de clonar o descargar el repositorio; sus imágenes están incluidas en la misma carpeta.
+- [Panorama OpenSource 2026](docs/panorama-opensource-2026.md): mapa en alta resolución de las capas de una plataforma moderna de Big Data y Lakehouse, desde gobernanza hasta formatos físicos. Incluye una explicación breve y el enlace oficial de cada producto representado.
 - [Guía práctica de pandas](docs/manual-pandas.md): inspección, filtros, consultas y operaciones sobre los CSV del curso.
 - [Guía rápida de Polars](docs/manual-polars.md): ejemplos mínimos, equivalencias con pandas y ventajas de las expresiones y la ejecución diferida.
 - [Polars con GPU NVIDIA: instalación y ejecución CPU/GPU](docs/polars-gpu.md): **solo para equipos con GPU NVIDIA compatible en Linux o WSL 2**; requiere controlador y CUDA Toolkit compatibles. Incluye entorno GPU independiente, selección del motor y regreso a CPU. Es opcional; los talleres funcionan en CPU.
@@ -66,12 +67,12 @@ Material de consulta y práctica para acompañar los ejercicios del curso.
 - [Ejercicios de pandas y Polars](ejercicios/README.md): PD01–PD03 (cuatro horas) y PD04–PD05 (ocho horas), con enunciados y plantillas en `ejercicios/` y entrega de los notebooks resueltos en `soluciones/`.
 - [Soluciones comentadas en Jupyter de P01, P02 y P03](soluciones/README.md).
 - [Índice completo de talleres](talleres/README.md), con descargas, tamaños y criterios.
-- [Kit base](kit/README.md), [manifesto agroambiental](kit/fuentes.json) y [manifiesto PQRS](kit/pqrs_fuentes.json).
+- [Kit base](kit/README.md), [manifiesto agroambiental](kit/fuentes.json), [manifiesto PQRS base](kit/pqrs_fuentes.json) y [cortes adicionales 2023–2025](kit/pqrs_fuentes_adicionales_2023_2025.json).
 - [Descargador PQRS](kit/pqrs_descarga.py) y [prácticas reproducibles PQRS](kit/pqrs_talleres.py).
 - [Proyecto y evaluación por dominio](proyecto/README.md) y [mapa de ejercicios y prerrequisitos](docs/mapa-ejercicios.md).
 - [Notebooks actuales](kit/Notebooks/README.md) y [notebooks históricos Supersalud](supersalud/README.md), preservados como referencia.
 
-Los originales agroambientales suman 136,4 MB; los tres completos PQRS, 1,816 GB. Las tres muestras reales incluidas suman 2,235 MB. Los originales voluminosos y salidas se excluyen de Git. La instalación se comprueba durante la clase 2 y el docente ofrece una copia validada para continuidad de los talleres.
+Los originales agroambientales suman 136,4 MB. P04 utiliza seis cortes completos PQRS de 2023–2025: 5.327.501 registros y aproximadamente 3,830 GB descomprimidos. Las tres muestras reales incluidas suman 2,235 MB. Los originales voluminosos y salidas se excluyen de Git. La instalación se comprueba durante la clase 2 y el docente ofrece una copia validada para continuidad de los talleres.
 
 ## Cierre del proyecto
 

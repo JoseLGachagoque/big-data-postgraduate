@@ -9,7 +9,7 @@ Las doce clases suman 64 horas efectivas. Las actividades comparten los bloques 
 | 1–2 | T01 y E01–E03; P01 con las tres muestras PQRS | Pregunta, presupuesto de recursos, manifiesto, perfil y claves territoriales | 10 % |
 | 3–4 | E04–E06 y P02–P03; ejecutar formatos antes de calidad PQRS | Contrato, conciliación, proyección Parquet, prueba de reejecución y consulta | 10 % |
 | 5–6 | E07 después de calidad/consultas agroambientales; E08–E09 con geometrías y rásteres | Equivalencia Spark/DuckDB, cardinalidad y mapa con cobertura explícita | 10 % |
-| 7–8 | E10/P04 con formatos ya preparado; I01/E11 con NASA y fuentes de clima | Un informe experimental y una traza de eventos | 20 % |
+| 7–8 | P04 con seis cortes completos 2023–2025; lectura Polars–DuckDB y benchmark Polars–pandas; I01/E11 con NASA y fuentes de clima | Un informe experimental y una traza de eventos | 20 % |
 | 9–12 | E12 como práctica común de evaluación temporal; E13 en el dominio elegido | Producto candidato el 31/10, clínica docente sin entrega el 06/11, informe final | 35 % |
 | 12 | E13 con evidencias reconstruibles | Sustentación final el 07/11 y explicación individual | 15 % |
 
@@ -49,7 +49,7 @@ Para la ruta agroambiental: `talleres.py calidad` → `talleres.py consultas` �
 
 ## Límites del alcance
 
-P04 ofrece una ruta con 3.000 filas y otra con 2.444.766. El corte completo requiere unos 1,816 GB de descarga más salidas y temporales. La ruta con muestras permite demostrar equivalencia en equipos limitados; no demuestra rendimiento a escala completa. En ambos casos se declara el alcance.
+P04 exige los seis cortes semestrales completos de 2023, 2024 y 2025. La preparación incluye localizar los archivos faltantes en el portal oficial, conservar huellas y procedencia, conciliar primero Polars con DuckDB y construir una entrada Parquet común. El benchmark posterior compara Polars con pandas mediante calentamiento y tres repeticiones; la preparación y la descarga quedan fuera del reloj. La ejecución guiada está en [04 Rendimiento Analysis](../kit/Notebooks/04_Rendimiento_Analysis.ipynb).
 
 I01 no implementa recuperación ni toda la semántica de Spark. E11 crea un checkpoint nuevo por ejecución: el entregable básico es una traza y un análisis de recuperación, no afirmar que se probó reinicio desde el mismo estado. Un experimento de recuperación real puede sustituir una ampliación si se implementa y documenta.
 

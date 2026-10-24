@@ -4,7 +4,7 @@ Preparado por el PhD Esteban Hernández, CyberColombia.
 
 P01: 3 de octubre. P02: 9 de octubre. P03: 10 de octubre. P04: 23 de octubre. I01: 24 de octubre. Los notebooks acompañan los talleres y comparten las horas de clase; no añaden entregas obligatorias.
 
-Preparar el `.venv` base CPU de la raíz según la guía [Windows/WSL](../../docs/instalacion-wsl.md) o [Linux/macOS](../../docs/instalacion-linux-macos.md). En instalación nativa, adaptar `repositorio` o `REPO` a la ruta real como indica esa guía. Abrir desde `kit/` o `kit/Notebooks/`, usar el mismo entorno Python y ejecutar en orden. Los prerrequisitos son explícitos: P03 y P04 leen los productos de P02; P03 requiere DIVIPOLA; no ejecuta P02 ni descarga fuentes silenciosamente.
+Preparar el `.venv` base CPU de la raíz según la guía [Windows/WSL](../../docs/instalacion-wsl.md) o [Linux/macOS](../../docs/instalacion-linux-macos.md). En instalación nativa, adaptar `repositorio` o `REPO` a la ruta real como indica esa guía. Abrir desde `kit/` o `kit/Notebooks/`, usar el mismo entorno Python y ejecutar en orden. Los prerrequisitos son explícitos: P03 y el notebook 04 original leen los productos de P02; P03 requiere DIVIPOLA. El nuevo `04_Rendimiento_Analysis` sigue una ruta independiente con los seis cortes completos.
 
 Para crear o comprobar el entorno y el kernel, consultar [entornos por plataforma](../../docs/entornos-virtuales.md). La [ampliación NVIDIA GPU](../../docs/polars-gpu.md) usa `.venv-gpu` y su propio kernel; no es necesaria para estos notebooks.
 
@@ -22,8 +22,10 @@ Como referencia durante las prácticas, consultar la [guía práctica de pandas]
 | [05 Spark: lectura y agregación](05_Spark_lectura_y_agregacion.ipynb) | E07 · clase 5, 16 de octubre | CSV, conversión, Parquet, plan y equivalencia con DuckDB |
 | [06 Spark: joins y ventanas](06_Spark_joins_y_ventanas.ipynb) | E07 · clase 6, 17 de octubre | Cardinalidad, broadcast, top 3 y particiones |
 | [04 Rendimiento y eventos](04_Rendimiento_y_eventos.ipynb) | P04 · clase 7; I01 · clase 8 | Equivalencia entre motores y traza finita NASA |
+| [04 Rendimiento Analysis](04_Rendimiento_Analysis.ipynb) | P04 actualizado · clases 7–8 | Seis cortes 2023–2025, equivalencia Polars–DuckDB y benchmark Polars–pandas |
+| [08 Streaming de eventos](08_Streaming_de_Eventos.ipynb) | I01 y E11 · clase 8 | Traza finita, ventanas, watermark, estado, checkpoint, recuperación y auditoría |
 
-El notebook 04 se usa en dos momentos: detenerse tras el benchmark en clase 7 y ejecutar la sección de eventos en clase 8. Los eventos requieren `data/raw/nasa.json`, que se descarga desde el manifiesto agroambiental. Los notebooks no incorporan descargas de 1,816 GB como paso automático.
+El notebook 04 original se conserva sin cambios. El nuevo notebook Analysis desarrolla por separado el panorama completo de P04. Para streaming, el notebook 08 reúne I01 y la reproducción E11 en una sola progresión; usa `data/raw/nasa.json`, que se descarga desde el manifiesto agroambiental. Los notebooks anteriores no se modifican.
 
 Seleccionar **BigData · WSL Ubuntu 26.04 · Python 3.12** en Windows/WSL o **BigData · Linux/macOS · Python 3.12** en instalación nativa. Instalar las dependencias mediante la guía correspondiente.
 
@@ -64,6 +66,11 @@ evidencia forma parte de P04, sin otra entrega.
 Desde `kit/`, el laboratorio usa `python 00_datos.py --descargar pqrs-completos`
 y `python 00_datos.py --verificar pqrs-completos`. El grupo `pqrs` conserva
 su significado: solo tres muestras.
+
+El panorama actualizado de seis cortes se desarrolla exclusivamente en
+[04 Rendimiento Analysis](04_Rendimiento_Analysis.ipynb): descarga verificable,
+lectura Polars–DuckDB, Parquet común y benchmark Polars–pandas. El notebook
+original y `update1` permanecen como estaban y no deben mezclarse con esta ejecución.
 
 El notebook 04 lee los productos de P02 (`kit/salidas/pandas/P02`); no ejecuta `lab.formatos` ni `lab.benchmark`. Presenta cinco celdas medidas: pandas, Polars, DuckDB sobre Parquet, sobre particiones y sobre CSV. Cada una incluye lectura, agregación y materialización del resultado en pandas; las verificaciones y visualizaciones quedan fuera. Una vuelta de calentamiento y tres vueltas alternadas generan `benchmark_notebook.csv` y su resumen en `kit/salidas/pandas/P04`. Los tiempos del kernel no se mezclan con el benchmark CLI, que además incluye procesos nuevos, exportación y sondeo RSS.
 

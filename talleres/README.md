@@ -19,7 +19,7 @@
 - [P01 Perfil PQRS y lectura por bloques](P01.md)
 - [P02 Parquet, contrato y reejecución](P02.md)
 - [P03 Calidad de reportes y consulta diferida](P03.md)
-- [P04 Escala real y comparación de motores](P04.md)
+- [P04 Datos completos 2023–2025 y rendimiento Polars–pandas](P04.md)
 
 ## Soluciones de referencia
 
@@ -38,4 +38,4 @@ python 00_datos.py --descargar pqrs
 python 00_datos.py --verificar pqrs
 ```
 
-Continuar cuando los tres cortes indiquen `coincide`. P03 requiere además DIVIPOLA y el Parquet generado por P02. P04 distingue la prueba con muestras de la prueba con completos, que usa `pqrs_descarga.py`. Cada enunciado detalla los comandos correspondientes.
+Continuar cuando los tres cortes de muestra indiquen `coincide`. P03 requiere además DIVIPOLA y el Parquet generado por P02. P04 sigue una ruta independiente con los seis cortes semestrales completos de 2023–2025: el kit descarga y verifica las fuentes oficiales, concilia primero la lectura Polars–DuckDB y después compara Polars con pandas.

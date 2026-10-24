@@ -135,8 +135,9 @@ La comprobación temporal no se incorpora como solución del alumno y no sustitu
 Copiar a `soluciones/` y desarrollar allí, con el kernel GPU ya verificado.
 No contiene la solución de las consultas; deja celdas explícitas por completar.
 
-1. Descargar y verificar tres periodos con `python kit/00_datos.py --descargar pqrs-completos`
-   y `python kit/00_datos.py --verificar pqrs-completos`, desde la raíz.
+1. Este ejercicio histórico conserva sus tres cortes originales. Desde la raíz, ejecutar
+   `python kit/pqrs_descarga.py --descargar 2023_II 2024_I 2024_II` y
+   `python kit/pqrs_descarga.py --verificar 2023_II 2024_I 2024_II`.
 2. Leer y convertir CSV a Parquet con Polars; conservar las 2.444.766 filas.
 3. Buscar departamentos con más quejas según edad, `patologia_1`,
    `cod_motesp`, `motivo_especifico` y `pqr_canal`, combinando todos los periodos.
