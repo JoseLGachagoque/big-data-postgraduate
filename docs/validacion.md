@@ -2,6 +2,10 @@
 
 Preparado por el PhD Esteban Hernández, CyberColombia.
 
+## Estado del bloque pipelines y DataOps: 30 de octubre
+
+La [revisión de alineación](revision-alineacion-30-octubre.md) registra los ajustes documentales y sus límites. El E12 vigente corresponde a integración del pipeline, no a las métricas predictivas históricas descritas más abajo. La [solución integrada E12](../soluciones/E12_solucion.ipynb) se ejecutó con las tres muestras locales: 3.000 filas, 687 grupos, conciliación exacta en DuckDB y contenido estable en dos ejecuciones. Esta comprobación no acredita una demostración Iceberg.
+
 El calendario contractual comprende 12 clases entre el 2 de octubre y el 7 de noviembre de 2026. Se comprobaron 3.840 minutos efectivos de docencia en línea, excluyendo todos los recesos y almuerzos. El trabajo autónomo es opcional y no reemplaza horas de clase.
 
 Las tres URL de Supersalud devolvieron HTTP 206 en una lectura Range de sus cabeceras y coincidieron con las 38 columnas del corte docente el 2 de octubre de 2026. Los CSV completos locales se verificaron por SHA-256, filas y esquema. Sumaron 2.444.766 filas y 1.816.243.049 bytes.
@@ -20,7 +24,7 @@ Se ejecutaron en orden todas las celdas de código de los cuatro notebooks vigen
 
 El benchmark verificó igualdad entre los cinco motores con tres repeticiones medidas y calentamiento. Se comprobó que rechaza etiquetar el producto de muestras como completo. En esta ejecución restringida no se pudo observar RSS y se obtuvo cero en ese campo: no es una medición de memoria válida. No se repitió el benchmark de 1,816 GB; sus resultados anteriores corresponden a la validación previa del material.
 
-E12 se volvió a ejecutar: 15.267 pares para 2024 y 15.503 para 2025. La salida `evaluacion_por_cultivo.csv` contiene 317 grupos año–cultivo–estado físico; sus conteos y MAE ponderado concilian con el resumen global. Se verificaron cobertura entre 0 y 1, grupos sin año previo y conservación de denominadores.
+La versión histórica de E12, hoy referencia opcional de predicción, se volvió a ejecutar: 15.267 pares para 2024 y 15.503 para 2025. La salida `evaluacion_por_cultivo.csv` contiene 317 grupos año–cultivo–estado físico; sus conteos y MAE ponderado concilian con el resumen global. Se verificaron cobertura entre 0 y 1, grupos sin año previo y conservación de denominadores. Estos resultados no validan el E12 vigente de integración del pipeline.
 
 Se comprobaron los enlaces locales y el calendario estructurado de doce clases y 3.840 minutos. Spark, Windows y QGIS no se volvieron a validar en esta integración. Los notebooks históricos permanecen sin ejecutar ni alterar.
 

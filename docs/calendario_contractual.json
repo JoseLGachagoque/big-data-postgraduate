@@ -219,22 +219,22 @@
       "fecha": "2026-10-16",
       "fecha_texto": "Viernes 16/10/2026",
       "tema": "Procesamiento con Spark",
-      "practica": "E07: planes, particiones y equivalencia Spark/DuckDB",
-      "producto": "Referencia docente: Plan explicado y control de equivalencia; ejecución y entrega estudiantil el sábado",
+      "practica": "Dos ejercicios: procesamiento con Spark y procesamiento con Polars, comparados con pandas",
+      "producto": "Referencia docente: dos ejercicios sobre el mismo conjunto de datos y protocolo de comparación; ejecución y entrega estudiantil el sábado",
       "horario": "18:00–21:15",
       "minutos_clase": 180,
       "agenda": [
         [
           "18:00–18:30",
-          "Explicación / demostración docente: Motores y entorno Spark"
+          "Explicación / demostración docente: Entornos y carga del conjunto de datos común"
         ],
         [
           "18:30–19:15",
-          "Explicación / demostración docente: Driver, particiones, transformaciones y plan"
+          "Explicación / demostración docente: Spark, driver, particiones, transformaciones y acciones"
         ],
         [
           "19:15–20:00",
-          "Explicación / demostración docente: E07: agregación y acción"
+          "Demostración docente del ejercicio 1: procesamiento y medición con Spark"
         ],
         [
           "20:00–20:15",
@@ -242,11 +242,11 @@
         ],
         [
           "20:15–21:00",
-          "Explicación / demostración docente: E07: equivalencia con DuckDB"
+          "Demostración docente del ejercicio 2: Polars y pandas con operaciones equivalentes"
         ],
         [
           "21:00–21:15",
-          "Explicación / demostración docente: Plan, controles y cierre"
+          "Protocolo de comparación, controles de equivalencia y preparación del sábado"
         ]
       ],
       "modalidad": "Demostración guiada por el profesor",
@@ -257,15 +257,15 @@
       "sesion": 6,
       "fecha": "2026-10-17",
       "fecha_texto": "Sábado 17/10/2026",
-      "tema": "Consultas e integración distribuida",
-      "practica": "E07–E09: joins, shapes DANE/IGAC, SoilGrids y WoSIS",
-      "producto": "Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial",
+      "tema": "Spark, Polars y comparación de rendimiento con pandas",
+      "practica": "Dos ejercicios: uno con Spark y otro con Polars, usando pandas como línea base",
+      "producto": "Ejercicio reproducible con Spark, ejercicio reproducible con Polars y pandas, tabla de rendimiento, control de equivalencia y conclusiones",
       "horario": "08:00–17:00",
       "minutos_clase": 450,
       "agenda": [
         [
           "08:00–09:30",
-          "Reejecución propia E07, plan y equivalencia (08:00–08:45); joins y cardinalidad (08:45–09:30)"
+          "Ejercicio 1 con Spark: carga, transformaciones, agregación y ejecución de una acción"
         ],
         [
           "09:30–09:45",
@@ -273,7 +273,7 @@
         ],
         [
           "09:45–12:00",
-          "E07: equivalencia, ventanas y ranking"
+          "Ejercicio 1: medición, plan de ejecución y comprobación de resultados frente a pandas"
         ],
         [
           "12:00–13:00",
@@ -281,7 +281,7 @@
         ],
         [
           "13:00–15:00",
-          "E08: shapes DANE, geometrías IGAC y cobertura"
+          "Ejercicio 2 con Polars: operaciones equivalentes en modo eager/lazy y línea base en pandas"
         ],
         [
           "15:00–15:15",
@@ -289,11 +289,11 @@
         ],
         [
           "15:15–16:30",
-          "E09: SoilGrids, WoSIS, profundidad y unidades"
+          "Comparación de tiempos, memoria, equivalencia de resultados y conclusiones"
         ],
         [
           "16:30–17:00",
-          "Revisión del soporte espacial y entrega"
+          "Revisión y entrega de los dos ejercicios y de la tabla comparativa"
         ]
       ],
       "modalidad": "Actividad estudiantil y entrega en clase",
@@ -392,35 +392,43 @@
       "sesion": 9,
       "fecha": "2026-10-30",
       "fecha_texto": "Viernes 30/10/2026",
-      "tema": "Analítica y gobernanza",
-      "practica": "E12: rendimiento por cultivo, evaluación temporal y gobernanza",
-      "producto": "Referencia docente: Evaluación temporal y ficha de gobernanza; ejecución y entrega estudiantil el sábado",
+      "tema": "Integración del pipeline y publicación de datos",
+      "practica": "E12: conceptos de pipelines y DataOps, esquemas industriales, ejemplo, ejercicios guiados y demostración docente Iceberg",
+      "producto": "Referencia docente: pipeline completo y criterios de E12; ejecución estudiantil el sábado",
       "horario": "18:00–21:15",
       "minutos_clase": 180,
       "agenda": [
         [
-          "18:00–18:30",
-          "Explicación / demostración docente: Métrica, población, tiempo y fuga de información"
+          "18:00–18:35",
+          "Propósito y conceptos de pipelines, DAG y orquestación"
         ],
         [
-          "18:30–20:00",
-          "Explicación / demostración docente: E12: persistencia, rendimiento y MAE por cultivo"
+          "18:35–19:10",
+          "DataOps y esquemas industriales"
+        ],
+        [
+          "19:10–19:55",
+          "Ejemplo desarrollado PQRS"
+        ],
+        [
+          "19:55–20:00",
+          "Seguimiento operativo: primera parte"
         ],
         [
           "20:00–20:15",
           "Coffee break"
         ],
         [
-          "20:15–20:30",
-          "Explicación / demostración docente: E12: error por cultivo y cobertura"
+          "20:15–20:35",
+          "Seguimiento operativo: continuación"
         ],
         [
-          "20:30–21:00",
-          "Explicación / demostración docente: Gobernanza y revisión crítica de índices compuestos"
+          "20:35–20:45",
+          "Formatos de tabla y demostración docente preparada"
         ],
         [
-          "21:00–21:15",
-          "Explicación / demostración docente: Definición del producto integrador"
+          "20:45–21:15",
+          "Ejercicios guiados y conexión con E12"
         ]
       ],
       "modalidad": "Demostración guiada por el profesor",
@@ -431,43 +439,55 @@
       "sesion": 10,
       "fecha": "2026-10-31",
       "fecha_texto": "Sábado 31/10/2026",
-      "tema": "Integración y auditoría del proyecto",
-      "practica": "E13: reconstrucción, pruebas y auditoría cruzada",
-      "producto": "Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos",
+      "tema": "Ejecución y auditoría del pipeline",
+      "practica": "E12–E13: integración del pipeline, conciliación, reejecución y auditoría",
+      "producto": "Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría",
       "horario": "08:00–17:00",
       "minutos_clase": 450,
       "agenda": [
         [
-          "08:00–09:30",
-          "E12 propio: evaluación temporal EVA (08:00–08:45); E13: reconstrucción (08:45–09:30)"
+          "08:00–08:45",
+          "Preparación y alcance"
+        ],
+        [
+          "08:45–09:30",
+          "Recepción y validación: primera parte"
         ],
         [
           "09:30–09:45",
           "Receso de la mañana"
         ],
         [
-          "09:45–12:00",
-          "Auditoría cruzada de datos, código y resultados"
+          "09:45–10:30",
+          "Recepción y validación: continuación"
+        ],
+        [
+          "10:30–12:00",
+          "Transformación y publicación candidata"
         ],
         [
           "12:00–13:00",
           "Almuerzo"
         ],
         [
-          "13:00–15:00",
-          "Corrección de hallazgos y revisión del informe"
+          "13:00–14:15",
+          "Reejecución y registro operativo"
+        ],
+        [
+          "14:15–15:00",
+          "Ejercicio de auditoría entre equipos: primera parte"
         ],
         [
           "15:00–15:15",
           "Receso de la tarde"
         ],
         [
-          "15:15–16:30",
-          "Validación del producto candidato y límites"
+          "15:15–16:00",
+          "Ejercicio de auditoría entre equipos: continuación"
         ],
         [
-          "16:30–17:00",
-          "Entrega candidata y preparación de la clínica"
+          "16:00–17:00",
+          "Revisión y entrega del candidato"
         ]
       ],
       "modalidad": "Actividad estudiantil y entrega en clase",
@@ -579,8 +599,8 @@
     {
       "fecha": "2026-10-17",
       "hora": "16:30–17:00",
-      "codigos": "E07–E09",
-      "producto": "Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial",
+      "codigos": "Ejercicio Spark / Ejercicio Polars–pandas",
+      "producto": "Dos ejercicios reproducibles, tabla de rendimiento, control de equivalencia y conclusiones",
       "peso": "10 %"
     },
     {
@@ -594,7 +614,7 @@
       "fecha": "2026-10-31",
       "hora": "16:30–17:00",
       "codigos": "E12–E13",
-      "producto": "Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos",
+      "producto": "Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría",
       "peso": "Hito formativo del bloque de proyecto (35 %)"
     },
     {

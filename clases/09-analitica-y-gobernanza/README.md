@@ -1,24 +1,32 @@
-# Clase 9: Analítica y gobernanza
+# Clase 9: Integración del pipeline y publicación de datos
 
 Preparado por el PhD Esteban Hernández, CyberColombia.
 
-Viernes 30/10/2026. 18:00–21:15. 180 minutos efectivos.
+Viernes 30 de octubre de 2026. Tres horas efectivas de explicación y demostración docente. Participación guiada, sin entrega ni calificación el viernes.
 
-**Modalidad:** Demostración guiada por el profesor.
+## Propósito
 
-Viernes: explicación y demostraciones guiadas por el profesor, sin entregas ni calificación. El profesor ejecuta, explica y comparte sus archivos de referencia; los estudiantes observan, preguntan y pueden seguir voluntariamente. Sábado: ejecución por los estudiantes, revisión y entrega durante la clase. La evidencia evaluable debe corresponder a su propia ejecución. No se exige una entrega ni trabajo autónomo obligatorio entre ambos encuentros.
+Comprender por qué necesitamos un pipeline repetible y cómo DataOps organiza sus cambios y operación. Después, aplicar los conceptos a un caso conocido que publique detalle y agregado Parquet consultables mediante SQL.
 
-E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01–P04); PQRS significa peticiones, quejas, reclamos y sugerencias. El número identifica la actividad, no la sesión. T01 = taller teórico de capacidad; I01 = introducción a eventos NASA.
+## Temario
 
-| Horario | Tema y actividad |
-|---|---|
-| 18:00–18:30 | Explicación / demostración docente: Métrica, población, tiempo y fuga de información |
-| 18:30–20:00 | Explicación / demostración docente: E12: persistencia, rendimiento y MAE por cultivo |
-| 20:00–20:15 | Coffee break |
-| 20:15–20:30 | Explicación / demostración docente: E12: error por cultivo y cobertura |
-| 20:30–21:00 | Explicación / demostración docente: Gobernanza y revisión crítica de índices compuestos |
-| 21:00–21:15 | Explicación / demostración docente: Definición del producto integrador |
+1. Problema: reportes diferentes, decisiones implícitas y dificultad para explicar cambios.
+2. Pipeline: entradas, tareas, dependencias, productos y controles. Flujo de datos, DAG y orquestación.
+3. DataOps: propósito, ciclo de trabajo, responsables, versiones, pruebas, monitoreo y tratamiento de fallos.
+4. Esquemas industriales: ETL, ELT, capas Medallion y captura de cambios (CDC). Criterios de uso y combinaciones.
+5. Ejemplo PQRS: originales, reglas, rechazados, detalle, agregado y conciliación por grupo y total.
+6. Publicación candidata, registro y reejecución estable. Diferenciar reintento y corrección de la fuente.
+7. Formatos de tabla: snapshots Iceberg y comparación conceptual con Hudi.
+8. Tres ejercicios guiados: diseñar el flujo, atender incidentes y definir pruebas. Conexión con E12.
 
-**Sin entrega el viernes.** El profesor comparte material de referencia. Ejecución y entrega estudiantil: 2026-10-31.
+La [guía de pipelines y DataOps](../../docs/pipelines-dataops.md) conserva en el repositorio los conceptos, esquemas y ejercicios. La secuencia es problema y propósito, explicación conceptual, ejemplo desarrollado y ejercicio. Cada paso del ejemplo debe explicar su razón, operación y comprobación. Airflow y Great Expectations son referencias conceptuales, sin instalación obligatoria.
 
-[Calendario](../../docs/calendario.md) · [Entregas sabatinas](../../docs/entregas-sabados.md) · [Talleres y evaluación](../../docs/mapa-ejercicios.md)
+El [temario desarrollado](../../docs/temario-30-31-octubre.md) contiene preguntas, explicación, demostraciones y comprobaciones. Se utiliza una entrada manejable y validada. La instalación estudiantil de Iceberg no forma parte de la sesión.
+
+## Descanso
+
+20:00–20:15.
+
+## Continuidad
+
+El sábado se ejecuta [E12: integración y verificación del pipeline](../../talleres/E12.md), que aporta evidencia al [proyecto E13](../../talleres/E13.md). Se retira la evaluación predictiva EVA como requisito de estas sesiones. Las prácticas anteriores permanecen como referencia.

@@ -19,7 +19,7 @@ Elegir **PQRS** o **agroambiental** y construir un producto reproducible. Las co
 
 ## Hitos y trabajo en clase
 
-- Clase 10, 31 de octubre: reconstrucción y auditoría cruzada; producto candidato.
+- Clase 10, 31 de octubre: integración, publicación, conciliación y reejecución; producto candidato.
 - Clase 11, 6 de noviembre: resolver hallazgos, validar y ensayar la defensa.
 - Clase 12, 7 de noviembre: entrega final y sustentación de 15 minutos por equipo, con preguntas y transición.
 
@@ -30,7 +30,7 @@ Estos tres encuentros reúnen 1.050 minutos dentro de las 64 horas en línea. La
 | Ruta | Entradas | Producto específico |
 |---|---|---|
 | PQRS | Muestras de tres cortes; completos opcionales para volumen; DIVIPOLA si se usa dimensión territorial | Series de reportes, contrato, conteos por período/territorio y cobertura de enlace |
-| Agroambiental | AGROSAVIA, EVA y DIVIPOLA; DANE/IGAC para mapa; demás fuentes según pregunta | Tabla agrícola con denominador correcto, mapa y cobertura espacial |
+| Agroambiental | Fuentes ya trabajadas según pregunta; DANE/IGAC si se conserva el componente espacial | Detalle y agregado agrícola con unidades y denominador compatibles; mapa como evidencia previa cuando corresponda |
 
 Consultar [datasets](../docs/datasets.md), [descarga y entorno](../docs/entorno.md), [manifiesto PQRS](../kit/pqrs_fuentes.json) y [manifiesto agroambiental](../kit/fuentes.json). Descargar solo las fuentes necesarias. Los archivos completos y las salidas no se incorporan al repositorio.
 
@@ -48,14 +48,14 @@ python talleres.py calidad
 python talleres.py consultas
 ```
 
-Ejecutar la ruta elegida, no todas las líneas como obligación. Adjuntar por separado las evidencias comunes E07 (Spark), E08–E09 (soporte espacial), I01/E11 (eventos NASA) y E12 (evaluación temporal EVA), identificando su dominio y sus limitaciones.
+Estos comandos son referencias de automatización; no constituyen por sí solos el pipeline integrado. Reutilizar las transformaciones conocidas en un notebook ordenado y seguir [E12](../talleres/E12.md) y el [temario del 30 y 31 de octubre](../docs/temario-30-31-octubre.md). E12 aporta las cuatro comprobaciones mínimas al producto. Las prácticas DataOps se evidencian en entradas y reglas versionadas, configuración declarada, controles, responsables de revisión y tratamiento de incidentes dentro del registro y ficha existentes. Consultar la [guía de pipelines y DataOps](../docs/pipelines-dataops.md). No añaden plataformas obligatorias ni otra ponderación. Las evidencias previas de Spark, rendimiento, soporte espacial y eventos se adjuntan por separado cuando corresponda, identificando su dominio y sus límites.
 
 ## Instrucciones y aceptación
 
 1. Definir pregunta, unidad de observación, población cubierta y límites. Para PQRS, reportes no equivalen a personas únicas ni prevalencia.
 2. Registrar procedencia, tamaños, hashes, versiones y comandos. Conservar originales y verificar cardinalidad tras cada transformación.
-3. Construir el producto específico de la ruta. El mapa agroambiental no es una exigencia de mapa clínico para PQRS: en salud se puede entregar una tabla territorial con conteos, vigencia y cobertura.
-4. Incorporar una consulta verificada, controles de calidad y un experimento de rendimiento. Declarar muestra o completo en cada resultado.
+3. Construir recepción, validación, transformación, detalle y agregado Parquet y consulta SQL de la ruta. Comprobar conteos, conciliación por grupo y total, registro final y reejecución estable con las mismas entradas.
+4. Incorporar las evidencias previas pertinentes sin rehacer todos los talleres ni integrar todos los motores. Declarar muestra o completo en cada resultado.
 5. Presentar las evidencias metodológicas comunes sin atribuirlas al dominio equivocado. Diferenciar una reproducción de eventos de una prueba de recuperación efectivamente ejecutada.
 6. Otro equipo reconstruye controles; registrar hallazgo, corrección y resultado de la nueva ejecución.
 7. Entregar código/notebooks, informe de 8–12 páginas, ficha de gobernanza y defensa. Explicar un resultado que no se puede inferir de los datos.
@@ -66,4 +66,4 @@ Proyecto e informe: **35 %**. Sustentación individual: **15 %**. Las prácticas
 
 Dentro de cada entrega: corrección y unidades 30 %, reproducibilidad y trazabilidad 25 %, justificación 25 % y comunicación de límites 20 %. No se penaliza optar por las muestras cuando el equipo no admite los completos; sí se exige declarar el alcance y no extrapolarlo.
 
-Los mapas y controles espaciales se generan con los notebooks GeoPandas/Rasterio de E08, E09 y E11; adjuntar código ejecutado, PNG y controles de CRS, cardinalidad y cobertura.
+Si el producto utiliza un mapa, adjuntar su código y controles de CRS, cardinalidad y cobertura. La integración de streaming, mapas, Iceberg estudiantil y tablero visual no es requisito mínimo. La reconstrucción de un período se aborda cuando los cuatro criterios básicos de E12 funcionen; puede completarse en la clínica.

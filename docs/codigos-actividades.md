@@ -17,7 +17,7 @@ E significa ejercicio general. P significa práctica con datos PQRS (peticiones,
 | E09 | Ejercicio 09 | Propiedades del suelo y profundidad |
 | E10 | Ejercicio 10 | Rendimiento del procesamiento |
 | E11 | Ejercicio 11 | Clima y reproducción de eventos |
-| E12 | Ejercicio 12 | Línea base temporal y gobernanza |
+| E12 | Ejercicio 12 | Integración y verificación del pipeline local |
 | E13 | Ejercicio 13 | Producto integrador reproducible |
 | P01 | Práctica PQRS 01 | Perfil PQRS y lectura por bloques |
 | P02 | Práctica PQRS 02 | Parquet, contrato y reejecución |

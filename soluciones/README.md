@@ -27,13 +27,14 @@ Las tablas CSV se generan en `kit/salidas/soluciones/PD01/`, `PD02/` y `PD03/`. 
 
 ## Soluciones comentadas de referencia PQRS
 
-Las soluciones P01, P02 y P03 relacionan sus secciones con las tareas de cada taller e incluyen código, verificaciones e interpretación.
+Las soluciones P01, P02, P03 y E12 relacionan sus secciones con las tareas de cada taller e incluyen código, verificaciones e interpretación.
 
 | Taller | Solución | Evidencias |
 |---|---|---|
 | [P01](../talleres/P01.md) | [Perfil y lectura por bloques](P01_solucion.ipynb) | Manifiesto, perfiles con bloques 100/500/1000, diccionario y límites |
 | [P02](../talleres/P02.md) | [Parquet, contrato y reejecución](P02_solucion.ipynb) | 16 columnas, conciliación de particiones, dos ejecuciones y fallo de contrato |
 | [P03](../talleres/P03.md) | [Calidad y consulta diferida](P03_solucion.ipynb) | Controles, política de decisión y equivalencia Polars/SQL |
+| [E12](../talleres/E12.md) | [Pipeline local integrado](E12_solucion.ipynb) | Entradas verificadas, detalle y rechazados, agregado Parquet, conciliación DuckDB, dos ejecuciones estables, publicación identificada y auditoría |
 
 ## Abrir en WSL
 
@@ -62,4 +63,4 @@ python 00_datos.py --descargar divipola
 
 La validación de las plantillas PD01–PD03 se documenta en el [índice de ejercicios](../ejercicios/README.md#validación-de-las-plantillas). Cada estudiante debe comprobar la ejecución completa de sus soluciones antes de entregar.
 
-Se validó el formato de las soluciones P01, P02 y P03 y se ejecutaron todas sus celdas con las muestras locales: 3.000 filas y 38 columnas originales, proyección de 16 columnas, 8 archivos particionados, estabilidad de la reejecución, rechazo de una columna ausente y equivalencia de consultas de 2024 sobre 2.000 filas. Los notebooks se distribuyen sin salidas guardadas para que cada estudiante produzca su propia evidencia. Esta comprobación no equivale a una instalación real en Windows/WSL.
+Se validó el formato de las soluciones P01, P02 y P03 y se ejecutaron todas sus celdas con las muestras locales: 3.000 filas y 38 columnas originales, proyección de 16 columnas, 8 archivos particionados, estabilidad de la reejecución, rechazo de una columna ausente y equivalencia de consultas de 2024 sobre 2.000 filas. E12 se ejecutó de principio a fin con las mismas tres muestras: 3.000 filas conciliadas, 687 grupos, igualdad por grupo y total en DuckDB y firmas de contenido idénticas entre dos ejecuciones. E12 conserva sus resultados de referencia en el notebook; las salidas regenerables permanecen excluidas de Git. Esta comprobación no equivale a una instalación real en Windows/WSL.

@@ -13,7 +13,7 @@
 - [E09 Propiedades del suelo y profundidad](E09.md)
 - [E10 Rendimiento del procesamiento](E10.md)
 - [E11 Clima y reproducción de eventos](E11.md)
-- [E12 Línea base temporal y gobernanza](E12.md)
+- [E12 Integración y verificación del pipeline local](E12.md)
 - [E13 Proyecto integrador por dominio](E13.md)
 - [I01 Introducción finita a eventos con NASA](I01.md)
 - [P01 Perfil PQRS y lectura por bloques](P01.md)
@@ -39,3 +39,7 @@ python 00_datos.py --verificar pqrs
 ```
 
 Continuar cuando los tres cortes de muestra indiquen `coincide`. P03 requiere además DIVIPOLA y el Parquet generado por P02. P04 sigue una ruta independiente con los seis cortes semestrales completos de 2023–2025: el kit descarga y verifica las fuentes oficiales, concilia primero la lectura Polars–DuckDB y después compara Polars con pandas.
+
+## Propuesta de trabajo en casa
+
+[Ejercicios sobre los temas del 16 y 17 de octubre](trabajo-casa-16-17-octubre.md): Spark, joins y ventanas, integración territorial y suelo. Borrador para revisión docente; fecha, medio de entrega y ponderación por definir.

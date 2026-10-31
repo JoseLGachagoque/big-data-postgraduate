@@ -10,7 +10,7 @@ Las doce clases suman 64 horas efectivas. Las actividades comparten los bloques 
 | 3–4 | E04–E06 y P02–P03; ejecutar formatos antes de calidad PQRS | Contrato, conciliación, proyección Parquet, prueba de reejecución y consulta | 10 % |
 | 5–6 | E07 después de calidad/consultas agroambientales; E08–E09 con geometrías y rásteres | Equivalencia Spark/DuckDB, cardinalidad y mapa con cobertura explícita | 10 % |
 | 7–8 | P04 con seis cortes completos 2023–2025; lectura Polars–DuckDB y benchmark Polars–pandas; I01/E11 con NASA y fuentes de clima | Un informe experimental y una traza de eventos | 20 % |
-| 9–12 | E12 como práctica común de evaluación temporal; E13 en el dominio elegido | Producto candidato el 31/10, clínica docente sin entrega el 06/11, informe final | 35 % |
+| 9–12 | E12: integración y verificación del pipeline; E13 en el dominio elegido | Producto candidato el 31/10, clínica docente sin entrega el 06/11, informe final | 35 % |
 | 12 | E13 con evidencias reconstruibles | Sustentación final el 07/11 y explicación individual | 15 % |
 
 ## Política de entrega
@@ -35,7 +35,7 @@ python pqrs_talleres.py eventos
 
 Perfil, formatos, calidad y benchmark usan las muestras incluidas por defecto. Eventos requiere `data/raw/nasa.json`. El notebook P03 requiere DIVIPOLA para desarrollar los joins; descargarla antes de ejecutarlo. P02 y P03 muestran las operaciones pandas y no llaman al script para resolverlas. P03 requiere el Parquet de P02 y DIVIPOLA para sus joins. Las celdas se distribuyen entre las clases correspondientes, no se ejecutan todas en cada encuentro.
 
-Para la ruta agroambiental: `talleres.py calidad` → `talleres.py consultas` → `spark_taller.py lotes` o `talleres.py modelo`. Geografía necesita DANE e IGAC; `talleres.py suelo` lee SoilGrids y WoSIS; `talleres.py clima` lee NASA y CHIRPS. E11 lee NASA para Spark.
+Para la ruta agroambiental: `talleres.py calidad` → `talleres.py consultas` → `spark_taller.py lotes` cuando corresponda a la práctica Spark. El comando `talleres.py modelo` es opcional y no ejecuta E12. El pipeline integrador sigue el enunciado E12 y utiliza operaciones conocidas. Geografía necesita DANE e IGAC; `talleres.py suelo` lee SoilGrids y WoSIS; `talleres.py clima` lee NASA y CHIRPS. E11 lee NASA para Spark.
 
 ## Uso de Supersalud histórico y actual
 
@@ -44,7 +44,7 @@ Para la ruta agroambiental: `talleres.py calidad` → `talleres.py consultas` �
 | Sesiones históricas 1 y 2, duplicadas | P01 y P03 | Medir perfil y faltantes sin inferir anonimato o errores por edad alta |
 | Sesión histórica 3 | P02 | Validar contrato y reejecución; registrar incidencias localmente, sin correo |
 | Sesión histórica 4, comparación de motores | E10/P04 | CPU, consulta equivalente, calentamiento, tres repeticiones y memoria observada |
-| Sesión histórica 4, índices | E12: discusión de gobernanza | Revisar variables ausentes y supuestos; no fabricar puntuaciones clínicas |
+| Sesión histórica 4, índices | Referencia opcional de gobernanza | Revisar variables ausentes y supuestos; no fabricar puntuaciones clínicas |
 | Sesión histórica 4, bucles de streaming | I01 y E11 | Traza finita con observaciones NASA; distinguir reintentos, atraso y semántica de Spark |
 
 ## Límites del alcance
@@ -53,7 +53,7 @@ P04 exige los seis cortes semestrales completos de 2023, 2024 y 2025. La prepara
 
 I01 no implementa recuperación ni toda la semántica de Spark. E11 crea un checkpoint nuevo por ejecución: el entregable básico es una traza y un análisis de recuperación, no afirmar que se probó reinicio desde el mismo estado. Un experimento de recuperación real puede sustituir una ampliación si se implementa y documenta.
 
-E12 evalúa persistencia sobre EVA para todos los equipos. Ese resultado metodológico se identifica aparte del proyecto PQRS; no se mezcla con tasas de salud. Los proyectos PQRS pueden mostrar distribución de reportes por territorio, sin calcular tasas poblacionales si faltan denominadores compatibles y validados.
+E12 integra un pipeline local en una ruta elegida, con publicación Parquet, consultas conciliadas y reejecución estable. La evaluación predictiva EVA deja de ser requisito; Iceberg se mantiene como demostración docente. Consultar el [temario del 30 y 31 de octubre](temario-30-31-octubre.md). Los proyectos PQRS pueden mostrar distribución de reportes por territorio, sin calcular tasas poblacionales si faltan denominadores compatibles y validados.
 
 ## Entorno de referencia
 

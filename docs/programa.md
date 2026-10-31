@@ -12,7 +12,7 @@ Diseñar, ejecutar y evaluar un sistema local de ingesta, calidad, integración 
 - RA2. Descargar y verificar archivos, conservar el corte original, tipar variables y reportar datos aptos y pendientes de revisión.
 - RA3. Integrar códigos territoriales, tablas y geometrías sin multiplicar observaciones ni confundir escalas espaciales.
 - RA4. Comparar DuckDB y Spark local, medir formatos y explicar particiones, joins, ventanas y eventos tardíos.
-- RA5. Evaluar una línea base temporal, documentar incertidumbre y defender un producto reproducible con límites explícitos.
+- RA5. Integrar y verificar un pipeline local con controles, publicación de detalle y agregado, consultas SQL y reejecución estable; defender sus decisiones y límites.
 
 ## Horario y carga académica
 
@@ -38,12 +38,14 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 | 09/10 y 10/10 | Arquitecturas, formatos y pipelines / Calidad e integración | 11 h 15 min |
 | 16/10 y 17/10 | Procesamiento con Spark / Consultas e integración distribuida | 10 h 30 min |
 | 23/10 y 24/10 | Rendimiento y escalabilidad / Streaming de eventos | 10 h 30 min |
-| 30/10 y 31/10 | Analítica y gobernanza / Integración y auditoría del proyecto | 10 h 30 min |
+| 30/10 y 31/10 | Integración del pipeline y publicación de datos / Ejecución y auditoría del pipeline | 10 h 30 min |
 | 06/11 y 07/11 | Clínica de proyectos y ensayo de defensa / Sustentación y cierre contractual | 10 h |
 
 ## Fundamentos que se conservan
 
 Volumen, velocidad, variedad y veracidad; escalamiento vertical y horizontal; ley de Amdahl; latencia y throughput; ciclo de vida del dato; sistemas distribuidos y tolerancia a fallos. Warehouse, lake y lakehouse, papel de Hadoop/HDFS y modelos NoSQL se estudian mediante decisiones de arquitectura. La implementación se concentra en Python, DuckDB, Parquet, Spark local y herramientas geográficas de escritorio.
+
+Las sesiones 9 y 10 explican primero el propósito de los pipelines y las prácticas DataOps: dependencias, orquestación, responsables, versiones, pruebas, monitoreo y tratamiento de fallos. Comparan ETL, ELT, capas Medallion y captura de cambios como esquemas que pueden combinarse. Después desarrollan un ejemplo y ejercicios guiados antes de integrar E12. La [guía de pipelines y DataOps](pipelines-dataops.md) contiene ese desarrollo, sin exigir plataformas adicionales.
 
 Los archivos tabulares de esta cohorte caben en un portátil. Su tamaño no demuestra una necesidad de cómputo distribuido. La complejidad surge también de esquemas heterogéneos, profundidades, fechas, escalas, geometrías y versiones territoriales. Spark local permite estudiar ejecución y planes; sus tiempos no predicen el rendimiento de un clúster.
 
@@ -62,7 +64,9 @@ La rúbrica valora corrección y conservación de unidades (30 %), reproducibili
 
 ## Producto integrador
 
-Cada equipo elige dominio agroambiental o PQRS y presenta un pipeline ejecutable de uno de los dominios, un catálogo de fuentes, tablas Parquet, una consulta equivalente entre motores, un mapa con cobertura explícita, un experimento de rendimiento, evidencia de eventos y una evaluación temporal. El informe de 8 a 12 páginas debe separar resultados observados, estimaciones, limitaciones y propuesta de escalamiento. La sustentación final se realiza el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto dentro de las horas contratadas. Planificar 15 minutos por equipo incluyendo preguntas y transición; ajustar el número de turnos al grupo real.
+Cada equipo elige dominio agroambiental o PQRS y presenta un pipeline local ejecutable con entradas identificadas, validación, detalle y agregado Parquet, consultas SQL conciliadas y registros de dos ejecuciones. Las prácticas previas de motores, rendimiento, mapas y eventos se adjuntan como evidencias pertinentes, sin exigir integrarlas todas en el pipeline. La actualización de un período es una ampliación posterior a los cuatro criterios mínimos de E12. La evaluación predictiva EVA queda como referencia opcional. El informe de 8 a 12 páginas debe separar resultados observados, estimaciones, limitaciones y propuesta de escalamiento. La sustentación final se realiza el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto dentro de las horas contratadas. Planificar 15 minutos por equipo incluyendo preguntas y transición; ajustar el número de turnos al grupo real.
+
+El [temario desarrollado del 30 y 31 de octubre](temario-30-31-octubre.md) establece la progresión y los criterios de E12. Iceberg se presenta en una demostración docente preparada; su instalación y uso estudiantil no son requisitos del proyecto.
 
 ## Dos dominios y una secuencia común
 
@@ -88,7 +92,7 @@ La introducción usa las cinco V, costos de movimiento, escalamiento y Amdahl. D
 | 10-10 · 16:30–16:45 | Contrato propio, Parquet, prueba de reejecución, controles de calidad, consultas equivalentes y cobertura | 10 % |
 | 10-17 · 16:30–17:00 | Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial | 10 % |
 | 10-24 · 16:30–17:00 | Informe de benchmark propio, traza de eventos y análisis de recuperación | 20 % |
-| 10-31 · 16:30–17:00 | Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos | Hito formativo del bloque de proyecto (35 %) |
+| 10-31 · 16:30–17:00 | Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría | Hito formativo del bloque de proyecto (35 %) |
 | 11-07 · 16:00–16:30 | Paquete final corregido, informe de 8–12 páginas y registro de defensa individual | 35 % proyecto + 15 % sustentación |
 
 El candidato del 31 de octubre recibe retroalimentación y no añade otra ponderación. El bloque E12–E13 se califica con 35 % sobre la versión final del 7 de noviembre, que incorpora E12 y las correcciones. La sustentación individual vale 15 %. Total del curso: 100 %. Los archivos parciales del sábado forman una entrega única por fin de semana.

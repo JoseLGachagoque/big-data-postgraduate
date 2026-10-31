@@ -17,11 +17,11 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 | Viernes 09/10/2026 18:00–22:00 | Arquitecturas, formatos y pipelines. Demostración guiada por el profesor | 3 h 45 min |
 | Sábado 10/10/2026 08:00–17:00 | Calidad e integración. Actividad estudiantil y entrega en clase | 7 h 30 min |
 | Viernes 16/10/2026 18:00–21:15 | Procesamiento con Spark. Demostración guiada por el profesor | 3 h  |
-| Sábado 17/10/2026 08:00–17:00 | Consultas e integración distribuida. Actividad estudiantil y entrega en clase | 7 h 30 min |
+| Sábado 17/10/2026 08:00–17:00 | Spark, Polars y comparación de rendimiento con pandas. Actividad estudiantil y entrega en clase | 7 h 30 min |
 | Viernes 23/10/2026 18:00–21:15 | Rendimiento y escalabilidad. Demostración guiada por el profesor | 3 h  |
 | Sábado 24/10/2026 08:00–17:00 | Streaming de eventos. Actividad estudiantil y entrega en clase | 7 h 30 min |
-| Viernes 30/10/2026 18:00–21:15 | Analítica y gobernanza. Demostración guiada por el profesor | 3 h  |
-| Sábado 31/10/2026 08:00–17:00 | Integración y auditoría del proyecto. Actividad estudiantil y entrega en clase | 7 h 30 min |
+| Viernes 30/10/2026 18:00–21:15 | Integración del pipeline y publicación de datos. Demostración guiada por el profesor | 3 h  |
+| Sábado 31/10/2026 08:00–17:00 | Ejecución y auditoría del pipeline. Actividad estudiantil y entrega en clase | 7 h 30 min |
 | Viernes 06/11/2026 18:00–21:15 | Clínica de proyectos y ensayo de defensa. Demostración guiada por el profesor | 3 h  |
 | Sábado 07/11/2026 08:00–16:30 | Sustentación y cierre contractual. Actividad estudiantil y entrega en clase | 7 h  |
 
@@ -35,9 +35,9 @@ Viernes: 20:00–20:15. Sábados: 09:30–09:45 y 15:00–15:15; almuerzo 12:00�
 |---|---|
 | 2026-10-03 16:45–17:00 | E01–E03 / P01 / T01: Ficha de problema, presupuesto de recursos, manifiesto, perfil y claves territoriales |
 | 2026-10-10 16:30–16:45 | E04–E06 / P02–P03: Contrato propio, Parquet, prueba de reejecución, controles de calidad, consultas equivalentes y cobertura |
-| 2026-10-17 16:30–17:00 | E07–E09: Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial |
+| 2026-10-17 16:30–17:00 | Dos ejercicios: procesamiento con Spark y procesamiento con Polars, con resultados equivalentes y comparación de rendimiento frente a pandas |
 | 2026-10-24 16:30–17:00 | E10–E11 / P04 / I01: Informe de benchmark propio, traza de eventos y análisis de recuperación |
-| 2026-10-31 16:30–17:00 | E12–E13: Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos |
+| 2026-10-31 16:30–17:00 | E12–E13: Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría |
 | 2026-11-07 16:00–16:30 | E13 / sustentación individual: Paquete final corregido, informe de 8–12 páginas y registro de defensa individual |
 
 El 31 de octubre es un hito formativo del proyecto. El 6 de noviembre es una clínica demostrativa del profesor y ensayo sin calificación ni entrega. La defensa individual evaluable y la entrega final se realizan el sábado 7 de noviembre. Con turnos de 15 minutos se disponen de hasta 23 equipos; los ensayos del viernes no se califican.
@@ -122,31 +122,31 @@ Procesamiento con Spark. 18:00–21:15. Demostración guiada por el profesor.
 
 | Horario | Actividad |
 |---|---|
-| 18:00–18:30 | Explicación / demostración docente: Motores y entorno Spark |
-| 18:30–19:15 | Explicación / demostración docente: Driver, particiones, transformaciones y plan |
-| 19:15–20:00 | Explicación / demostración docente: E07: agregación y acción |
+| 18:00–18:30 | Explicación / demostración docente: Entornos y carga del conjunto de datos común |
+| 18:30–19:15 | Explicación / demostración docente: Spark, driver, particiones, transformaciones y acciones |
+| 19:15–20:00 | Demostración docente del ejercicio 1: procesamiento y medición con Spark |
 | 20:00–20:15 | Coffee break |
-| 20:15–21:00 | Explicación / demostración docente: E07: equivalencia con DuckDB |
-| 21:00–21:15 | Explicación / demostración docente: Plan, controles y cierre |
+| 20:15–21:00 | Demostración docente del ejercicio 2: Polars y pandas con operaciones equivalentes |
+| 21:00–21:15 | Protocolo de comparación, controles de equivalencia y preparación del sábado |
 
-Material de referencia del profesor: Referencia docente: Plan explicado y control de equivalencia; ejecución y entrega estudiantil el sábado.
+Material de referencia del profesor: Dos ejercicios de referencia sobre el mismo conjunto de datos: uno con Spark y otro con Polars, comparados con una línea base equivalente en pandas; ejecución y entrega estudiantil el sábado.
 
 ## Sesión 06: Sábado 17/10/2026
 
-Consultas e integración distribuida. 08:00–17:00. Actividad estudiantil y entrega en clase.
+Spark, Polars y comparación de rendimiento con pandas. 08:00–17:00. Actividad estudiantil y entrega en clase.
 
 | Horario | Actividad |
 |---|---|
-| 08:00–09:30 | Reejecución propia E07, plan y equivalencia (08:00–08:45); joins y cardinalidad (08:45–09:30) |
+| 08:00–09:30 | Ejercicio 1 con Spark: carga, transformaciones, agregación y ejecución de una acción |
 | 09:30–09:45 | Receso de la mañana |
-| 09:45–12:00 | E07: equivalencia, ventanas y ranking |
+| 09:45–12:00 | Ejercicio 1: medición, plan de ejecución y comprobación de resultados frente a pandas |
 | 12:00–13:00 | Almuerzo |
-| 13:00–15:00 | E08: shapes DANE, geometrías IGAC y cobertura |
+| 13:00–15:00 | Ejercicio 2 con Polars: operaciones equivalentes en modo eager/lazy y línea base en pandas |
 | 15:00–15:15 | Receso de la tarde |
-| 15:15–16:30 | E09: SoilGrids, WoSIS, profundidad y unidades |
-| 16:30–17:00 | Revisión del soporte espacial y entrega |
+| 15:15–16:30 | Comparación de tiempos, memoria, equivalencia de resultados y conclusiones |
+| 16:30–17:00 | Revisión y entrega de los dos ejercicios y de la tabla comparativa |
 
-Entrega en clase: Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial.
+Entrega en clase: ejercicio reproducible con Spark, ejercicio reproducible con Polars y pandas, tabla de rendimiento, control de equivalencia y conclusiones.
 
 ## Sesión 07: Viernes 23/10/2026
 
@@ -182,35 +182,21 @@ Entrega en clase: Informe de benchmark propio, traza de eventos y análisis de r
 
 ## Sesión 09: Viernes 30/10/2026
 
-Analítica y gobernanza. 18:00–21:15. Demostración guiada por el profesor.
+Integración del pipeline y publicación de datos. Tres horas efectivas de explicación y demostración docente, sin entrega el viernes.
 
-| Horario | Actividad |
-|---|---|
-| 18:00–18:30 | Explicación / demostración docente: Métrica, población, tiempo y fuga de información |
-| 18:30–20:00 | Explicación / demostración docente: E12: persistencia, rendimiento y MAE por cultivo |
-| 20:00–20:15 | Coffee break |
-| 20:15–20:30 | Explicación / demostración docente: E12: error por cultivo y cobertura |
-| 20:30–21:00 | Explicación / demostración docente: Gobernanza y revisión crítica de índices compuestos |
-| 21:00–21:15 | Explicación / demostración docente: Definición del producto integrador |
+Temario: propósito y conceptos de pipelines; tareas, DAG y orquestación; DataOps, responsables, versiones, pruebas y diagnóstico; esquemas industriales ETL, ELT, Medallion y CDC; ejemplo PQRS, publicación y reejecución; formatos de tabla; ejercicios guiados. Consultar la [guía de pipelines y DataOps](pipelines-dataops.md), el [temario desarrollado](temario-30-31-octubre.md) y [E12](../talleres/E12.md).
 
-Material de referencia del profesor: Referencia docente: Evaluación temporal y ficha de gobernanza; ejecución y entrega estudiantil el sábado.
+Descanso: 20:00–20:15.
 
 ## Sesión 10: Sábado 31/10/2026
 
-Integración y auditoría del proyecto. 08:00–17:00. Actividad estudiantil y entrega en clase.
+Ejecución y auditoría del pipeline. Siete horas y treinta minutos efectivos de actividad estudiantil.
 
-| Horario | Actividad |
-|---|---|
-| 08:00–09:30 | E12 propio: evaluación temporal EVA (08:00–08:45); E13: reconstrucción (08:45–09:30) |
-| 09:30–09:45 | Receso de la mañana |
-| 09:45–12:00 | Auditoría cruzada de datos, código y resultados |
-| 12:00–13:00 | Almuerzo |
-| 13:00–15:00 | Corrección de hallazgos y revisión del informe |
-| 15:00–15:15 | Receso de la tarde |
-| 15:15–16:30 | Validación del producto candidato y límites |
-| 16:30–17:00 | Entrega candidata y preparación de la clínica |
+Temario: preparación y alcance; integración de validaciones; publicación de detalle y agregado Parquet; conciliación SQL; segunda ejecución y comparación; auditoría entre equipos; corrección y revisión del candidato.
 
-Entrega en clase: Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos.
+Entrega formativa: Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría. La actualización de un período es una ampliación; no se exige predicción EVA, instalación estudiantil de Iceberg ni integración de streaming.
+
+Descansos: 09:30–09:45 y 15:00–15:15; almuerzo 12:00–13:00.
 
 ## Sesión 11: Viernes 06/11/2026
 

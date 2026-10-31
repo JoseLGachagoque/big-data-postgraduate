@@ -25,7 +25,7 @@
           "RA2. Descargar y verificar archivos, conservar el corte original, tipar variables y reportar datos aptos y pendientes de revisión.",
           "RA3. Integrar códigos territoriales, tablas y geometrías sin multiplicar observaciones ni confundir escalas espaciales.",
           "RA4. Comparar DuckDB y Spark local, medir formatos y explicar particiones, joins, ventanas y eventos tardíos.",
-          "RA5. Evaluar una línea base temporal, documentar incertidumbre y defender un producto reproducible con límites explícitos."
+          "RA5. Integrar y verificar un pipeline local con controles, publicación de detalle y agregado, consultas SQL y reejecución estable; defender sus decisiones y límites."
         ]
       },
       {
@@ -61,8 +61,8 @@
           ]
         ],
         "widths": [
-          0.7,
-          0.3
+          0.5,
+          0.5
         ]
       },
       {
@@ -111,7 +111,7 @@
           ],
           [
             "30/10 y 31/10",
-            "Analítica y gobernanza / Integración y auditoría del proyecto",
+            "Integración del pipeline y publicación de datos / Ejecución y auditoría del pipeline",
             "10 h 30 min"
           ],
           [
@@ -121,9 +121,9 @@
           ]
         ],
         "widths": [
-          0.29,
-          0.49,
-          0.22
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
         ]
       },
       {
@@ -133,6 +133,10 @@
       {
         "type": "p",
         "text": "Volumen, velocidad, variedad y veracidad; escalamiento vertical y horizontal; ley de Amdahl; latencia y throughput; ciclo de vida del dato; sistemas distribuidos y tolerancia a fallos. Warehouse, lake y lakehouse, papel de Hadoop/HDFS y modelos NoSQL se estudian mediante decisiones de arquitectura. La implementación se concentra en Python, DuckDB, Parquet, Spark local y herramientas geográficas de escritorio."
+      },
+      {
+        "type": "p",
+        "text": "Las sesiones 9 y 10 explican primero el propósito de los pipelines y las prácticas DataOps: dependencias, orquestación, responsables, versiones, pruebas, monitoreo y tratamiento de fallos. Comparan ETL, ELT, capas Medallion y captura de cambios como esquemas que pueden combinarse. Después desarrollan un ejemplo y ejercicios guiados antes de integrar E12. La guía de pipelines y DataOps (pipelines-dataops.md) contiene ese desarrollo, sin exigir plataformas adicionales."
       },
       {
         "type": "p",
@@ -175,8 +179,8 @@
           ]
         ],
         "widths": [
-          0.78,
-          0.22
+          0.5,
+          0.5
         ]
       },
       {
@@ -189,7 +193,11 @@
       },
       {
         "type": "p",
-        "text": "Cada equipo elige dominio agroambiental o PQRS y presenta un pipeline ejecutable de uno de los dominios, un catálogo de fuentes, tablas Parquet, una consulta equivalente entre motores, un mapa con cobertura explícita, un experimento de rendimiento, evidencia de eventos y una evaluación temporal. El informe de 8 a 12 páginas debe separar resultados observados, estimaciones, limitaciones y propuesta de escalamiento. La sustentación final se realiza el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto dentro de las horas contratadas. Planificar 15 minutos por equipo incluyendo preguntas y transición; ajustar el número de turnos al grupo real."
+        "text": "Cada equipo elige dominio agroambiental o PQRS y presenta un pipeline local ejecutable con entradas identificadas, validación, detalle y agregado Parquet, consultas SQL conciliadas y registros de dos ejecuciones. Las prácticas previas de motores, rendimiento, mapas y eventos se adjuntan como evidencias pertinentes, sin exigir integrarlas todas en el pipeline. La actualización de un período es una ampliación posterior a los cuatro criterios mínimos de E12. La evaluación predictiva EVA queda como referencia opcional. El informe de 8 a 12 páginas debe separar resultados observados, estimaciones, limitaciones y propuesta de escalamiento. La sustentación final se realiza el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto dentro de las horas contratadas. Planificar 15 minutos por equipo incluyendo preguntas y transición; ajustar el número de turnos al grupo real."
+      },
+      {
+        "type": "p",
+        "text": "El temario desarrollado del 30 y 31 de octubre (temario-30-31-octubre.md) establece la progresión y los criterios de E12. Iceberg se presenta en una demostración docente preparada; su instalación y uso estudiantil no son requisitos del proyecto."
       },
       {
         "type": "h",
@@ -215,9 +223,9 @@
           ]
         ],
         "widths": [
-          0.26,
-          0.37,
-          0.37
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
         ]
       },
       {
@@ -271,7 +279,7 @@
           ],
           [
             "10-31 · 16:30–17:00",
-            "Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos",
+            "Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría",
             "Hito formativo del bloque de proyecto (35 %)"
           ],
           [
@@ -281,128 +289,14 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.55,
-          0.21
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
         ]
       },
       {
         "type": "p",
         "text": "El candidato del 31 de octubre recibe retroalimentación y no añade otra ponderación. El bloque E12–E13 se califica con 35 % sobre la versión final del 7 de noviembre, que incorpora E12 y las correcciones. La sustentación individual vale 15 %. Total del curso: 100 %. Los archivos parciales del sábado forman una entrega única por fin de semana."
-      },
-      {
-        "type": "h",
-        "text": "Nombres completos de las actividades"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "Código",
-          "Significado",
-          "Actividad"
-        ],
-        "rows": [
-          [
-            "E01",
-            "Ejercicio 01",
-            "Pregunta y procedencia"
-          ],
-          [
-            "E02",
-            "Ejercicio 02",
-            "Descarga y perfil inicial"
-          ],
-          [
-            "E03",
-            "Ejercicio 03",
-            "Identidad territorial y vigencias"
-          ],
-          [
-            "E04",
-            "Ejercicio 04",
-            "Formatos y contrato de datos"
-          ],
-          [
-            "E05",
-            "Ejercicio 05",
-            "Calidad de análisis de suelo"
-          ],
-          [
-            "E06",
-            "Ejercicio 06",
-            "Rendimiento agrícola e integración SQL"
-          ],
-          [
-            "E07",
-            "Ejercicio 07",
-            "Spark y equivalencia de resultados"
-          ],
-          [
-            "E08",
-            "Ejercicio 08",
-            "Shapes y capacidad de uso"
-          ],
-          [
-            "E09",
-            "Ejercicio 09",
-            "Propiedades del suelo y profundidad"
-          ],
-          [
-            "E10",
-            "Ejercicio 10",
-            "Rendimiento del procesamiento"
-          ],
-          [
-            "E11",
-            "Ejercicio 11",
-            "Clima y reproducción de eventos"
-          ],
-          [
-            "E12",
-            "Ejercicio 12",
-            "Línea base temporal y gobernanza"
-          ],
-          [
-            "E13",
-            "Ejercicio 13",
-            "Producto integrador reproducible"
-          ],
-          [
-            "P01",
-            "Práctica PQRS 01",
-            "Perfil PQRS y lectura por bloques"
-          ],
-          [
-            "P02",
-            "Práctica PQRS 02",
-            "Parquet, contrato y reejecución"
-          ],
-          [
-            "P03",
-            "Práctica PQRS 03",
-            "Calidad de reportes y consulta diferida"
-          ],
-          [
-            "P04",
-            "Práctica PQRS 04",
-            "Escala real y comparación de motores"
-          ],
-          [
-            "T01",
-            "Taller teórico",
-            "Capacidad y escala"
-          ],
-          [
-            "I01",
-            "Introducción",
-            "Eventos finitos con NASA"
-          ]
-        ],
-        "widths": [
-          0.12,
-          0.28,
-          0.6
-        ]
       }
     ]
   },
@@ -460,17 +354,17 @@
           [
             "Viernes 16/10/2026 18:00–21:15",
             "Procesamiento con Spark. Demostración guiada por el profesor",
-            "3 h "
+            "3 h"
           ],
           [
             "Sábado 17/10/2026 08:00–17:00",
-            "Consultas e integración distribuida. Actividad estudiantil y entrega en clase",
+            "Spark, Polars y comparación de rendimiento con pandas. Actividad estudiantil y entrega en clase",
             "7 h 30 min"
           ],
           [
             "Viernes 23/10/2026 18:00–21:15",
             "Rendimiento y escalabilidad. Demostración guiada por el profesor",
-            "3 h "
+            "3 h"
           ],
           [
             "Sábado 24/10/2026 08:00–17:00",
@@ -479,29 +373,29 @@
           ],
           [
             "Viernes 30/10/2026 18:00–21:15",
-            "Analítica y gobernanza. Demostración guiada por el profesor",
-            "3 h "
+            "Integración del pipeline y publicación de datos. Demostración guiada por el profesor",
+            "3 h"
           ],
           [
             "Sábado 31/10/2026 08:00–17:00",
-            "Integración y auditoría del proyecto. Actividad estudiantil y entrega en clase",
+            "Ejecución y auditoría del pipeline. Actividad estudiantil y entrega en clase",
             "7 h 30 min"
           ],
           [
             "Viernes 06/11/2026 18:00–21:15",
             "Clínica de proyectos y ensayo de defensa. Demostración guiada por el profesor",
-            "3 h "
+            "3 h"
           ],
           [
             "Sábado 07/11/2026 08:00–16:30",
             "Sustentación y cierre contractual. Actividad estudiantil y entrega en clase",
-            "7 h "
+            "7 h"
           ]
         ],
         "widths": [
-          0.3,
-          0.51,
-          0.19
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
         ]
       },
       {
@@ -533,7 +427,7 @@
           ],
           [
             "2026-10-17 16:30–17:00",
-            "E07–E09: Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial"
+            "Dos ejercicios: procesamiento con Spark y procesamiento con Polars, con resultados equivalentes y comparación de rendimiento frente a pandas"
           ],
           [
             "2026-10-24 16:30–17:00",
@@ -541,7 +435,7 @@
           ],
           [
             "2026-10-31 16:30–17:00",
-            "E12–E13: Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos"
+            "E12–E13: Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría"
           ],
           [
             "2026-11-07 16:00–16:30",
@@ -549,8 +443,8 @@
           ]
         ],
         "widths": [
-          0.27,
-          0.73
+          0.5,
+          0.5
         ]
       },
       {
@@ -602,8 +496,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -675,8 +569,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -732,8 +626,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -797,8 +691,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -822,15 +716,15 @@
         "rows": [
           [
             "18:00–18:30",
-            "Explicación / demostración docente: Motores y entorno Spark"
+            "Explicación / demostración docente: Entornos y carga del conjunto de datos común"
           ],
           [
             "18:30–19:15",
-            "Explicación / demostración docente: Driver, particiones, transformaciones y plan"
+            "Explicación / demostración docente: Spark, driver, particiones, transformaciones y acciones"
           ],
           [
             "19:15–20:00",
-            "Explicación / demostración docente: E07: agregación y acción"
+            "Demostración docente del ejercicio 1: procesamiento y medición con Spark"
           ],
           [
             "20:00–20:15",
@@ -838,21 +732,21 @@
           ],
           [
             "20:15–21:00",
-            "Explicación / demostración docente: E07: equivalencia con DuckDB"
+            "Demostración docente del ejercicio 2: Polars y pandas con operaciones equivalentes"
           ],
           [
             "21:00–21:15",
-            "Explicación / demostración docente: Plan, controles y cierre"
+            "Protocolo de comparación, controles de equivalencia y preparación del sábado"
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
         "type": "p",
-        "text": "Material de referencia del profesor: Referencia docente: Plan explicado y control de equivalencia; ejecución y entrega estudiantil el sábado."
+        "text": "Material de referencia del profesor: Dos ejercicios de referencia sobre el mismo conjunto de datos: uno con Spark y otro con Polars, comparados con una línea base equivalente en pandas; ejecución y entrega estudiantil el sábado."
       },
       {
         "type": "h",
@@ -860,7 +754,7 @@
       },
       {
         "type": "p",
-        "text": "Consultas e integración distribuida. 08:00–17:00. Actividad estudiantil y entrega en clase."
+        "text": "Spark, Polars y comparación de rendimiento con pandas. 08:00–17:00. Actividad estudiantil y entrega en clase."
       },
       {
         "type": "table",
@@ -871,7 +765,7 @@
         "rows": [
           [
             "08:00–09:30",
-            "Reejecución propia E07, plan y equivalencia (08:00–08:45); joins y cardinalidad (08:45–09:30)"
+            "Ejercicio 1 con Spark: carga, transformaciones, agregación y ejecución de una acción"
           ],
           [
             "09:30–09:45",
@@ -879,7 +773,7 @@
           ],
           [
             "09:45–12:00",
-            "E07: equivalencia, ventanas y ranking"
+            "Ejercicio 1: medición, plan de ejecución y comprobación de resultados frente a pandas"
           ],
           [
             "12:00–13:00",
@@ -887,7 +781,7 @@
           ],
           [
             "13:00–15:00",
-            "E08: shapes DANE, geometrías IGAC y cobertura"
+            "Ejercicio 2 con Polars: operaciones equivalentes en modo eager/lazy y línea base en pandas"
           ],
           [
             "15:00–15:15",
@@ -895,21 +789,21 @@
           ],
           [
             "15:15–16:30",
-            "E09: SoilGrids, WoSIS, profundidad y unidades"
+            "Comparación de tiempos, memoria, equivalencia de resultados y conclusiones"
           ],
           [
             "16:30–17:00",
-            "Revisión del soporte espacial y entrega"
+            "Revisión y entrega de los dos ejercicios y de la tabla comparativa"
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
         "type": "p",
-        "text": "Entrega en clase: Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial."
+        "text": "Entrega en clase: ejercicio reproducible con Spark, ejercicio reproducible con Polars y pandas, tabla de rendimiento, control de equivalencia y conclusiones."
       },
       {
         "type": "h",
@@ -948,8 +842,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -1009,8 +903,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -1023,48 +917,15 @@
       },
       {
         "type": "p",
-        "text": "Analítica y gobernanza. 18:00–21:15. Demostración guiada por el profesor."
-      },
-      {
-        "type": "table",
-        "headers": [
-          "Horario",
-          "Actividad"
-        ],
-        "rows": [
-          [
-            "18:00–18:30",
-            "Explicación / demostración docente: Métrica, población, tiempo y fuga de información"
-          ],
-          [
-            "18:30–20:00",
-            "Explicación / demostración docente: E12: persistencia, rendimiento y MAE por cultivo"
-          ],
-          [
-            "20:00–20:15",
-            "Coffee break"
-          ],
-          [
-            "20:15–20:30",
-            "Explicación / demostración docente: E12: error por cultivo y cobertura"
-          ],
-          [
-            "20:30–21:00",
-            "Explicación / demostración docente: Gobernanza y revisión crítica de índices compuestos"
-          ],
-          [
-            "21:00–21:15",
-            "Explicación / demostración docente: Definición del producto integrador"
-          ]
-        ],
-        "widths": [
-          0.24,
-          0.76
-        ]
+        "text": "Integración del pipeline y publicación de datos. Tres horas efectivas de explicación y demostración docente, sin entrega el viernes."
       },
       {
         "type": "p",
-        "text": "Material de referencia del profesor: Referencia docente: Evaluación temporal y ficha de gobernanza; ejecución y entrega estudiantil el sábado."
+        "text": "Temario: propósito y conceptos de pipelines; tareas, DAG y orquestación; DataOps, responsables, versiones, pruebas y diagnóstico; esquemas industriales ETL, ELT, Medallion y CDC; ejemplo PQRS, publicación y reejecución; formatos de tabla; ejercicios guiados. Consultar la guía de pipelines y DataOps (pipelines-dataops.md), el temario desarrollado (temario-30-31-octubre.md) y E12 (../talleres/E12.md)."
+      },
+      {
+        "type": "p",
+        "text": "Descanso: 20:00–20:15."
       },
       {
         "type": "h",
@@ -1072,56 +933,19 @@
       },
       {
         "type": "p",
-        "text": "Integración y auditoría del proyecto. 08:00–17:00. Actividad estudiantil y entrega en clase."
-      },
-      {
-        "type": "table",
-        "headers": [
-          "Horario",
-          "Actividad"
-        ],
-        "rows": [
-          [
-            "08:00–09:30",
-            "E12 propio: evaluación temporal EVA (08:00–08:45); E13: reconstrucción (08:45–09:30)"
-          ],
-          [
-            "09:30–09:45",
-            "Receso de la mañana"
-          ],
-          [
-            "09:45–12:00",
-            "Auditoría cruzada de datos, código y resultados"
-          ],
-          [
-            "12:00–13:00",
-            "Almuerzo"
-          ],
-          [
-            "13:00–15:00",
-            "Corrección de hallazgos y revisión del informe"
-          ],
-          [
-            "15:00–15:15",
-            "Receso de la tarde"
-          ],
-          [
-            "15:15–16:30",
-            "Validación del producto candidato y límites"
-          ],
-          [
-            "16:30–17:00",
-            "Entrega candidata y preparación de la clínica"
-          ]
-        ],
-        "widths": [
-          0.24,
-          0.76
-        ]
+        "text": "Ejecución y auditoría del pipeline. Siete horas y treinta minutos efectivos de actividad estudiantil."
       },
       {
         "type": "p",
-        "text": "Entrega en clase: Evaluación temporal EVA, ficha de gobernanza, producto candidato e informe con hallazgos."
+        "text": "Temario: preparación y alcance; integración de validaciones; publicación de detalle y agregado Parquet; conciliación SQL; segunda ejecución y comparación; auditoría entre equipos; corrección y revisión del candidato."
+      },
+      {
+        "type": "p",
+        "text": "Entrega formativa: Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría. La actualización de un período es una ampliación; no se exige predicción EVA, instalación estudiantil de Iceberg ni integración de streaming."
+      },
+      {
+        "type": "p",
+        "text": "Descansos: 09:30–09:45 y 15:00–15:15; almuerzo 12:00–13:00."
       },
       {
         "type": "h",
@@ -1160,8 +984,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -1217,8 +1041,8 @@
           ]
         ],
         "widths": [
-          0.24,
-          0.76
+          0.5,
+          0.5
         ]
       },
       {
@@ -1749,7 +1573,7 @@
       },
       {
         "type": "p",
-        "text": "Sesión 1: cinco V, restricciones y ficha de problema. Sesión 2: ingesta, perfil y códigos. Sesión 3: formatos, contrato y reejecución. Sesión 4: calidad, consulta e integración. La introducción a eventos se ubica en la sesión 8. Las presentaciones vigentes distribuyen Spark, rendimiento, eventos y analítica en las sesiones 5, 7, 8 y 9. No requieren ejecutar Spark ni instalar Dask, GPU o plataformas gestionadas en el primer fin de semana."
+        "text": "Sesión 1: cinco V, restricciones y ficha de problema. Sesión 2: ingesta, perfil y códigos. Sesión 3: formatos, contrato y reejecución. Sesión 4: calidad, consulta e integración. La introducción a eventos se ubica en la sesión 8. Las sesiones 5, 7 y 8 trabajan Spark, rendimiento y eventos. Las sesiones 9 y 10 explican primero el problema y propósito, después conceptos de pipelines y DataOps, esquemas industriales, ejemplo y ejercicios guiados. La guía conceptual (pipelines-dataops.md) conecta esa progresión con integración, publicación y reejecución según el temario vigente (temario-30-31-octubre.md); las presentaciones anteriores de analítica quedan como referencia opcional. No requieren ejecutar Spark ni instalar Dask, GPU o plataformas gestionadas en el primer fin de semana."
       },
       {
         "type": "h",
@@ -1784,9 +1608,9 @@
           ]
         ],
         "widths": [
-          0.3,
-          0.3,
-          0.4
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
         ]
       },
       {
@@ -1835,7 +1659,7 @@
           ],
           [
             "9–10",
-            "Evaluación temporal y auditoría",
+            "Pipeline, publicación, conciliación y reejecución",
             "E12–E13"
           ],
           [
@@ -1845,119 +1669,9 @@
           ]
         ],
         "widths": [
-          0.15,
-          0.43,
-          0.42
-        ]
-      },
-      {
-        "type": "table",
-        "headers": [
-          "Código",
-          "Significado",
-          "Actividad"
-        ],
-        "rows": [
-          [
-            "E01",
-            "Ejercicio 01",
-            "Pregunta y procedencia"
-          ],
-          [
-            "E02",
-            "Ejercicio 02",
-            "Descarga y perfil inicial"
-          ],
-          [
-            "E03",
-            "Ejercicio 03",
-            "Identidad territorial y vigencias"
-          ],
-          [
-            "E04",
-            "Ejercicio 04",
-            "Formatos y contrato de datos"
-          ],
-          [
-            "E05",
-            "Ejercicio 05",
-            "Calidad de análisis de suelo"
-          ],
-          [
-            "E06",
-            "Ejercicio 06",
-            "Rendimiento agrícola e integración SQL"
-          ],
-          [
-            "E07",
-            "Ejercicio 07",
-            "Spark y equivalencia de resultados"
-          ],
-          [
-            "E08",
-            "Ejercicio 08",
-            "Shapes y capacidad de uso"
-          ],
-          [
-            "E09",
-            "Ejercicio 09",
-            "Propiedades del suelo y profundidad"
-          ],
-          [
-            "E10",
-            "Ejercicio 10",
-            "Rendimiento del procesamiento"
-          ],
-          [
-            "E11",
-            "Ejercicio 11",
-            "Clima y reproducción de eventos"
-          ],
-          [
-            "E12",
-            "Ejercicio 12",
-            "Línea base temporal y gobernanza"
-          ],
-          [
-            "E13",
-            "Ejercicio 13",
-            "Producto integrador reproducible"
-          ],
-          [
-            "P01",
-            "Práctica PQRS 01",
-            "Perfil PQRS y lectura por bloques"
-          ],
-          [
-            "P02",
-            "Práctica PQRS 02",
-            "Parquet, contrato y reejecución"
-          ],
-          [
-            "P03",
-            "Práctica PQRS 03",
-            "Calidad de reportes y consulta diferida"
-          ],
-          [
-            "P04",
-            "Práctica PQRS 04",
-            "Escala real y comparación de motores"
-          ],
-          [
-            "T01",
-            "Taller teórico",
-            "Capacidad y escala"
-          ],
-          [
-            "I01",
-            "Introducción",
-            "Eventos finitos con NASA"
-          ]
-        ],
-        "widths": [
-          0.12,
-          0.28,
-          0.6
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
         ]
       }
     ]
@@ -2992,97 +2706,113 @@
     ]
   },
   {
-    "title": "E12 Línea base temporal y gobernanza",
+    "title": "E12 Integración y verificación del pipeline local",
     "blocks": [
       {
-        "type": "p",
-        "text": "Modalidad y entrega: demostración docente el viernes; ejecución propia y entrega el sábado. Evidencia integrada en la entrega del 2026-10-31 (16:30–17:00). E12 acompaña el candidato formativo del 31/10 y se integra en la calificación final del 07/11."
+        "type": "h",
+        "text": "Propósito y modalidad"
       },
       {
         "type": "p",
-        "text": "Sesión 9, viernes 30 de octubre. Trabajo guiado de E12: 105 minutos. El bloque de gobernanza dispone de 30 minutos adicionales dentro de la misma clase de 3 horas. El viernes lo ejecuta el profesor; la ejecución estudiantil se realiza en el bloque del sábado indicado en el calendario."
+        "text": "Integrar recepción, validación, transformación, publicación y consulta en un proceso local que pueda ejecutarse completo y repetirse con resultados estables. El profesor demuestra el viernes 30 de octubre y los estudiantes ejecutan el sábado 31. El candidato es formativo y se incorpora a E13; la entrega final permanece el 7 de noviembre, sin cambiar ponderaciones."
+      },
+      {
+        "type": "p",
+        "text": "Consultar el temario desarrollado (../docs/temario-30-31-octubre.md). Este ejercicio sustituye la evaluación predictiva EVA como requisito; talleres.py modelo se conserva como recurso opcional y no es el comando de ejecución de E12."
       },
       {
         "type": "h",
-        "text": "Propósito"
+        "text": "Entradas y herramientas"
       },
       {
         "type": "p",
-        "text": "Evaluar predicción sin fuga de información y documentar las responsabilidades del producto."
+        "text": "Elegir PQRS o agroambiental y reutilizar entradas y transformaciones conocidas. Registrar archivos, fuente, período, huella y alcance. Se admite una selección manejable claramente identificada. Disponer de los archivos antes de integrar el recorrido; puede utilizarse la copia docente validada."
+      },
+      {
+        "type": "p",
+        "text": "Usar el entorno base y kernel del curso, Parquet y DuckDB. Spark puede mantenerse si ya funciona para el equipo. El notebook identifica la raíz del proyecto y sus rutas antes de ejecutar. No se exige instalar Iceberg ni construir un tablero."
       },
       {
         "type": "h",
-        "text": "Datos y descarga"
+        "text": "Ejercicio incremental"
       },
       {
         "type": "p",
-        "text": "D05 EVA UPRA 2019 a 2025: eva.csv, 27.490 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D01 AGROSAVIA: agrosavia.csv, 20.380 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D02 DIVIPOLA: divipola.csv, 0.071 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "Con el kit completo ejecutar --verificar. Para obtener una nueva copia utilizar la ruta B del capítulo de descarga y los IDs indicados abajo. Los shapes DANE se descargan por navegador. Todas las URLs están en el catálogo y en fuentes.json."
-      },
-      {
-        "type": "code",
-        "text": "python 00_datos.py --descargar eva agrosavia divipola"
-      },
-      {
-        "type": "h",
-        "text": "Instrucciones"
+        "text": "Antes de programar, resolver los tres ejercicios guiados (../docs/pipelines-dataops.md#ejercicios-guiados): explicar el propósito y dibujar el flujo, decidir acciones ante incidentes y calcular resultados esperados para seis filas. El viernes son actividades formativas sin entrega calificada; el sábado orientan la implementación."
       },
       {
         "type": "steps",
         "items": [
-          "Leer rendimiento.parquet y restringir la comparación a 2022–2025 para evitar mezclar el cambio metodológico anterior de EVA.",
-          "Construir una predicción de persistencia: rendimiento del año anterior del mismo municipio, cultivo y estado físico. Exigir años consecutivos.",
-          "Usar 2024 para revisión del procedimiento y 2025 como evaluación final reservada. No ajustar reglas tras observar el error final.",
-          "Ejecutar modelo y reportar MAE, cobertura, errores por cultivo y casos sin año previo. No usar área o producción del año objetivo como predictores de su propio cociente.",
-          "Completar ficha de gobernanza: fuente, licencia, corte, transformaciones, responsables, frecuencia, acceso, control de cambios y límites de uso."
+          "Definir el producto. Escribir pregunta, unidad de observación, entradas, granularidad del agregado y salidas. En PQRS, contar reportes sin inferir personas únicas o prevalencia.",
+          "Recibir y validar. Conservar originales. Aplicar reglas de esquema, tipos y aceptación. Separar aceptados y rechazados con motivos y conciliar sus conteos con las filas leídas. Contar cada fila rechazada una sola vez aunque tenga varios motivos.",
+          "Transformar. Reutilizar operaciones conocidas. Si existe un join, comprobar claves y cardinalidad. Identificar valores sin correspondencia y conservarlos explícitamente en la conciliación.",
+          "Publicar un candidato. Escribir detalle y agregado en una carpeta de ejecución. Releer y verificar antes de identificarlos como publicación válida. Si falla el proceso, conservar la publicación válida anterior.",
+          "Consultar y conciliar. Ejecutar SQL sobre detalle y agregado. Comprobar igualdad por grupo y total. En la ruta agrícola, conservar unidades y calcular cocientes sobre numeradores y denominadores compatibles.",
+          "Registrar. Guardar identificador, entradas y huellas, versión de reglas/código, parámetros y versiones de bibliotecas, conteos, controles, estado y errores. Identificar quién revisa una incidencia y qué salida pasó la validación. Estos datos completan el registro existente.",
+          "Reejecutar. Procesar las mismas entradas y comprobar contenido, claves y medidas. Los identificadores y tiempos pueden cambiar; no se exige identidad binaria de los archivos Parquet.",
+          "Auditar en clase. Otro equipo reproduce una consulta y examina controles. Registrar hallazgo o control satisfactorio, evidencia, acción y comprobación posterior. Explicar una limitación de interpretación."
         ]
       },
       {
-        "type": "h",
-        "text": "Ejecución"
-      },
-      {
-        "type": "code",
-        "text": "python talleres.py modelo"
-      },
-      {
-        "type": "h",
-        "text": "Entrega y criterios"
+        "type": "p",
+        "text": "Cada sección contiene explicación breve, operación visible y comprobación. Evitar capas adicionales de funciones, clases o servicios antes de completar el recorrido. No existe todavía un nuevo comando CLI de E12: el producto mínimo se ejecuta mediante el notebook ordenado."
       },
       {
         "type": "p",
-        "text": "15.267 pares consecutivos para 2024 y 15.503 para 2025. Reportar MAE por año y desagregado por cultivo. La persistencia es una línea base, no un modelo agronómico validado para recomendar prácticas."
+        "text": "La solución integrada de referencia E12 (../soluciones/E12_solucion.ipynb) desarrolla y ejecuta este recorrido con las tres muestras PQRS incluidas. Verifica hashes y contrato, conserva rechazados, publica detalle y agregado Parquet, concilia cada grupo con DuckDB, registra dos ejecuciones, compara sus firmas de contenido y genera una ficha de auditoría. Los notebooks 02 y 03 siguen disponibles como antecedentes parciales. No se exige Airflow, Great Expectations ni captura CDC real."
       },
       {
         "type": "h",
-        "text": "Advertencia de interpretación"
+        "text": "Criterios de aceptación"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Criterio",
+          "Evidencia"
+        ],
+        "rows": [
+          [
+            "Ejecución completa",
+            "Instrucciones, entradas identificadas y registro final"
+          ],
+          [
+            "Conteos explicables",
+            "Leídos, aceptados y rechazados conciliados; reglas declaradas"
+          ],
+          [
+            "Agregado consistente",
+            "Consulta y comparación por grupo y total"
+          ],
+          [
+            "Reejecución estable",
+            "Comparación del contenido entre dos ejecuciones"
+          ]
+        ],
+        "widths": [
+          0.5,
+          0.5
+        ]
       },
       {
         "type": "p",
-        "text": "El MAE global mezcla cultivos de escalas diferentes. No usar la mediana de pH del año objetivo si no estaba disponible en la fecha de predicción. No presentar rendimiento como función exclusiva del suelo."
+        "text": "Un fallo pendiente se registra como tal; la comprobación requiere ejecución. Las tablas y sus controles pertenecen a la misma ejecución identificada."
       },
       {
         "type": "h",
-        "text": "Ampliación dentro del bloque"
+        "text": "Producto del sábado"
       },
       {
         "type": "p",
-        "text": "Añadir una segunda línea base con mediana histórica por cultivo calculada únicamente con años anteriores y comparar cobertura en el mismo conjunto de prueba."
+        "text": "Un notebook ordenado, instrucciones, manifiesto breve de entradas, consultas, registro de ambas ejecuciones y ficha de auditoría. Incluir las tablas o instrucciones comprobadas para regenerarlas. Los datos originales y salidas voluminosas se entregan por el medio del curso y se excluyen de Git."
+      },
+      {
+        "type": "h",
+        "text": "Ampliación"
       },
       {
         "type": "p",
-        "text": "La métrica IPA de los notebooks históricos se utiliza solo para revisar diseño de índices compuestos. Los cortes actuales no contienen medidas completas de severidad clínica, costo y urgencia que permitan calcular el índice original con fundamento. La actividad exige identificar esos campos ausentes, definir normalizaciones y discutir sensibilidad; no se publican puntuaciones clínicas ni se inventan atributos."
+        "text": "Cuando los cuatro criterios funcionan, reconstruir un período afectado y comprobar que los demás permanecen iguales. Puede completarse durante la clínica del 6 de noviembre. Iceberg estudiantil, actualización por registro y tablero visual no condicionan la aceptación mínima."
       }
     ]
   },
@@ -3090,138 +2820,141 @@
     "title": "E13 Producto integrador reproducible",
     "blocks": [
       {
-        "type": "p",
-        "text": "Modalidad y entrega: actividad estudiantil los sábados. Evidencia integrada en la entrega del 2026-11-07 (16:00–16:30). Candidato formativo: 31/10. Clínica docente sin entrega: 06/11. Final y defensa: 07/11."
+        "type": "h",
+        "text": "Modalidad y fecha de entrega"
       },
       {
         "type": "p",
-        "text": "Sesiones 10–12. Integración y auditoría: 31 de octubre, 450 minutos. Clínica y ensayo: 6 de noviembre, 180 minutos. Sustentación y cierre: 7 de noviembre, 420 minutos. Los 1.050 minutos de esta fase se imparten íntegramente en línea, dentro de las 64 horas contratadas."
+        "text": "Viernes: explicación y demostraciones guiadas por el profesor, sin entregas ni calificación. El profesor ejecuta, explica y comparte sus archivos de referencia; los estudiantes observan, preguntan y pueden seguir voluntariamente. Sábado: ejecución por los estudiantes, revisión y entrega durante la clase. La evidencia evaluable debe corresponder a su propia ejecución. No se exige una entrega ni trabajo autónomo obligatorio entre ambos encuentros."
       },
       {
         "type": "p",
-        "text": "Construir y defender un producto reproducible del dominio elegido, con una pregunta, unidad, controles y límites. La ruta agroambiental conserva el mapa y la evaluación por cultivo. La ruta PQRS aporta series de reportes, dimensión territorial, calidad y comparación de motores; utiliza NASA para demostrar ingeniería de eventos y EVA para el ejercicio común de evaluación temporal. Cada producto distingue claramente la evidencia de su dominio de los ejercicios metodológicos comunes."
+        "text": "E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01–P04); PQRS significa peticiones, quejas, reclamos y sugerencias. El número identifica la actividad, no la sesión. T01 = taller teórico de capacidad; I01 = introducción a eventos NASA."
       },
       {
         "type": "p",
-        "text": "Construir una evidencia técnica defendible que reúna las competencias del curso."
+        "text": "E13: evidencia integrada en la entrega del sábado 2026-11-07, dentro de 16:00–16:30. El candidato del 31/10 es formativo, la clínica del 06/11 no exige entrega y la versión final se entrega el 07/11."
       },
       {
         "type": "h",
-        "text": "Datos y descarga"
+        "text": "Directorio de trabajo"
       },
       {
         "type": "p",
-        "text": "D01 agrosavia.csv, 20.380 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D02 divipola.csv, 0.071 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D04 dane_municipios.zip, 71.576 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D03 dane_departamentos.zip, 12.524 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D05 eva.csv, 27.490 MB, completo."
-      },
-      {
-        "type": "p",
-        "text": "D07 igac_capacidad.json, 0.096 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "D08 igac_quimica.json, 0.030 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "D06 igac_correlacion.json, 0.012 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "D09 soilgrids.tif, 0.002 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "D10 wosis.json, 0.007 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "D11 nasa.json, 0.002 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "D12 chirps.tif, 4.213 MB, muestra."
-      },
-      {
-        "type": "p",
-        "text": "Con el kit completo ejecutar --verificar. Para obtener una nueva copia utilizar la ruta B del capítulo de descarga y los IDs indicados abajo. Los shapes DANE se descargan por navegador. Todas las URLs están en el catálogo y en fuentes.json."
+        "text": "Ejecutar desde la terminal de Ubuntu-26.04 en WSL, con el repositorio clonado de main:"
       },
       {
         "type": "code",
-        "text": "python 00_datos.py --descargar agrosavia divipola dane_municipios dane_departamentos eva igac_capacidad igac_quimica igac_correlacion soilgrids wosis nasa chirps"
+        "text": "cd /mnt/c/Users/TUPTC/bigdata\ncd big-data-postgraduate\nsource .venv/bin/activate\ncd kit"
+      },
+      {
+        "type": "p",
+        "text": "Las rutas relativas data/, salidas/ y los archivos de requisitos se interpretan desde kit/. Preparar las herramientas según la guía WSL (../docs/instalacion-wsl.md)."
+      },
+      {
+        "type": "p",
+        "text": "Índice del curso (../README.md) · Evaluación (../docs/mapa-ejercicios.md) · Calendario (../docs/calendario.md)"
+      },
+      {
+        "type": "p",
+        "text": "Elegir PQRS o agroambiental y construir un producto reproducible. Las competencias comunes se acreditan con las prácticas del curso; no se exige desarrollar dos proyectos ni unir reportes de salud con muestras de suelo."
       },
       {
         "type": "h",
-        "text": "Instrucciones"
+        "text": "Hitos y trabajo en clase"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Clase 10, 31 de octubre: integración, publicación, conciliación y reejecución; producto candidato.",
+          "Clase 11, 6 de noviembre: resolver hallazgos, validar y ensayar la defensa.",
+          "Clase 12, 7 de noviembre: entrega final y sustentación de 15 minutos por equipo, con preguntas y transición."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Estos tres encuentros reúnen 1.050 minutos dentro de las 64 horas en línea. La ampliación fuera de clase es opcional."
+      },
+      {
+        "type": "h",
+        "text": "Fuentes y preparación por ruta"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Ruta",
+          "Entradas",
+          "Producto específico"
+        ],
+        "rows": [
+          [
+            "PQRS",
+            "Muestras de tres cortes; completos opcionales para volumen; DIVIPOLA si se usa dimensión territorial",
+            "Series de reportes, contrato, conteos por período/territorio y cobertura de enlace"
+          ],
+          [
+            "Agroambiental",
+            "Fuentes ya trabajadas según pregunta; DANE/IGAC si se conserva el componente espacial",
+            "Detalle y agregado agrícola con unidades y denominador compatibles; mapa como evidencia previa cuando corresponda"
+          ]
+        ],
+        "widths": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Consultar datasets (../docs/datasets.md), descarga y entorno (../docs/entorno.md), manifiesto PQRS (../kit/pqrs_fuentes.json) y manifiesto agroambiental (../kit/fuentes.json). Descargar solo las fuentes necesarias. Los archivos completos y las salidas no se incorporan al repositorio."
+      },
+      {
+        "type": "h",
+        "text": "Ejecución inicial"
+      },
+      {
+        "type": "p",
+        "text": "Desde kit/, después de preparar las entradas y el entorno:"
+      },
+      {
+        "type": "code",
+        "text": "# Ruta PQRS con muestras\npython pqrs_talleres.py formatos\npython pqrs_talleres.py calidad\npython pqrs_talleres.py benchmark --repeticiones 3\n# Ruta agroambiental\npython talleres.py calidad\npython talleres.py consultas"
+      },
+      {
+        "type": "p",
+        "text": "Estos comandos son referencias de automatización; no constituyen por sí solos el pipeline integrado. Reutilizar las transformaciones conocidas en un notebook ordenado y seguir E12 (E12.md) y el temario del 30 y 31 de octubre (../docs/temario-30-31-octubre.md). E12 aporta las cuatro comprobaciones mínimas al producto. Las prácticas DataOps se evidencian en entradas y reglas versionadas, configuración declarada, controles, responsables de revisión y tratamiento de incidentes dentro del registro y ficha existentes. Consultar la guía de pipelines y DataOps (../docs/pipelines-dataops.md). No añaden plataformas obligatorias ni otra ponderación. Las evidencias previas de Spark, rendimiento, soporte espacial y eventos se adjuntan por separado cuando corresponda, identificando su dominio y sus límites."
+      },
+      {
+        "type": "h",
+        "text": "Instrucciones y aceptación"
       },
       {
         "type": "steps",
         "items": [
-          "Elegir una pregunta y un ámbito territorial; justificar qué fuentes pueden integrarse y cuáles solo aportan contexto. No forzar un join entre las doce fuentes.",
-          "Reconstruir el pipeline desde una copia verificada y registrar versiones. Otro equipo ejecuta los comandos y compara controles.",
-          "Presentar un mapa, una tabla agronómica con denominador correcto, una medida de calidad del dato y una medida de cobertura.",
-          "Incluir comparación de motores, experimento de formatos, traza de eventos y línea base temporal. Separar desempeño informático y rendimiento agrícola.",
-          "Redactar informe, ficha de gobernanza y defensa. Explicar al menos un resultado que no se puede inferir de los datos."
+          "Definir pregunta, unidad de observación, población cubierta y límites. Para PQRS, reportes no equivalen a personas únicas ni prevalencia.",
+          "Registrar procedencia, tamaños, hashes, versiones y comandos. Conservar originales y verificar cardinalidad tras cada transformación.",
+          "Construir recepción, validación, transformación, detalle y agregado Parquet y consulta SQL de la ruta. Comprobar conteos, conciliación por grupo y total, registro final y reejecución estable con las mismas entradas.",
+          "Incorporar las evidencias previas pertinentes sin rehacer todos los talleres ni integrar todos los motores. Declarar muestra o completo en cada resultado.",
+          "Presentar las evidencias metodológicas comunes sin atribuirlas al dominio equivocado. Diferenciar una reproducción de eventos de una prueba de recuperación efectivamente ejecutada.",
+          "Otro equipo reconstruye controles; registrar hallazgo, corrección y resultado de la nueva ejecución.",
+          "Entregar código/notebooks, informe de 8–12 páginas, ficha de gobernanza y defensa. Explicar un resultado que no se puede inferir de los datos."
         ]
       },
       {
         "type": "h",
-        "text": "Ejecución"
-      },
-      {
-        "type": "code",
-        "text": "python 00_datos.py --verificar\npython talleres.py calidad\npython talleres.py consultas"
-      },
-      {
-        "type": "h",
-        "text": "Entrega y criterios"
+        "text": "Evaluación"
       },
       {
         "type": "p",
-        "text": "Paquete ejecutable, informe de 8–12 páginas y sustentación de 15 minutos por equipo, incluyendo preguntas y transición. El equipo revisor debe reconstruir los controles sin editar datos originales ni rutas absolutas del docente."
-      },
-      {
-        "type": "h",
-        "text": "Advertencia de interpretación"
+        "text": "Proyecto e informe: 35 %. Sustentación individual: 15 %. Las prácticas previas completan el 50 % restante según el mapa de evaluación (../docs/mapa-ejercicios.md). No hay un peso adicional por cada notebook."
       },
       {
         "type": "p",
-        "text": "La disponibilidad en línea no garantiza estabilidad futura. Conservar el corte y la atribución. Las muestras geográficas del curso no autorizan conclusiones nacionales ni decisiones de fertilización parcelaria."
-      },
-      {
-        "type": "h",
-        "text": "Ampliación dentro del bloque"
+        "text": "Dentro de cada entrega: corrección y unidades 30 %, reproducibilidad y trazabilidad 25 %, justificación 25 % y comunicación de límites 20 %. No se penaliza optar por las muestras cuando el equipo no admite los completos; sí se exige declarar el alcance y no extrapolarlo."
       },
       {
         "type": "p",
-        "text": "Diseñar un plan de ampliación de cobertura y una estimación razonada de almacenamiento sin ejecutar descargas masivas."
-      },
-      {
-        "type": "p",
-        "text": "Elegir fuentes pertinentes, documentar licencia y granularidad. La disponibilidad de quince archivos no obliga a unirlos todos ni a duplicar las rutas prácticas. Los archivos originales permanecen sin edición. La salida agregada debe conservar procedencia y controlar grupos pequeños cuando corresponda."
-      },
-      {
-        "type": "p",
-        "text": "La evaluación final corresponde al calendario contractual. El producto candidato se entrega el 31 de octubre; las correcciones se trabajan en la clase del 6 de noviembre. No se exige trabajo autónomo adicional para completar las horas contratadas."
-      },
-      {
-        "type": "p",
-        "text": "Adjuntar mapas y controles espaciales producidos en Jupyter con los notebooks E08, E09 y E11, indicando CRS, cardinalidad y cobertura."
+        "text": "Si el producto utiliza un mapa, adjuntar su código y controles de CRS, cardinalidad y cobertura. La integración de streaming, mapas, Iceberg estudiantil y tablero visual no es requisito mínimo. La reconstrucción de un período se aborda cuando los cuatro criterios básicos de E12 funcionen; puede completarse en la clínica."
       }
     ]
   },
@@ -3932,6 +3665,665 @@
           "Métricas compuestas históricas se estudian en gobernanza y no como puntuaciones calculadas con campos inexistentes.",
           "Ejemplos acotados con observaciones abiertas y comparación equivalente de motores."
         ]
+      }
+    ]
+  },
+  {
+    "title": "Data pipelines y DataOps",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Material conceptual de las clases 09 y 10. La aplicación corresponde a E12 (../talleres/E12.md), con sus cuatro criterios mínimos y sin nuevas ponderaciones. Esta guía acompaña las presentaciones y permanece disponible al clonar el repositorio."
+      },
+      {
+        "type": "h",
+        "text": "Por qué necesitamos un pipeline"
+      },
+      {
+        "type": "p",
+        "text": "Dos personas preparan un conteo con el mismo archivo. Una elimina territorios vacíos y otra los conserva. Obtienen cifras diferentes aunque ambos programas terminan sin errores. Para explicar la diferencia necesitamos conocer los datos, las reglas y las operaciones aplicadas."
+      },
+      {
+        "type": "p",
+        "text": "Un pipeline organiza tareas que reciben datos y producen un resultado utilizable. Sus dependencias establecen qué debe estar disponible antes de iniciar cada tarea. Una ejecución aplica ese diseño a unas entradas concretas y conserva evidencia de sus resultados."
+      },
+      {
+        "type": "p",
+        "text": "Conservar originales permite revisar las decisiones sin perder la evidencia recibida. Separar rechazos explica qué observaciones quedaron fuera. Comprobar las salidas evita entregar archivos incompletos como resultados válidos. Repetir el proceso permite detectar acumulaciones accidentales."
+      },
+      {
+        "type": "h",
+        "text": "Cómo se organiza el trabajo"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Concepto",
+          "Significado",
+          "Aplicación en el caso"
+        ],
+        "rows": [
+          [
+            "Entrada",
+            "Datos identificados para una ejecución",
+            "Archivo, fuente, corte y huella"
+          ],
+          [
+            "Tarea",
+            "Una operación concreta",
+            "Validar el período"
+          ],
+          [
+            "Dependencia",
+            "Condición previa para ejecutar",
+            "El agregado requiere detalle válido"
+          ],
+          [
+            "Producto",
+            "Salida que otra tarea o persona utiliza",
+            "Detalle y agregado Parquet"
+          ],
+          [
+            "Control",
+            "Comparación con un resultado esperado",
+            "Igualdad por grupo y total"
+          ]
+        ],
+        "widths": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "type": "p",
+        "text": "El flujo de datos explica qué recibe y entrega cada etapa. El flujo de control explica qué permite continuar. Un DAG representa tareas y dependencias dirigidas sin ciclos. Puede tener ramas, como guardar detalle y guardar rechazos después de validar. La ejecución local puede recorrerlas secuencialmente."
+      },
+      {
+        "type": "code",
+        "text": "flowchart LR\n  A[Recibir e identificar] --> B[Validar]\n  B --> C[Guardar detalle]\n  B --> D[Guardar rechazos y motivos]\n  C --> E[Agregar]\n  E --> F[Conciliar detalle y agregado]\n  F --> G[Identificar publicación válida si cumple]"
+      },
+      {
+        "type": "p",
+        "text": "La orquestación coordina orden, condiciones, estados y respuesta al fallo. Evita, por ejemplo, que una tarea continúe con la tabla de una ejecución anterior tras fallar la nueva validación. Airflow ejemplifica una plataforma para operar flujos. El curso expresa esas condiciones localmente, sin exigir su instalación."
+      },
+      {
+        "type": "h",
+        "text": "Por qué necesitamos DataOps"
+      },
+      {
+        "type": "p",
+        "text": "Un programa puede terminar con un corte incompleto. Una corrección de la fuente puede cambiar legítimamente una cifra. Un equipo nuevo puede desconocer la regla que produjo una publicación. Por eso necesitamos prácticas compartidas que sostengan la confianza en cada ejecución."
+      },
+      {
+        "type": "p",
+        "text": "DataOps organiza colaboración, cambios, pruebas y operación. El equipo acuerda el significado del resultado, identifica datos y reglas, comprueba cambios antes de publicar y utiliza las evidencias de operación para corregir problemas."
+      },
+      {
+        "type": "code",
+        "text": "flowchart LR\n  A[Acordar necesidad y responsables] --> B[Preparar datos y versiones]\n  B --> C[Probar resultados esperados]\n  C --> D[Publicar versión aceptada]\n  D --> E[Observar calidad y ejecución]\n  E --> F[Investigar y corregir]\n  F --> A"
+      },
+      {
+        "type": "p",
+        "text": "Este ciclo describe la mejora del trabajo del equipo. El DAG anterior describe las dependencias de una ejecución. Son dos esquemas con propósitos distintos."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Necesidad",
+          "Práctica",
+          "Evidencia en E12"
+        ],
+        "rows": [
+          [
+            "Explicar un cambio",
+            "Identificar datos, reglas y configuración",
+            "Manifiesto, versión de código/reglas, parámetros y bibliotecas"
+          ],
+          [
+            "Comprobar una regla",
+            "Probar primero un caso conocido",
+            "Tabla de resultados esperados y control"
+          ],
+          [
+            "Entender una ejecución",
+            "Registrar estado, conteos y causas",
+            "Registro vinculado al candidato"
+          ],
+          [
+            "Atender un fallo",
+            "Acordar responsable y acción",
+            "Ficha de auditoría con revisión posterior"
+          ],
+          [
+            "Evitar duplicación",
+            "Repetir sin acumular el mismo efecto",
+            "Comparación del contenido de dos ejecuciones"
+          ]
+        ],
+        "widths": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Una descarga interrumpida puede admitir un reintento limitado. Una columna necesaria ausente requiere revisar fuente o contrato. Repetir sin corregir no resuelve ese problema. La idempotencia evita que repetir una operación duplique su efecto esperado. En el ejercicio, dos ejecuciones del mismo corte deben conservar el contenido previsto, incluidas las multiplicidades del detalle. Comparar solo totales o los bytes de Parquet no demuestra esa igualdad."
+      },
+      {
+        "type": "h",
+        "text": "Esquemas industriales"
+      },
+      {
+        "type": "p",
+        "text": "Estos patrones aparecen en documentación actual de plataformas y proyectos. No representan un ranking de adopción ni alternativas excluyentes."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Esquema",
+          "Recorrido",
+          "Razón para considerarlo",
+          "Ejemplo de herramienta"
+        ],
+        "rows": [
+          [
+            "ETL",
+            "Extraer, transformar, cargar",
+            "Preparar o filtrar antes del destino de consumo",
+            "AWS Glue con Spark"
+          ],
+          [
+            "ELT",
+            "Extraer, cargar, transformar dentro del destino",
+            "Aprovechar el motor del almacén para transformar",
+            "Ingesta más modelos SQL con dbt"
+          ],
+          [
+            "Medallion",
+            "Bronze originales, Silver validados, Gold para consumo",
+            "Separar conservación, preparación y productos",
+            "Spark en un lakehouse"
+          ],
+          [
+            "CDC",
+            "Cambios de la base, eventos, aplicación en el destino",
+            "Actualizar con menor demora y evitar releer todo el origen",
+            "Debezium, con Kafka como opción de transporte"
+          ]
+        ],
+        "widths": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "type": "p",
+        "text": "ETL y ELT describen orden y lugar de transformación. Medallion organiza capas y puede usar lotes o eventos. CDC captura cambios y exige definir cómo el destino maneja orden, duplicados y eliminaciones. La orquestación y las prácticas DataOps atraviesan estos esquemas. Nombrar carpetas Bronze/Silver/Gold no acredita calidad ni una plataforma de producción."
+      },
+      {
+        "type": "p",
+        "text": "Parquet conserva valores y columnas. Un formato de tabla como Iceberg gestiona metadatos que identifican los archivos de un estado de tabla. Sus snapshots ayudan a consultar estados retenidos tras correcciones. Hudi es otra referencia de gestión de tablas y actualizaciones. Estos formatos complementan las pruebas y la orquestación. En E12 se mantiene Parquet local; la demostración Iceberg es docente y requiere entorno preparado."
+      },
+      {
+        "type": "h",
+        "text": "Ejemplo desarrollado"
+      },
+      {
+        "type": "p",
+        "text": "Pregunta: contar reportes por período y territorio. Cada fila del ejemplo representa un reporte distinto. Las cifras son hipotéticas y no describen resultados observados de Supersalud."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Fila",
+          "Período",
+          "Territorio",
+          "Regla aplicada"
+        ],
+        "rows": [
+          [
+            "1",
+            "2024-I",
+            "Bogotá",
+            "Aceptar"
+          ],
+          [
+            "2",
+            "2024-I",
+            "Bogotá",
+            "Aceptar"
+          ],
+          [
+            "3",
+            "2024-I",
+            "Boyacá",
+            "Aceptar"
+          ],
+          [
+            "4",
+            "2024-I",
+            "Ausente",
+            "Aceptar como SIN_INFORMAR"
+          ],
+          [
+            "5",
+            "2024-II",
+            "Bogotá",
+            "Aceptar"
+          ],
+          [
+            "6",
+            "Inválido",
+            "Boyacá",
+            "Rechazar con motivo"
+          ]
+        ],
+        "widths": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La regla conserva la ausencia territorial para no ocultar observaciones sin esa información. El período inválido impide asignar la fila al corte del ejemplo. Estas decisiones deben adaptarse al contrato de la fuente real."
+      },
+      {
+        "type": "p",
+        "text": "Se leen 6 filas, se aceptan 5 y se rechaza 1. El agregado contiene cuatro grupos: 2024-I/Bogotá = 2, 2024-I/Boyacá = 1, 2024-I/SIN_INFORMAR = 1 y 2024-II/Bogotá = 1. La consulta sobre el detalle debe reproducir cada grupo y el total 5."
+      },
+      {
+        "type": "p",
+        "text": "Si intercambiamos los conteos de Bogotá y Boyacá, el total sigue en 5 pero la publicación es incorrecta. Si anexamos otra vez el mismo corte, duplicamos el efecto de la primera ejecución. Por eso comprobamos grupos y contenido, además del total."
+      },
+      {
+        "type": "p",
+        "text": "Una corrección legítima de Boyacá a Bogotá cambia la entrada y su huella: el primer grupo pasa a 3 y el segundo a 0. Conservamos la versión anterior, investigamos la causa, probamos el nuevo candidato y registramos cuál puede consumirse. Ya no esperamos igualdad entre las dos versiones de entrada."
+      },
+      {
+        "type": "h",
+        "text": "Ejercicios guiados"
+      },
+      {
+        "type": "steps",
+        "items": [
+          "Diseñar el pipeline. Dibujar tareas y dependencias del ejemplo. Explicar por qué existe cada tarea, qué recibe y qué entrega. Incluir rechazados y condición de publicación. Producto: esquema explicado. Comprobación: si falta la entrada, la validación no puede comenzar.",
+          "Atender incidentes. Decidir qué hacer ante una descarga interrumpida, dos grupos distintos con igual total, diez filas después de reejecutar y un aumento de rechazos. Producto: causa posible, acción, evidencia y responsable. Comprobación: distinguir una señal observada de una causa demostrada.",
+          "Definir una prueba. Calcular la salida esperada de las seis filas, proponer una modificación deliberada y explicar qué control debe detectarla. Producto: tabla esperada y fallo detectable. Comprobación: 6 = 5 + 1, cuatro grupos y comparación de sus medidas."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "El viernes son ejercicios formativos sin entrega calificada. El sábado se implementan los pasos de E12 con operaciones conocidas. Cada sección explica primero para qué sirve, muestra la operación y comprueba su salida. Los productos existentes acreditan las prácticas DataOps, sin nuevos criterios ponderados."
+      },
+      {
+        "type": "h",
+        "text": "Material disponible y pendiente"
+      },
+      {
+        "type": "p",
+        "text": "El enunciado E12, esta guía y la solución integrada de referencia (../soluciones/E12_solucion.ipynb) están disponibles. La solución relee candidatos, concilia cada grupo y el total, conserva dos registros y compara el contenido de ambas ejecuciones. Los notebooks 02 y 03 mantienen las operaciones parciales que sirvieron de antecedente. La demostración Iceberg continúa separada y requiere un entorno preparado; el script talleres.py modelo y sus métricas históricas no validan el E12 vigente."
+      },
+      {
+        "type": "h",
+        "text": "Fuentes primarias"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Airflow: DAG, tareas y dependencias (https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html).",
+          "Manifiesto DataOps (https://dataopsmanifesto.org/en/).",
+          "Great Expectations: validación en el pipeline (https://docs.greatexpectations.io/docs/reference/learn/gx_in_your_data_pipeline/gx_in_your_data_pipeline_lp/).",
+          "AWS Glue: ETL y procesamiento (https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html).",
+          "dbt: pipeline ELT (https://www.getdbt.com/blog/elt-pipeline).",
+          "Azure Databricks: arquitectura Medallion (https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion).",
+          "Debezium: arquitectura CDC (https://debezium.io/documentation/reference/stable/architecture.html).",
+          "Iceberg: consultas Spark (https://iceberg.apache.org/docs/latest/spark-queries/).",
+          "Apache Hudi (https://hudi.apache.org/docs/overview/)."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Temario del 30 y 31 de octubre de 2026",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Preparado por el PhD Esteban Hernández, CyberColombia."
+      },
+      {
+        "type": "h",
+        "text": "Propósito y alcance"
+      },
+      {
+        "type": "p",
+        "text": "Integrar los procedimientos estudiados en un pipeline local que reciba datos, los valide, produzca tablas Parquet y publique un agregado consultable mediante SQL. El estudiante debe ejecutar el proceso completo, explicar sus controles y comprobar que una segunda ejecución con las mismas entradas conserva los resultados esperados."
+      },
+      {
+        "type": "p",
+        "text": "El viernes dispone de 180 minutos efectivos de explicación y demostración docente; el sábado, de 450 minutos de ejecución estudiantil, revisión y entrega de un candidato formativo. No hay entrega el viernes ni trabajo autónomo obligatorio entre encuentros."
+      },
+      {
+        "type": "p",
+        "text": "Cada equipo trabaja una sola ruta: PQRS o agroambiental. Se reutilizan datos y transformaciones anteriores. La referencia docente utiliza una selección manejable de PQRS ya disponible; el volumen completo no es requisito. El alcance de la selección debe declararse."
+      },
+      {
+        "type": "p",
+        "text": "El entorno base utiliza Python, Parquet y DuckDB. Spark puede mantenerse si el equipo ya tiene una ejecución comprobada. No se repite la comparación entre motores como obligación. Las prácticas previas de streaming se conservan como evidencia independiente."
+      },
+      {
+        "type": "h",
+        "text": "Preparación docente"
+      },
+      {
+        "type": "p",
+        "text": "Antes de clase, comprobar la ejecución completa de la referencia, entradas, dependencias y rutas. Disponer de una copia validada de los archivos. La demostración Iceberg requiere una sesión de Spark y un conector preparados y probados; no se incluye instalación estudiantil."
+      },
+      {
+        "type": "p",
+        "text": "Este documento desarrolla el temario y las consignas de E12 (../talleres/E12.md) y E13 (../talleres/E13.md). La guía de pipelines y DataOps (pipelines-dataops.md) conserva conceptos, esquemas y ejercicios dentro del repositorio. Los PPTX se distribuyen por separado: 09_Data_pipelines_y_DataOps_pedagogica_v10.pptx y 10_Ejecucion_y_auditoria_pipeline_v6.pptx. Están fuera del árbol Git y no se incluyen al clonar. La solución integrada E12 (../soluciones/E12_solucion.ipynb) contiene la referencia ejecutada; las diapositivas por sí solas no acreditan la ejecución del pipeline."
+      },
+      {
+        "type": "h",
+        "text": "Viernes 30: integración del pipeline y publicación de datos"
+      },
+      {
+        "type": "h",
+        "text": "1. Conceptos de data pipelines · 35 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Pregunta: ¿qué debe existir para que otra persona obtenga el mismo resultado?"
+      },
+      {
+        "type": "p",
+        "text": "Comenzar con dos personas que preparan el mismo reporte y aplican criterios distintos. Explicar por qué se necesitan reglas explícitas, originales conservados y controles antes de presentar la definición del pipeline. Mantener la secuencia problema, consecuencia, concepto y procedimiento."
+      },
+      {
+        "type": "p",
+        "text": "Definir pipeline, tarea, dependencia, producto y control. Distinguir flujo de datos y flujo de control, diseño y ejecución. Leer un DAG sencillo, explicar sus ramas y diferenciar el período del dato de la fecha de ejecución. Explicar orquestación como coordinación del orden, las condiciones, los estados y la respuesta al fallo. Relacionar lotes y eventos con las prácticas anteriores."
+      },
+      {
+        "type": "p",
+        "text": "Usar una pregunta concreta: ¿cuántos reportes contiene el corte por período y territorio? Precisar fuente, corte, unidad de observación y cobertura de los archivos seleccionados."
+      },
+      {
+        "type": "p",
+        "text": "Apoyo visual: ilustración completa del pipeline, esquema de datos y control, y DAG editable. Explicar cada flecha antes de presentar herramientas."
+      },
+      {
+        "type": "p",
+        "text": "Comprobación oral: explicar qué etapa no puede continuar si falta una entrada y qué debe registrar el error."
+      },
+      {
+        "type": "h",
+        "text": "2. Conceptos y esquemas de DataOps · 35 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Pregunta: ¿cómo organiza un equipo los cambios y la operación del pipeline?"
+      },
+      {
+        "type": "p",
+        "text": "Definir DataOps mediante colaboración, reproducibilidad, pruebas y retroalimentación. Recorrer el ciclo acordar, preparar, probar, publicar, observar y corregir. Distinguir este ciclo de mejora del DAG de una ejecución. Identificar responsables, versiones de datos, código, reglas y configuración. Relacionar monitoreo con diagnóstico y distinguir reintento de corrección. Explicar idempotencia con un ejemplo de anexado duplicado."
+      },
+      {
+        "type": "p",
+        "text": "Explicar primero las razones: un programa puede terminar con datos incompletos, una fuente corregida puede cambiar legítimamente una cifra y el consumidor necesita un responsable que atienda incidentes. Cada práctica debe responder a uno de esos problemas."
+      },
+      {
+        "type": "p",
+        "text": "Situar la solución con una diapositiva de esquemas industriales documentados actualmente: ETL, ELT, capas Medallion y captura de cambios (CDC). Mostrar sus recorridos y criterios de uso. Aclarar que corresponden a decisiones distintas y pueden combinarse. Los ejemplos de herramientas y las fuentes primarias quedan en las notas docentes. Esta comparación se integra en el bloque conceptual, sin ampliar la duración ni exigir nuevas instalaciones."
+      },
+      {
+        "type": "p",
+        "text": "Comprobación oral: señalar qué evidencia permite distinguir una entrada corregida de una reejecución defectuosa. Airflow y Great Expectations se nombran como ejemplos de responsabilidades; no se instalan ni se exigen."
+      },
+      {
+        "type": "h",
+        "text": "3. Ejemplo desarrollado PQRS · 45 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Pregunta: ¿qué condiciones debe cumplir una entrada antes de incorporarla?"
+      },
+      {
+        "type": "p",
+        "text": "Explicar esquema, tipos y reglas de aceptación. Diferenciar un valor faltante de uno inválido. Identificar archivos ya recibidos y conservar los originales. Examinar posibles duplicados sin asumir que dos filas iguales representan necesariamente el mismo reporte."
+      },
+      {
+        "type": "p",
+        "text": "Demostración: leer una entrada, aplicar pocas reglas visibles y separar aceptados y rechazados con sus motivos. Conciliar filas leídas = aceptadas + rechazadas. Contar cada fila rechazada una sola vez, aunque tenga varios motivos."
+      },
+      {
+        "type": "p",
+        "text": "Las reglas por fila se documentan antes de ejecutar; el número de rechazos queda visible. Un fallo de esquema detiene la publicación."
+      },
+      {
+        "type": "p",
+        "text": "Comprobación oral: distinguir un lote procesable con rechazos documentados de otro que debe detenerse."
+      },
+      {
+        "type": "p",
+        "text": "Pregunta complementaria: ¿qué representa una fila publicada y qué consulta debe responder?"
+      },
+      {
+        "type": "p",
+        "text": "Explicar granularidad. Una fila del detalle conserva la unidad de observación; una fila agregada corresponde a una combinación de dimensiones. En PQRS, utilizar período y territorio y una medida de conteo de reportes. El período proviene de un campo documentado o del corte identificado; no se inventan fechas mensuales."
+      },
+      {
+        "type": "p",
+        "text": "Si se incorpora DIVIPOLA, revisar claves y cardinalidad. Conservar e identificar territorios sin correspondencia y comprobar que la unión no multiplique observaciones. Agrupar categorías no informadas explícitamente para que no desaparezcan de la conciliación."
+      },
+      {
+        "type": "p",
+        "text": "Demostración: reutilizar una transformación conocida, escribir detalle Parquet, producir el agregado y contrastarlo mediante SQL en DuckDB. Comparar cada grupo, además del total."
+      },
+      {
+        "type": "p",
+        "text": "En la ruta agrícola, usar combinaciones compatibles de período, territorio, cultivo y estado físico. Si se calcula rendimiento, utilizar producción y área cosechada válidas sobre el mismo conjunto de observaciones y conservar unidades. No sumar rendimientos ni promediar cocientes sin justificación."
+      },
+      {
+        "type": "p",
+        "text": "Comprobación oral: explicar qué información pierde el agregado y qué preguntas requieren el detalle."
+      },
+      {
+        "type": "h",
+        "text": "4. Seguimiento operativo del ejemplo · 25 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Pregunta: ¿cómo evitamos presentar una salida incompleta como resultado válido?"
+      },
+      {
+        "type": "p",
+        "text": "Separar salida candidata y publicación validada. Guardar candidatos en una carpeta de ejecución, verificarlos e identificar en el registro la publicación válida. Si la ejecución falla, conservar la publicación válida anterior. Este procedimiento local no demuestra transacciones distribuidas ni publicación atómica de varias tablas."
+      },
+      {
+        "type": "p",
+        "text": "Registrar identificador, entradas y huellas, versión de reglas y configuración, etapas, conteos, controles, estado final y errores. Relacionar esas evidencias con las responsabilidades DataOps. Distinguir datos publicados de metadatos operativos: tiempos e identificadores pueden cambiar aunque el contenido de las tablas deba permanecer estable. Contrastar una reejecución con una corrección de la fuente: esta última puede cambiar legítimamente la distribución por grupo."
+      },
+      {
+        "type": "p",
+        "text": "Demostración: ejecutar el recorrido completo y repetirlo con las mismas entradas. Comparar contenido, claves y medidas; la identidad binaria de los archivos Parquet no es el criterio obligatorio. Mostrar el registro producido ante una entrada inválida controlada, conservando intacto el original."
+      },
+      {
+        "type": "p",
+        "text": "Comprobación oral: identificar la evidencia necesaria para afirmar que el proceso terminó correctamente."
+      },
+      {
+        "type": "h",
+        "text": "5. Formatos de tabla: Iceberg y Hudi · 10 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Pregunta: ¿qué dificultades aparecen cuando una tabla recibe correcciones y varios procesos necesitan consultarla?"
+      },
+      {
+        "type": "p",
+        "text": "Distinguir formato físico, formato de tabla, catálogo y motor. Relacionar snapshots y correcciones con los límites del ejercicio con archivos. Nombrar Hudi como alternativa relacionada con actualizaciones e ingesta incremental. El formato de tabla no sustituye la orquestación ni las pruebas del significado de los datos."
+      },
+      {
+        "type": "p",
+        "text": "Demostración docente preparada con Spark SQL: consultar una tabla Iceberg pequeña, observar su snapshot, aplicar un cambio identificado como didáctico y consultar el estado anterior. La configuración y creación inicial de la tabla deben estar resueltas antes de clase."
+      },
+      {
+        "type": "p",
+        "text": "Comprobación oral: justificar cuándo bastan Parquet y los controles del ejercicio y qué requisitos justificarían un formato de tabla. Iceberg no garantiza por sí solo una consulta más rápida."
+      },
+      {
+        "type": "h",
+        "text": "6. Ejercicios guiados y conexión con E12 · 30 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Después del ejemplo, resolver tres actividades: dibujar el pipeline y sus dependencias; decidir acciones ante incidentes; definir pruebas con las seis filas hipotéticas. Cada actividad tiene un producto explícito y respuestas orientadoras en las notas docentes. Identificar después los pasos de E12 y sus cuatro criterios mínimos. Las prácticas DataOps se evidencian en el manifiesto, las reglas, los registros y la revisión entre equipos; no añaden nuevas ponderaciones. Participación guiada, sin entrega evaluable el viernes."
+      },
+      {
+        "type": "p",
+        "text": "Descanso: 20:00–20:15. Los seis bloques suman 180 minutos efectivos. El descanso interrumpe el bloque 4, después de sus primeros 5 minutos. La explicación conceptual y el ejemplo preceden a los ejercicios."
+      },
+      {
+        "type": "h",
+        "text": "Sábado 31: ejecución y verificación del pipeline"
+      },
+      {
+        "type": "h",
+        "text": "1. Preparación y alcance · 45 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Comprobar kernel, bibliotecas, rutas y datos. Elegir ruta, pregunta y granularidad. Registrar corte y unidad de observación e identificar las transformaciones previas que se reutilizan."
+      },
+      {
+        "type": "p",
+        "text": "Producto: ficha breve de entradas, etapas y salidas. Si una descarga falla, utilizar la copia docente validada y registrar su procedencia. No dedicar el bloque a descargar todos los cortes completos."
+      },
+      {
+        "type": "h",
+        "text": "2. Recepción y validación · 90 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Ejecutar lectura, tipado y reglas acordadas. Separar aceptados, rechazados y motivos. Revisar claves y cobertura territorial cuando corresponda. Explicar faltantes y conciliar conteos."
+      },
+      {
+        "type": "p",
+        "text": "Producto: controles de validación revisados por el profesor antes de publicar."
+      },
+      {
+        "type": "h",
+        "text": "3. Transformación y publicación candidata · 90 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Integrar operaciones conocidas en un notebook con secciones consecutivas. Escribir detalle y agregado Parquet en una carpeta candidata. Releerlos y contrastar medidas por grupo y total mediante SQL, incluyendo categorías no informadas."
+      },
+      {
+        "type": "p",
+        "text": "Producto: primera ejecución completa y consulta conciliada. Identificar las tablas como publicación válida cuando pasen los controles."
+      },
+      {
+        "type": "h",
+        "text": "4. Reejecución y registro operativo · 75 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Repetir las mismas entradas. Comparar contenido y comprobar que no aparecen filas adicionales por acumulación accidental. Conservar ambos registros. Documentar rutas, dependencias y orden para otro equipo."
+      },
+      {
+        "type": "p",
+        "text": "Producto: comparación entre ejecuciones y registro final. Los equipos que aún no tengan una primera ejecución válida utilizan el bloque para completarla y registran lo pendiente."
+      },
+      {
+        "type": "h",
+        "text": "5. Ejercicio de auditoría entre equipos · 90 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Otro equipo utiliza las instrucciones para ejecutar o reproducir una consulta del candidato. Comprueba conciliación y registros y documenta un hallazgo verificable. El equipo autor corrige y vuelve a ejecutar el control afectado. Si no se encuentra un defecto, registrar el control satisfactorio; no inventar fallos."
+      },
+      {
+        "type": "p",
+        "text": "Consigna: demostrar las cuatro comprobaciones mínimas de E12 y explicar un resultado que no puede inferirse de las entradas. Si una falla, registrar evidencia, causa investigada y corrección pendiente."
+      },
+      {
+        "type": "p",
+        "text": "Producto: ficha con hallazgo o control satisfactorio, evidencia, acción y resultado posterior."
+      },
+      {
+        "type": "h",
+        "text": "6. Revisión del candidato · 60 minutos"
+      },
+      {
+        "type": "p",
+        "text": "Revisar los cuatro criterios y consolidar una entrega por equipo. Identificar bloqueos para la clínica del 6 de noviembre. El candidato del 31 es formativo; la versión final y la sustentación permanecen el 7 de noviembre."
+      },
+      {
+        "type": "p",
+        "text": "Producto: notebook ordenado, instrucciones, entradas identificadas, consultas, registros, ficha de auditoría y tablas o instrucciones comprobadas para regenerarlas. Las salidas voluminosas se entregan por el medio del curso y se excluyen de Git."
+      },
+      {
+        "type": "p",
+        "text": "Descansos: 09:30–09:45 y 15:00–15:15; almuerzo 12:00–13:00. Los bloques suman 450 minutos efectivos y pueden interrumpirse en esos puntos sin alterar el orden."
+      },
+      {
+        "type": "h",
+        "text": "Criterios mínimos y ampliaciones"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Criterio obligatorio",
+          "Evidencia"
+        ],
+        "rows": [
+          [
+            "Ejecución completa con instrucciones disponibles",
+            "Entradas identificadas, etapas ejecutadas y registro final"
+          ],
+          [
+            "Conteos y reglas explicables",
+            "Leídos, aceptados y rechazados conciliados; claves y faltantes documentados"
+          ],
+          [
+            "Agregado conciliado con el detalle",
+            "Comparación SQL por grupo y total"
+          ],
+          [
+            "Reejecución estable",
+            "Comparación del contenido de dos ejecuciones"
+          ]
+        ],
+        "widths": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Después de cumplir los cuatro criterios, un equipo puede reconstruir un período afectado y comprobar que los demás permanecen iguales. Puede completarse durante la clínica; no condiciona la aceptación mínima. Iceberg estudiantil y un tablero visual son ampliaciones posteriores al pipeline básico."
+      },
+      {
+        "type": "p",
+        "text": "La actualización por registro, recuperación automática, operación concurrente y despliegue distribuido necesitarían diseño y pruebas adicionales. Este ejercicio no acredita esas capacidades."
+      },
+      {
+        "type": "h",
+        "text": "Correcciones del temario anterior"
+      },
+      {
+        "type": "p",
+        "text": "E12 sustituye la predicción temporal EVA, MAE y líneas base por integración, publicación y reejecución. La gobernanza se concreta en procedencia, reglas, responsables, versiones de entradas y estado de publicación. E13 incorpora esa evidencia y las prácticas anteriores pertinentes, sin exigir streaming ni mapas integrados en todos los productos."
+      },
+      {
+        "type": "p",
+        "text": "Se mantienen las 64 horas totales, descansos, candidato formativo y ponderaciones vigentes. Las presentaciones anteriores de analítica y los ejercicios de modelo conservados quedan como referencia histórica u opcional y no definen la entrega de estas sesiones."
       }
     ]
   }

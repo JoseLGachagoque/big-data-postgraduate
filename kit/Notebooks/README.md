@@ -12,6 +12,8 @@ Los notebooks históricos se conservan en `supersalud/`, con su procedencia y li
 
 ## Índice y propósito
 
+Para el 30 y 31 de octubre, consultar [pipelines y DataOps](../../docs/pipelines-dataops.md), [E12](../../talleres/E12.md) y la [solución integrada E12](../../soluciones/E12_solucion.ipynb). Esta solución reúne recepción, validación, detalle y agregado Parquet, conciliación DuckDB, publicación candidata, dos registros, comparación del contenido y auditoría. Los notebooks 02 y 03 conservan sus recorridos parciales como antecedentes.
+
 Como referencia durante las prácticas, consultar la [guía práctica de pandas](../../docs/manual-pandas.md), con ejemplos sobre los CSV de DIVIPOLA, EVA y AGROSAVIA descargados con `kit/00_datos.py`.
 
 | Notebook | Talleres y clases | Evidencia |
@@ -24,6 +26,7 @@ Como referencia durante las prácticas, consultar la [guía práctica de pandas]
 | [04 Rendimiento y eventos](04_Rendimiento_y_eventos.ipynb) | P04 · clase 7; I01 · clase 8 | Equivalencia entre motores y traza finita NASA |
 | [04 Rendimiento Analysis](04_Rendimiento_Analysis.ipynb) | P04 actualizado · clases 7–8 | Seis cortes 2023–2025, equivalencia Polars–DuckDB y benchmark Polars–pandas |
 | [08 Streaming de eventos](08_Streaming_de_Eventos.ipynb) | I01 y E11 · clase 8 | Traza finita, ventanas, watermark, estado, checkpoint, recuperación y auditoría |
+| [E12 Pipeline local integrado](../../soluciones/E12_solucion.ipynb) | E12 · clases 9–10 | Tres entradas verificadas, aceptados y rechazados, detalle y agregado, conciliación SQL, dos ejecuciones estables y ficha de auditoría |
 
 El notebook 04 original se conserva sin cambios. El nuevo notebook Analysis desarrolla por separado el panorama completo de P04. Para streaming, el notebook 08 reúne I01 y la reproducción E11 en una sola progresión; usa `data/raw/nasa.json`, que se descarga desde el manifiesto agroambiental. Los notebooks anteriores no se modifican.
 

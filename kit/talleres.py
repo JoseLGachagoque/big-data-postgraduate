@@ -163,7 +163,7 @@ def modelo():
         test=valid[valid['anio']==year]
         if test.empty:raise ValueError(f'Sin pares consecutivos para {year}')
         reports.append({'anio':year,'n':len(test),'MAE_t_ha':float(mean_absolute_error(test['rendimiento_t_ha'],test['prediccion'])),'modelo':'persistencia del año anterior'})
-    # E12: conservar denominadores y distinguir escalas por cultivo y estado físico.
+    # Recurso predictivo opcional del antiguo E12: conservar denominadores y escalas.
     detail=[]
     for year in [2024,2025]:
         target=df[df['anio'].eq(year)]

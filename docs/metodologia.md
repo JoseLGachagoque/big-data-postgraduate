@@ -16,7 +16,7 @@ La presentación institucional introduce la pregunta y el concepto. La guía con
 
 ## Presentaciones centrales y material de ampliación
 
-Sesión 1: cinco V, restricciones y ficha de problema. Sesión 2: ingesta, perfil y códigos. Sesión 3: formatos, contrato y reejecución. Sesión 4: calidad, consulta e integración. La introducción a eventos se ubica en la sesión 8. Las presentaciones vigentes distribuyen Spark, rendimiento, eventos y analítica en las sesiones 5, 7, 8 y 9. No requieren ejecutar Spark ni instalar Dask, GPU o plataformas gestionadas en el primer fin de semana.
+Sesión 1: cinco V, restricciones y ficha de problema. Sesión 2: ingesta, perfil y códigos. Sesión 3: formatos, contrato y reejecución. Sesión 4: calidad, consulta e integración. La introducción a eventos se ubica en la sesión 8. Las sesiones 5, 7 y 8 trabajan Spark, rendimiento y eventos. Las sesiones 9 y 10 explican primero el problema y propósito, después conceptos de pipelines y DataOps, esquemas industriales, ejemplo y ejercicios guiados. La [guía conceptual](pipelines-dataops.md) conecta esa progresión con integración, publicación y reejecución según el [temario vigente](temario-30-31-octubre.md); las presentaciones anteriores de analítica quedan como referencia opcional. No requieren ejecutar Spark ni instalar Dask, GPU o plataformas gestionadas en el primer fin de semana.
 
 ## Datos observados y supuestos de capacidad
 
@@ -42,5 +42,5 @@ Cada taller pide hipótesis, criterio de aceptación, evidencia y una crítica. 
 | 3–4 | Parquet, contratos y controles | E04–E06, P02–P03 |
 | 5–6 | Equivalencia, consultas y mapas | E07–E09 |
 | 7–8 | Rendimiento y traza de eventos | E10–E11, P04, I01 |
-| 9–10 | Evaluación temporal y auditoría | E12–E13 |
+| 9–10 | Pipeline, publicación, conciliación y reejecución | E12–E13 |
 | 11–12 | Correcciones y defensa final | E13 |

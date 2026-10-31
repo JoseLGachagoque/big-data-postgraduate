@@ -25,7 +25,7 @@ python pqrs_talleres.py perfil
 Las instalaciones de paquetes y herramientas se realizan según la guía del sistema elegido.
 Después de descargar las fuentes, ejecutar la ruta del taller correspondiente.
 Orden agroambiental: perfil, calidad, consultas; luego geografia, suelo, clima,
-benchmark o modelo según la sesión. Spark por lotes requiere calidad y consultas.
+benchmark según la sesión. El comando `modelo` es una referencia opcional del enfoque anterior. E12 integra el pipeline conforme a su [enunciado vigente](../talleres/E12.md); ese comando no ejecuta E12. Spark por lotes requiere calidad y consultas.
 
 ## ARCHIVOS
 fuentes.json contiene URL, tamaño y SHA-256 del corte original. data/raw debe contener 12 archivos originales (descargados o copiados del respaldo; no incluidos en Git), 136,4 MB en conjunto (ZIP de DANE sin extraer). salidas se crea al ejecutar y puede reconstruirse; conservar aparte las entregas personales. Los scripts escriben nuevamente sus salidas homónimas; no editar esas salidas como único original.
