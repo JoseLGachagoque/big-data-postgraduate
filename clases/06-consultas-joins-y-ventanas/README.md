@@ -1,4 +1,4 @@
-# Clase 6: Consultas e integración distribuida
+# Clase 6: Spark, Polars y comparación con pandas
 
 Preparado por el PhD Esteban Hernández, CyberColombia.
 
@@ -12,16 +12,16 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 
 | Horario | Tema y actividad |
 |---|---|
-| 08:00–09:30 | Reejecución propia E07, plan y equivalencia (08:00–08:45); joins y cardinalidad (08:45–09:30) |
+| 08:00–09:30 | Ejercicio con Spark: carga, transformaciones, agregación y acción |
 | 09:30–09:45 | Receso de la mañana |
-| 09:45–12:00 | E07: equivalencia, ventanas y ranking |
+| 09:45–12:00 | Medición, plan y comprobación frente a pandas |
 | 12:00–13:00 | Almuerzo |
-| 13:00–15:00 | E08: shapes DANE, geometrías IGAC y cobertura |
+| 13:00–15:00 | Polars eager/lazy y operaciones equivalentes en pandas |
 | 15:00–15:15 | Receso de la tarde |
-| 15:15–16:30 | E09: SoilGrids, WoSIS, profundidad y unidades |
-| 16:30–17:00 | Revisión del soporte espacial y entrega |
+| 15:15–16:30 | Comparación de tiempo, memoria y equivalencia |
+| 16:30–17:00 | Revisión y entrega de los ejercicios y tabla comparativa |
 
-**Entrega:** Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial. Cierre 16:30–17:00.
+**Entrega programada:** ejercicios reproducibles con Spark y Polars/pandas, tabla comparativa, equivalencia y conclusiones. Cierre 16:30–17:00.
 
 [Calendario](../../docs/calendario.md) · [Entregas sabatinas](../../docs/entregas-sabados.md) · [Talleres y evaluación](../../docs/mapa-ejercicios.md)
 
@@ -29,4 +29,6 @@ Las actividades geoespaciales E08, E09 y E11 se desarrollan con GeoPandas, Raste
 
 ## Notebooks de la clase
 
-Reejecutar [05 Spark](../../kit/Notebooks/05_Spark_lectura_y_agregacion.ipynb) y continuar con [06 Joins y ventanas](../../kit/Notebooks/06_Spark_joins_y_ventanas.ipynb). Antes del receso de la mañana: claves, cardinalidad y joins; después: planes, broadcast, ranking y particiones. En la tarde, antes del receso: [E08](../../kit/Notebooks/E08_Geoespacial.ipynb); después: [E09](../../kit/Notebooks/E09_Geoespacial.ipynb) y entrega integrada. El notebook 06 lee explícitamente los productos del 05.
+[05 Spark](../../kit/Notebooks/05_Spark_lectura_y_agregacion.ipynb) y [06 Joins y ventanas](../../kit/Notebooks/06_Spark_joins_y_ventanas.ipynb) son recursos de referencia. La agenda actual prioriza la comparación de motores; los ejercicios geoespaciales siguen disponibles como material complementario.
+
+**Presentación disponible:** [Consultas e integración distribuida v6](06_Consultas_e_integracion_distribuida_v6.pptx). Corresponde al enfoque anterior y se conserva como referencia; confirmar si fue la versión utilizada.

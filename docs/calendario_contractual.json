@@ -219,8 +219,8 @@
       "fecha": "2026-10-16",
       "fecha_texto": "Viernes 16/10/2026",
       "tema": "Procesamiento con Spark",
-      "practica": "Dos ejercicios: procesamiento con Spark y procesamiento con Polars, comparados con pandas",
-      "producto": "Referencia docente: dos ejercicios sobre el mismo conjunto de datos y protocolo de comparación; ejecución y entrega estudiantil el sábado",
+      "practica": "Spark, Polars y pandas: demostración y protocolo de comparación",
+      "producto": "Referencia docente para los ejercicios comparativos del sábado",
       "horario": "18:00–21:15",
       "minutos_clase": 180,
       "agenda": [
@@ -258,14 +258,14 @@
       "fecha": "2026-10-17",
       "fecha_texto": "Sábado 17/10/2026",
       "tema": "Spark, Polars y comparación de rendimiento con pandas",
-      "practica": "Dos ejercicios: uno con Spark y otro con Polars, usando pandas como línea base",
-      "producto": "Ejercicio reproducible con Spark, ejercicio reproducible con Polars y pandas, tabla de rendimiento, control de equivalencia y conclusiones",
+      "practica": "Ejercicios reproducibles con Spark y Polars/pandas; medición y equivalencia",
+      "producto": "Ejercicios, tabla comparativa y comprobación de equivalencia",
       "horario": "08:00–17:00",
       "minutos_clase": 450,
       "agenda": [
         [
           "08:00–09:30",
-          "Ejercicio 1 con Spark: carga, transformaciones, agregación y ejecución de una acción"
+          "Spark: carga, transformaciones, agregación y acción"
         ],
         [
           "09:30–09:45",
@@ -273,7 +273,7 @@
         ],
         [
           "09:45–12:00",
-          "Ejercicio 1: medición, plan de ejecución y comprobación de resultados frente a pandas"
+          "Medición, plan y comprobación frente a pandas"
         ],
         [
           "12:00–13:00",
@@ -281,7 +281,7 @@
         ],
         [
           "13:00–15:00",
-          "Ejercicio 2 con Polars: operaciones equivalentes en modo eager/lazy y línea base en pandas"
+          "Polars eager/lazy y operaciones equivalentes en pandas"
         ],
         [
           "15:00–15:15",
@@ -289,11 +289,11 @@
         ],
         [
           "15:15–16:30",
-          "Comparación de tiempos, memoria, equivalencia de resultados y conclusiones"
+          "Comparación de tiempos, memoria y equivalencia"
         ],
         [
           "16:30–17:00",
-          "Revisión y entrega de los dos ejercicios y de la tabla comparativa"
+          "Revisión y entrega de ejercicios y tabla comparativa"
         ]
       ],
       "modalidad": "Actividad estudiantil y entrega en clase",
@@ -440,8 +440,8 @@
       "fecha": "2026-10-31",
       "fecha_texto": "Sábado 31/10/2026",
       "tema": "Ejecución y auditoría del pipeline",
-      "practica": "E12–E13: integración del pipeline, conciliación, reejecución y auditoría",
-      "producto": "Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría",
+      "practica": "Integración, conciliación, reejecución y auditoría como trabajo formativo",
+      "producto": "Trabajo formativo de integración y validación para el proyecto de Boyacá",
       "horario": "08:00–17:00",
       "minutos_clase": 450,
       "agenda": [
@@ -500,7 +500,7 @@
       "fecha": "2026-11-06",
       "fecha_texto": "Viernes 06/11/2026",
       "tema": "Clínica de proyectos y ensayo de defensa",
-      "practica": "E13: correcciones, límites e informe final",
+      "practica": "Clínica y ensayo del proyecto final de Boyacá",
       "producto": "Referencia docente: Producto corregido, informe y ensayo; ejecución y entrega estudiantil el sábado",
       "horario": "18:00–21:15",
       "minutos_clase": 180,
@@ -511,7 +511,7 @@
         ],
         [
           "18:45–20:00",
-          "Explicación / demostración docente: E13: profesor demuestra correcciones y validación; discusión de casos"
+          "Profesor demuestra correcciones y validación del proyecto de Boyacá; discusión de casos"
         ],
         [
           "20:00–20:15",
@@ -535,8 +535,8 @@
       "fecha": "2026-11-07",
       "fecha_texto": "Sábado 07/11/2026",
       "tema": "Sustentación y cierre contractual",
-      "practica": "E13: defensa, retroalimentación y entrega verificable",
-      "producto": "Paquete final corregido, informe de 8–12 páginas y registro de defensa individual",
+      "practica": "Proyecto de Boyacá por grupos y sustentación individual",
+      "producto": "Entrega del proyecto de Boyacá por grupos y sustentación individual según el enunciado",
       "horario": "08:00–16:30",
       "minutos_clase": 420,
       "agenda": [
@@ -613,16 +613,24 @@
     {
       "fecha": "2026-10-31",
       "hora": "16:30–17:00",
-      "codigos": "E12–E13",
-      "producto": "Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría",
+      "codigos": "Trabajo formativo",
+      "producto": "Trabajo formativo de integración y validación para el proyecto de Boyacá",
       "peso": "Hito formativo del bloque de proyecto (35 %)"
     },
     {
       "fecha": "2026-11-07",
       "hora": "16:00–16:30",
-      "codigos": "E13 / sustentación individual",
-      "producto": "Paquete final corregido, informe de 8–12 páginas y registro de defensa individual",
+      "codigos": "Proyecto de Boyacá",
+      "producto": "Entrega del proyecto de Boyacá por grupos y sustentación individual según el enunciado",
       "peso": "35 % proyecto + 15 % sustentación"
     }
-  ]
+  ],
+  "proyecto_final": {
+    "enunciado": "proyecto/Proyecto_final_Boyaca.md",
+    "modalidad": "Proyecto por grupos con sustentación individual",
+    "fecha_entrega": "2026-11-07",
+    "ponderacion_proyecto": 35,
+    "ponderacion_sustentacion": 15,
+    "referencias": "E12 y E13 son material formativo, sin entregas finales adicionales."
+  }
 }

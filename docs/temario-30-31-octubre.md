@@ -1,5 +1,7 @@
 # Temario del 30 y 31 de octubre de 2026
 
+> **Alcance vigente:** el [proyecto final de Boyacá](../proyecto/Proyecto_final_Boyaca.md) se desarrolla por grupos y se sustenta individualmente. E12 y E13 permanecen como material formativo de referencia, sin entregas finales adicionales.
+
 Preparado por el PhD Esteban Hernández, CyberColombia.
 
 ## Propósito y alcance
@@ -16,7 +18,7 @@ El entorno base utiliza Python, Parquet y DuckDB. Spark puede mantenerse si el e
 
 Antes de clase, comprobar la ejecución completa de la referencia, entradas, dependencias y rutas. Disponer de una copia validada de los archivos. La demostración Iceberg requiere una sesión de Spark y un conector preparados y probados; no se incluye instalación estudiantil.
 
-Este documento desarrolla el temario y las consignas de [E12](../talleres/E12.md) y [E13](../talleres/E13.md). La [guía de pipelines y DataOps](pipelines-dataops.md) conserva conceptos, esquemas y ejercicios dentro del repositorio. Los PPTX se distribuyen por separado: `09_Data_pipelines_y_DataOps_pedagogica_v10.pptx` y `10_Ejecucion_y_auditoria_pipeline_v6.pptx`. Están fuera del árbol Git y no se incluyen al clonar. La [solución integrada E12](../soluciones/E12_solucion.ipynb) contiene la referencia ejecutada; las diapositivas por sí solas no acreditan la ejecución del pipeline.
+Este documento conserva el desarrollo formativo de [E12](../talleres/E12.md) y [E13](../talleres/E13.md). La [guía de pipelines y DataOps](pipelines-dataops.md) contiene conceptos y ejercicios. Las presentaciones están en las carpetas de las [sesiones 9](../clases/09-analitica-y-gobernanza/README.md) y [10](../clases/10-integracion-y-defensa/README.md). La [solución integrada E12](../soluciones/E12_solucion.ipynb) es una referencia; las diapositivas por sí solas no acreditan su ejecución.
 
 ## Viernes 30: integración del pipeline y publicación de datos
 
@@ -134,7 +136,7 @@ Otro equipo utiliza las instrucciones para ejecutar o reproducir una consulta de
 
 ### 6. Revisión del candidato · 60 minutos
 
-Revisar los cuatro criterios y consolidar una entrega por equipo. Identificar bloqueos para la clínica del 6 de noviembre. El candidato del 31 es formativo; la versión final y la sustentación permanecen el 7 de noviembre.
+Revisar los cuatro criterios del ejemplo formativo e identificar bloqueos para la clínica del 6 de noviembre. El proyecto de Boyacá se entrega por grupos y se sustenta individualmente el 7 de noviembre.
 
 **Producto:** notebook ordenado, instrucciones, entradas identificadas, consultas, registros, ficha de auditoría y tablas o instrucciones comprobadas para regenerarlas. Las salidas voluminosas se entregan por el medio del curso y se excluyen de Git.
 
@@ -155,6 +157,6 @@ La actualización por registro, recuperación automática, operación concurrent
 
 ## Correcciones del temario anterior
 
-E12 sustituye la predicción temporal EVA, MAE y líneas base por integración, publicación y reejecución. La gobernanza se concreta en procedencia, reglas, responsables, versiones de entradas y estado de publicación. E13 incorpora esa evidencia y las prácticas anteriores pertinentes, sin exigir streaming ni mapas integrados en todos los productos.
+E12 ilustra integración, publicación y reejecución. La gobernanza se concreta en procedencia, reglas, responsables, versiones de entradas y estado de publicación. El proyecto final vigente se describe en el [enunciado de Boyacá](../proyecto/Proyecto_final_Boyaca.md); E12 y E13 no constituyen entregas adicionales.
 
 Se mantienen las 64 horas totales, descansos, candidato formativo y ponderaciones vigentes. Las presentaciones anteriores de analítica y los ejercicios de modelo conservados quedan como referencia histórica u opcional y no definen la entrega de estas sesiones.

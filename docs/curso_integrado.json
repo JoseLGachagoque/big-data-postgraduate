@@ -4,6 +4,10 @@
     "blocks": [
       {
         "type": "p",
+        "text": "Actualización: el proyecto final vigente es Boyacá, desarrollado por grupos con sustentación individual el 7 de noviembre. E12 y E13 son referencias formativas y no exigen entregas finales adicionales. Consulte los documentos Markdown vigentes del repositorio."
+      },
+      {
+        "type": "p",
         "text": "Curso de Postgrado: BigData, Especialización en Bases de datos. Preparado por el PhD Esteban Hernández, CyberColombia. El programa desarrolla competencias de ingeniería de datos sobre dos dominios abiertos: reportes administrativos de salud (PQRS/PQRD de Supersalud) y datos agroambientales de suelo, territorio, producción agrícola y clima. Cada dominio conserva su unidad y significado. El vínculo común es el diseño de ingesta, contratos, calidad, formatos, ejecución y evidencia reproducible."
       },
       {
@@ -101,7 +105,7 @@
           ],
           [
             "16/10 y 17/10",
-            "Procesamiento con Spark / Consultas e integración distribuida",
+            "Procesamiento con Spark / Spark, Polars y comparación con pandas",
             "10 h 30 min"
           ],
           [
@@ -170,7 +174,7 @@
             "20 %"
           ],
           [
-            "E12–E13: proyecto e informe técnico",
+            "Proyecto final de Boyacá e informe técnico",
             "35 %"
           ],
           [
@@ -185,7 +189,7 @@
       },
       {
         "type": "p",
-        "text": "La rúbrica valora corrección y conservación de unidades (30 %), reproducibilidad y trazabilidad (25 %), justificación técnica (25 %) y comunicación de limitaciones (20 %), aplicada dentro de cada entrega. Se penaliza afirmar cobertura nacional a partir de muestras, sumar rendimientos, convertir ausencias a cero, introducir fuga temporal o presentar asociaciones como causalidad. La nota mínima y las reglas de asistencia corresponden al programa institucional."
+        "text": "La rúbrica específica del proyecto final figura en el enunciado de Boyacá. Se consideran calidad, trazabilidad, integración, análisis, comunicación y reproducibilidad. La nota mínima y las reglas de asistencia corresponden al programa institucional."
       },
       {
         "type": "h",
@@ -193,7 +197,7 @@
       },
       {
         "type": "p",
-        "text": "Cada equipo elige dominio agroambiental o PQRS y presenta un pipeline local ejecutable con entradas identificadas, validación, detalle y agregado Parquet, consultas SQL conciliadas y registros de dos ejecuciones. Las prácticas previas de motores, rendimiento, mapas y eventos se adjuntan como evidencias pertinentes, sin exigir integrarlas todas en el pipeline. La actualización de un período es una ampliación posterior a los cuatro criterios mínimos de E12. La evaluación predictiva EVA queda como referencia opcional. El informe de 8 a 12 páginas debe separar resultados observados, estimaciones, limitaciones y propuesta de escalamiento. La sustentación final se realiza el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto dentro de las horas contratadas. Planificar 15 minutos por equipo incluyendo preguntas y transición; ajustar el número de turnos al grupo real."
+        "text": "El proyecto final de Boyacá se desarrolla por grupos e integra fuentes territoriales, población y producción mediante un pipeline reproducible. La sustentación es individual el 7 de noviembre. El enunciado vigente establece actividades, entregables y rúbrica."
       },
       {
         "type": "p",
@@ -269,7 +273,7 @@
           ],
           [
             "10-17 · 16:30–17:00",
-            "Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial",
+            "Ejercicios Spark y Polars/pandas, comparación y equivalencia",
             "10 %"
           ],
           [
@@ -284,7 +288,7 @@
           ],
           [
             "11-07 · 16:00–16:30",
-            "Paquete final corregido, informe de 8–12 páginas y registro de defensa individual",
+            "Proyecto final de Boyacá por grupos y sustentación individual",
             "35 % proyecto + 15 % sustentación"
           ]
         ],
@@ -296,13 +300,17 @@
       },
       {
         "type": "p",
-        "text": "El candidato del 31 de octubre recibe retroalimentación y no añade otra ponderación. El bloque E12–E13 se califica con 35 % sobre la versión final del 7 de noviembre, que incorpora E12 y las correcciones. La sustentación individual vale 15 %. Total del curso: 100 %. Los archivos parciales del sábado forman una entrega única por fin de semana."
+        "text": "La integración del 31 de octubre es formativa. El proyecto de Boyacá y su informe valen 35 %; la sustentación individual, 15 %. E12 y E13 no requieren entregas finales adicionales."
       }
     ]
   },
   {
     "title": "Calendario contractual y distribución por fechas",
     "blocks": [
+      {
+        "type": "p",
+        "text": "Actualización: el proyecto final vigente es Boyacá, desarrollado por grupos con sustentación individual el 7 de noviembre. E12 y E13 son referencias formativas y no exigen entregas finales adicionales. Consulte los documentos Markdown vigentes del repositorio."
+      },
       {
         "type": "p",
         "text": "Calendario contractual: 12 sesiones del 2 de octubre al 7 de noviembre de 2026. Las entregas estudiantiles se concentran exclusivamente en los seis sábados."
@@ -435,11 +443,11 @@
           ],
           [
             "2026-10-31 16:30–17:00",
-            "E12–E13: Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría"
+            "Trabajo formativo de integración y validación para el proyecto de Boyacá"
           ],
           [
             "2026-11-07 16:00–16:30",
-            "E13 / sustentación individual: Paquete final corregido, informe de 8–12 páginas y registro de defensa individual"
+            "Proyecto de Boyacá / sustentación individual: Proyecto final de Boyacá por grupos y sustentación individual"
           ]
         ],
         "widths": [
@@ -968,7 +976,7 @@
           ],
           [
             "18:45–20:00",
-            "Explicación / demostración docente: E13: profesor demuestra correcciones y validación; discusión de casos"
+            "Profesor demuestra correcciones y validación del proyecto de Boyacá; discusión de casos"
           ],
           [
             "20:00–20:15",
@@ -1047,7 +1055,7 @@
       },
       {
         "type": "p",
-        "text": "Entrega en clase: Paquete final corregido, informe de 8–12 páginas y registro de defensa individual."
+        "text": "Entrega en clase: Proyecto final de Boyacá por grupos y sustentación individual."
       }
     ]
   },
@@ -1660,7 +1668,7 @@
           [
             "9–10",
             "Pipeline, publicación, conciliación y reejecución",
-            "E12–E13"
+            "E12 como referencia formativa"
           ],
           [
             "11–12",
@@ -2709,12 +2717,16 @@
     "title": "E12 Integración y verificación del pipeline local",
     "blocks": [
       {
+        "type": "p",
+        "text": "Actualización: el proyecto final vigente es Boyacá, desarrollado por grupos con sustentación individual el 7 de noviembre. E12 y E13 son referencias formativas y no exigen entregas finales adicionales. Consulte los documentos Markdown vigentes del repositorio."
+      },
+      {
         "type": "h",
         "text": "Propósito y modalidad"
       },
       {
         "type": "p",
-        "text": "Integrar recepción, validación, transformación, publicación y consulta en un proceso local que pueda ejecutarse completo y repetirse con resultados estables. El profesor demuestra el viernes 30 de octubre y los estudiantes ejecutan el sábado 31. El candidato es formativo y se incorpora a E13; la entrega final permanece el 7 de noviembre, sin cambiar ponderaciones."
+        "text": "E12 ilustra recepción, validación, transformación, publicación y consulta en un proceso local repetible. Es una referencia formativa; el proyecto final vigente es Boyacá."
       },
       {
         "type": "p",
@@ -2820,6 +2832,10 @@
     "title": "E13 Producto integrador reproducible",
     "blocks": [
       {
+        "type": "p",
+        "text": "Actualización: el proyecto final vigente es Boyacá, desarrollado por grupos con sustentación individual el 7 de noviembre. E12 y E13 son referencias formativas y no exigen entregas finales adicionales. Consulte los documentos Markdown vigentes del repositorio."
+      },
+      {
         "type": "h",
         "text": "Modalidad y fecha de entrega"
       },
@@ -2833,7 +2849,7 @@
       },
       {
         "type": "p",
-        "text": "E13: evidencia integrada en la entrega del sábado 2026-11-07, dentro de 16:00–16:30. El candidato del 31/10 es formativo, la clínica del 06/11 no exige entrega y la versión final se entrega el 07/11."
+        "text": "E13 es una referencia anterior sin entrega final adicional. El proyecto vigente es Boyacá por grupos, con sustentación individual el 7 de noviembre."
       },
       {
         "type": "h",
@@ -2937,7 +2953,7 @@
           "Incorporar las evidencias previas pertinentes sin rehacer todos los talleres ni integrar todos los motores. Declarar muestra o completo en cada resultado.",
           "Presentar las evidencias metodológicas comunes sin atribuirlas al dominio equivocado. Diferenciar una reproducción de eventos de una prueba de recuperación efectivamente ejecutada.",
           "Otro equipo reconstruye controles; registrar hallazgo, corrección y resultado de la nueva ejecución.",
-          "Entregar código/notebooks, informe de 8–12 páginas, ficha de gobernanza y defensa. Explicar un resultado que no se puede inferir de los datos."
+          "Para la entrega vigente, consultar los entregables y la rúbrica del proyecto final de Boyacá."
         ]
       },
       {
@@ -3994,6 +4010,10 @@
     "blocks": [
       {
         "type": "p",
+        "text": "Actualización: el proyecto final vigente es Boyacá, desarrollado por grupos con sustentación individual el 7 de noviembre. E12 y E13 son referencias formativas y no exigen entregas finales adicionales. Consulte los documentos Markdown vigentes del repositorio."
+      },
+      {
+        "type": "p",
         "text": "Preparado por el PhD Esteban Hernández, CyberColombia."
       },
       {
@@ -4026,7 +4046,7 @@
       },
       {
         "type": "p",
-        "text": "Este documento desarrolla el temario y las consignas de E12 (../talleres/E12.md) y E13 (../talleres/E13.md). La guía de pipelines y DataOps (pipelines-dataops.md) conserva conceptos, esquemas y ejercicios dentro del repositorio. Los PPTX se distribuyen por separado: 09_Data_pipelines_y_DataOps_pedagogica_v10.pptx y 10_Ejecucion_y_auditoria_pipeline_v6.pptx. Están fuera del árbol Git y no se incluyen al clonar. La solución integrada E12 (../soluciones/E12_solucion.ipynb) contiene la referencia ejecutada; las diapositivas por sí solas no acreditan la ejecución del pipeline."
+        "text": "Las presentaciones de las sesiones 9 y 10 están disponibles en sus carpetas de clases. E12 y E13 son referencias formativas; el proyecto final vigente es Boyacá."
       },
       {
         "type": "h",
@@ -4319,7 +4339,7 @@
       },
       {
         "type": "p",
-        "text": "E12 sustituye la predicción temporal EVA, MAE y líneas base por integración, publicación y reejecución. La gobernanza se concreta en procedencia, reglas, responsables, versiones de entradas y estado de publicación. E13 incorpora esa evidencia y las prácticas anteriores pertinentes, sin exigir streaming ni mapas integrados en todos los productos."
+        "text": "E12 ilustra integración y reejecución. El proyecto final vigente es Boyacá; E12 y E13 no son entregas adicionales."
       },
       {
         "type": "p",

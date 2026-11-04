@@ -12,12 +12,12 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 
 | Horario | Tema y actividad |
 |---|---|
-| 18:00–18:30 | Explicación / demostración docente: Motores y entorno Spark |
-| 18:30–19:15 | Explicación / demostración docente: Driver, particiones, transformaciones y plan |
-| 19:15–20:00 | Explicación / demostración docente: E07: agregación y acción |
+| 18:00–18:30 | Entornos y carga del conjunto de datos común |
+| 18:30–19:15 | Spark: driver, particiones, transformaciones y acciones |
+| 19:15–20:00 | Demostración del ejercicio con Spark y medición |
 | 20:00–20:15 | Coffee break |
-| 20:15–21:00 | Explicación / demostración docente: E07: equivalencia con DuckDB |
-| 21:00–21:15 | Explicación / demostración docente: Plan, controles y cierre |
+| 20:15–21:00 | Demostración del ejercicio con Polars y pandas |
+| 21:00–21:15 | Protocolo de comparación y equivalencia |
 
 **Sin entrega el viernes.** El profesor comparte material de referencia. Ejecución y entrega estudiantil: 2026-10-17.
 
@@ -25,4 +25,6 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 
 ## Notebooks de la clase
 
-Desarrollar [05 Spark: lectura y agregación](../../kit/Notebooks/05_Spark_lectura_y_agregacion.ipynb). Antes del receso: lectura CSV, conversión, escritura Parquet, transformaciones y acciones. Después del receso: plan, agregación, medición de una acción y equivalencia con DuckDB. Preparar EVA y DIVIPOLA con los comandos del notebook; sus productos quedan en `kit/salidas/E07`.
+La programación actual compara Spark y Polars con una línea base pandas. [05 Spark: lectura y agregación](../../kit/Notebooks/05_Spark_lectura_y_agregacion.ipynb) permanece como referencia del procesamiento y la equivalencia con DuckDB.
+
+**Presentación disponible:** [Procesamiento con Spark v6](05_Procesamiento_con_Spark_v6.pptx). Versión del material docente; uso efectivo por confirmar.

@@ -1,5 +1,7 @@
 # Índice de talleres
 
+> El único proyecto final pendiente es [Boyacá](../proyecto/Proyecto_final_Boyaca.md), por grupos y con sustentación individual. E12 y E13 quedan como referencias sin entregas finales adicionales.
+
 [Mapa de evaluación y prerrequisitos](../docs/mapa-ejercicios.md).
 
 - [E01 Pregunta y procedencia](E01.md)

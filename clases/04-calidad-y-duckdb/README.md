@@ -26,3 +26,5 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 **Entrega:** Contrato propio, Parquet, prueba de reejecución, controles de calidad, consultas equivalentes y cobertura. Cierre 16:30–16:45.
 
 [Calendario](../../docs/calendario.md) · [Entregas sabatinas](../../docs/entregas-sabados.md) · [Talleres y evaluación](../../docs/mapa-ejercicios.md)
+
+**Presentación disponible:** [Calidad e integración v5](04_Calidad_e_integracion_v5.pptx). Versión del material docente; uso efectivo por confirmar.

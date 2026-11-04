@@ -39,7 +39,7 @@ Al retomar el trabajo, activar `.venv` y cargar `~/.config/bigdata/entorno.sh` a
 | Viernes 09/10/2026 | [Arquitecturas, formatos y pipelines](clases/03-arquitecturas-y-formatos/README.md) | 18:00–22:00 | 3 h 45 min |
 | Sábado 10/10/2026 | [Calidad e integración](clases/04-calidad-y-duckdb/README.md) | 08:00–17:00 | 7 h 30 min |
 | Viernes 16/10/2026 | [Procesamiento con Spark](clases/05-ejecucion-spark/README.md) | 18:00–21:15 | 3 h |
-| Sábado 17/10/2026 | [Consultas e integración distribuida](clases/06-consultas-joins-y-ventanas/README.md) | 08:00–17:00 | 7 h 30 min |
+| Sábado 17/10/2026 | [Spark, Polars y comparación con pandas](clases/06-consultas-joins-y-ventanas/README.md) | 08:00–17:00 | 7 h 30 min |
 | Viernes 23/10/2026 | [Rendimiento y escalabilidad](clases/07-rendimiento/README.md) | 18:00–21:15 | 3 h |
 | Sábado 24/10/2026 | [Streaming de eventos](clases/08-streaming/README.md) | 08:00–17:00 | 7 h 30 min |
 | Viernes 30/10/2026 | [Integración del pipeline y publicación de datos](clases/09-analitica-y-gobernanza/README.md) | 18:00–21:15 | 3 h |
@@ -63,6 +63,12 @@ Material de consulta y práctica para acompañar los ejercicios del curso.
 - [Guía rápida de DuckDB](docs/manual-duckdb.md): ejemplos mínimos de SQL, comparaciones con pandas y consultas sobre archivos Parquet.
 - [Guía práctica de GeoPandas y mapas de Colombia](docs/manual-geopandas.md): departamentos, ciudades, municipios y territorios especiales; resaltado de regiones y consultas de quejas por meses y edades representadas en mapas.
 - Preparación del entorno: [Windows/WSL](docs/instalacion-wsl.md) o [Linux/macOS](docs/instalacion-linux-macos.md).
+
+## Organización del repositorio
+
+Las carpetas [`clases/`](clases/) reúnen cada encuentro, su programación y las presentaciones disponibles. Las sesiones 11 y 12 aún están programadas, no realizadas. Los PPTX de las sesiones 1–8 son las versiones identificadas en el material docente disponible; su uso efectivo debe confirmarse. Para el 30 y 31 de octubre se conserva la pareja v10/v6 indicada en el índice de entregas.
+
+[`docs/`](docs/) contiene guías y calendario; [`talleres/`](talleres/) los enunciados; [`ejercicios/`](ejercicios/) las plantillas; [`kit/`](kit/) datos de muestra, notebooks y utilidades; [`soluciones/`](soluciones/) referencias; [`proyecto/`](proyecto/) el proyecto final; [`supersalud/`](supersalud/) notebooks históricos y [`historico/`](historico/) material anterior. La programación no demuestra por sí sola que cada actividad se haya completado.
 
 ## Recursos actuales
 

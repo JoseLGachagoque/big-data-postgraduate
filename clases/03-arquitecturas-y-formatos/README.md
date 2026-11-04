@@ -24,3 +24,5 @@ E = ejercicio general del curso (E01鈥揈13). P = pr谩ctica con datos PQRS (P01鈥
 **Sin entrega el viernes.** El profesor comparte material de referencia. Ejecuci贸n y entrega estudiantil: 2026-10-10.
 
 [Calendario](../../docs/calendario.md) 路 [Entregas sabatinas](../../docs/entregas-sabados.md) 路 [Talleres y evaluaci贸n](../../docs/mapa-ejercicios.md)
+
+**Presentaci贸n disponible:** [Arquitecturas, formatos y pipelines v5](03_Arquitecturas_formatos_y_pipelines_v5.pptx). Versi贸n del material docente; uso efectivo por confirmar.

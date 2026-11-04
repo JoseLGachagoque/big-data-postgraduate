@@ -6,6 +6,8 @@ Viernes 30 de octubre de 2026. Tres horas efectivas de explicación y demostraci
 
 ## Propósito
 
+**Presentación docente:** [Data pipelines y DataOps v10](09_Data_pipelines_y_DataOps_pedagogica_v10.pptx), identificada como vigente para el 30 de octubre en el índice de entregas.
+
 Comprender por qué necesitamos un pipeline repetible y cómo DataOps organiza sus cambios y operación. Después, aplicar los conceptos a un caso conocido que publique detalle y agregado Parquet consultables mediante SQL.
 
 ## Temario
@@ -29,4 +31,4 @@ El [temario desarrollado](../../docs/temario-30-31-octubre.md) contiene pregunta
 
 ## Continuidad
 
-El sábado se ejecuta [E12: integración y verificación del pipeline](../../talleres/E12.md), que aporta evidencia al [proyecto E13](../../talleres/E13.md). Se retira la evaluación predictiva EVA como requisito de estas sesiones. Las prácticas anteriores permanecen como referencia.
+La integración E12 permanece como referencia formativa. El único ejercicio final pendiente es el [proyecto de Boyacá](../../proyecto/Proyecto_final_Boyaca.md); no se exige una entrega adicional de E12 ni evaluación predictiva EVA.

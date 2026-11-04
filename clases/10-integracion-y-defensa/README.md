@@ -6,6 +6,8 @@ Sábado 31 de octubre de 2026. Siete horas y treinta minutos efectivos de trabaj
 
 ## Propósito
 
+**Presentación docente:** [Ejecución y auditoría del pipeline v6](10_Ejecucion_y_auditoria_pipeline_v6.pptx), identificada para el 31 de octubre en el índice de entregas. Existe una v7 posterior cuya utilización no está confirmada.
+
 Completar y verificar un pipeline local con componentes ya estudiados. Cada equipo trabaja una ruta y produce detalle y agregado Parquet, consultas SQL y registros de control.
 
 Aplicar las prácticas DataOps explicadas el viernes: entradas y reglas identificadas, responsabilidades acordadas, pruebas antes de publicar y revisión de incidentes. Consultar la [guía conceptual y los ejercicios guiados](../../docs/pipelines-dataops.md). Estas prácticas se evidencian en los productos existentes de E12, sin otra ponderación ni plataformas nuevas.
@@ -33,4 +35,4 @@ Recesos 09:30–09:45 y 15:00–15:15; almuerzo 12:00–13:00.
 
 ## Entrega
 
-Un candidato formativo por equipo: notebook ordenado, instrucciones, entradas identificadas, tablas regenerables, consultas, registros y ficha de auditoría. Se integra a [E13](../../talleres/E13.md), sin ponderación adicional. La versión final permanece el 7 de noviembre.
+La integración y auditoría son trabajo formativo. El único ejercicio final pendiente es el [proyecto de Boyacá por grupos](../../proyecto/Proyecto_final_Boyaca.md), con sustentación individual y entrega previstas para el 7 de noviembre. E12 y E13 quedan como referencias, sin entregas adicionales.

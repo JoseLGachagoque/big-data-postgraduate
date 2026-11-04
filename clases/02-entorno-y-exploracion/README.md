@@ -31,6 +31,8 @@ E = ejercicio general del curso (E01鈥揈13). P = pr谩ctica con datos PQRS (P01鈥
 
 ## Trabajo directo con pandas
 
+**Presentaci贸n disponible:** [Ingesta y perfilado v5](02_Ingesta_y_perfilado_v5.pptx). Versi贸n del material docente; uso efectivo por confirmar.
+
 Abrir [P01 paso a paso](../../kit/Notebooks/01_Perfil_PQRS.ipynb): rutas visibles, una lectura por CSV, inspecci贸n de columnas, faltantes, conversi贸n y verificaci贸n antes de repetir por bloques. No importar scripts del curso para producir el perfil. La [soluci贸n P01](../../soluciones/P01_solucion.ipynb) mantiene los mismos pasos; las [plantillas pandas](../../ejercicios/README.md) dejan el desarrollo de cada actividad al estudiante.
 
 Antes de leer las muestras, realizar [P01: descarga y verificaci贸n](../../talleres/P01.md) con `python 00_datos.py --descargar pqrs` y `python 00_datos.py --verificar pqrs`, desde `kit/`. Si las muestras ya existen y coinciden, se conservan.

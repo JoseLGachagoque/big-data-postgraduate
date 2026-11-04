@@ -26,4 +26,6 @@ E = ejercicio general del curso (E01鈥揈13). P = pr谩ctica con datos PQRS (P01鈥
 
 [Calendario](../../docs/calendario.md) 路 [Entregas sabatinas](../../docs/entregas-sabados.md) 路 [Talleres y evaluaci贸n](../../docs/mapa-ejercicios.md)
 
+**Presentaci贸n disponible:** [Streaming de eventos, versi贸n pedag贸gica v7](08_Streaming_de_eventos_pedagogica_v7_sin_agenda.pptx). Uso efectivo por confirmar.
+
 Las actividades geoespaciales E08, E09 y E11 se desarrollan con GeoPandas, Rasterio y Matplotlib en Jupyter. Consultar los [notebooks y sus requisitos](../../kit/Notebooks/README.md#ejercicios-geoespaciales).

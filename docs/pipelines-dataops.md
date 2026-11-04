@@ -1,5 +1,7 @@
 # Data pipelines y DataOps
 
+> **Proyecto final vigente:** [Boyacá](../proyecto/Proyecto_final_Boyaca.md), por grupos y con sustentación individual. E12 es una referencia formativa, sin entrega final adicional.
+
 Material conceptual de las clases 09 y 10. La aplicación corresponde a [E12](../talleres/E12.md), con sus cuatro criterios mínimos y sin nuevas ponderaciones. Esta guía acompaña las presentaciones y permanece disponible al clonar el repositorio.
 
 ## Por qué necesitamos un pipeline

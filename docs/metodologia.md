@@ -40,7 +40,7 @@ Cada taller pide hipótesis, criterio de aceptación, evidencia y una crítica. 
 |---|---|---|
 | 1–2 | Ficha, manifiestos y perfil | E01–E03, P01, T01 |
 | 3–4 | Parquet, contratos y controles | E04–E06, P02–P03 |
-| 5–6 | Equivalencia, consultas y mapas | E07–E09 |
+| 5–6 | Spark y Polars frente a pandas; equivalencia y medición | Ejercicios de comparación |
 | 7–8 | Rendimiento y traza de eventos | E10–E11, P04, I01 |
-| 9–10 | Pipeline, publicación, conciliación y reejecución | E12–E13 |
-| 11–12 | Correcciones y defensa final | E13 |
+| 9–10 | Pipeline, publicación, conciliación y reejecución | E12 como referencia formativa |
+| 11–12 | Correcciones y defensa final | Proyecto de Boyacá por grupos; sustentación individual |

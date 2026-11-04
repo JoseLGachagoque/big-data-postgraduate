@@ -207,7 +207,7 @@ Clínica de proyectos y ensayo de defensa. 18:00–21:15. Demostración guiada p
 | Horario | Actividad |
 |---|---|
 | 18:00–18:45 | Clínica de bloqueos, recursos y calidad |
-| 18:45–20:00 | Explicación / demostración docente: E13: profesor demuestra correcciones y validación; discusión de casos |
+| 18:45–20:00 | Profesor demuestra correcciones y validación del proyecto de Boyacá; discusión de casos |
 | 20:00–20:15 | Coffee break |
 | 20:15–21:00 | Ensayo de defensa y discusión de límites |
 | 21:00–21:15 | Preparación de la entrega del sábado y organización de turnos; sin entrega |
@@ -229,4 +229,4 @@ Sustentación y cierre contractual. 08:00–16:30. Actividad estudiantil y entre
 | 15:15–16:00 | Retroalimentación y evaluación individual; completar correcciones finales |
 | 16:00–16:30 | Acta, entregas verificables y cierre contractual |
 
-Entrega en clase: Paquete final corregido, informe de 8–12 páginas y registro de defensa individual.
+Entrega en clase: proyecto final de Boyacá por grupos y sustentación individual, según el enunciado vigente.

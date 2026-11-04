@@ -36,7 +36,7 @@ E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01�
 |---|---|---|
 | 02/10 y 03/10 | Fundamentos y escala / Ingesta y perfilado | 11 h 15 min |
 | 09/10 y 10/10 | Arquitecturas, formatos y pipelines / Calidad e integración | 11 h 15 min |
-| 16/10 y 17/10 | Procesamiento con Spark / Consultas e integración distribuida | 10 h 30 min |
+| 16/10 y 17/10 | Procesamiento con Spark / Spark, Polars y comparación con pandas | 10 h 30 min |
 | 23/10 y 24/10 | Rendimiento y escalabilidad / Streaming de eventos | 10 h 30 min |
 | 30/10 y 31/10 | Integración del pipeline y publicación de datos / Ejecución y auditoría del pipeline | 10 h 30 min |
 | 06/11 y 07/11 | Clínica de proyectos y ensayo de defensa / Sustentación y cierre contractual | 10 h |
@@ -55,16 +55,16 @@ Los archivos tabulares de esta cohorte caben en un portátil. Su tamaño no demu
 |---|---|
 | E01–E03: procedencia, descarga y perfilado | 10 % |
 | E04–E06: calidad, formatos y SQL | 10 % |
-| E07–E09: Spark e integración geográfica | 10 % |
+| Spark, Polars y comparación con pandas | 10 % |
 | E10–E11: experimento y eventos | 20 % |
-| E12–E13: proyecto e informe técnico | 35 % |
+| Proyecto final de Boyacá e informe técnico | 35 % |
 | Sustentación individual | 15 % |
 
-La rúbrica valora corrección y conservación de unidades (30 %), reproducibilidad y trazabilidad (25 %), justificación técnica (25 %) y comunicación de limitaciones (20 %), aplicada dentro de cada entrega. Se penaliza afirmar cobertura nacional a partir de muestras, sumar rendimientos, convertir ausencias a cero, introducir fuga temporal o presentar asociaciones como causalidad. La nota mínima y las reglas de asistencia corresponden al programa institucional.
+La rúbrica específica del proyecto final figura en el [enunciado de Boyacá](../proyecto/Proyecto_final_Boyaca.md#12-rúbrica-de-evaluación). Se consideran la calidad, la trazabilidad, la integración, el análisis, la comunicación y la reproducibilidad. La nota mínima y las reglas de asistencia corresponden al programa institucional.
 
 ## Producto integrador
 
-Cada equipo elige dominio agroambiental o PQRS y presenta un pipeline local ejecutable con entradas identificadas, validación, detalle y agregado Parquet, consultas SQL conciliadas y registros de dos ejecuciones. Las prácticas previas de motores, rendimiento, mapas y eventos se adjuntan como evidencias pertinentes, sin exigir integrarlas todas en el pipeline. La actualización de un período es una ampliación posterior a los cuatro criterios mínimos de E12. La evaluación predictiva EVA queda como referencia opcional. El informe de 8 a 12 páginas debe separar resultados observados, estimaciones, limitaciones y propuesta de escalamiento. La sustentación final se realiza el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto dentro de las horas contratadas. Planificar 15 minutos por equipo incluyendo preguntas y transición; ajustar el número de turnos al grupo real.
+El [proyecto final de Boyacá](../proyecto/Proyecto_final_Boyaca.md) se desarrolla por grupos e integra población, producción agrícola, capacidad de uso y desempeño municipal. Cada grupo construye un pipeline reproducible con capas bronze, silver y gold, documenta calidad y justifica las herramientas. La sustentación es individual el 7 de noviembre. La sesión del 6 permite ensayar, corregir y validar el producto. El enunciado determina actividades, entregables y rúbrica; E12 y E13 son referencias, sin entregas adicionales.
 
 El [temario desarrollado del 30 y 31 de octubre](temario-30-31-octubre.md) establece la progresión y los criterios de E12. Iceberg se presenta en una demostración docente preparada; su instalación y uso estudiantil no son requisitos del proyecto.
 
@@ -82,7 +82,7 @@ La introducción usa las cinco V, costos de movimiento, escalamiento y Amdahl. D
 - Saber usar una terminal, tipos básicos de Python y SELECT/GROUP BY en SQL. El diagnóstico inicial orienta la ayuda docente.
 - Iniciar con las tres muestras reales de 1.000 filas PQRS y los CSV agroambientales. Las muestras son las primeras filas y sirven para probar código; no tienen representatividad estadística.
 - El profesor demuestra datos completos PQRS en la sesión 7 después de validar la consulta con muestras. Descargar un corte por vez o acceder a la copia docente.
-- E01–E13 y P01–P04 comparten los bloques del programa. P01–P03 complementan los talleres de las sesiones 2–4; P04 se demuestra en la sesión 7 y se ejecuta y entrega en la sesión 8. No se añaden horas.
+- E01–E11 y P01–P04 identifican prácticas del programa. E12 y E13 son referencias formativas; el proyecto final vigente es Boyacá. P01–P03 complementan las sesiones 2–4 y P04 las sesiones 7–8. No se añaden horas.
 
 ## Fechas de entrega y calificación
 
@@ -90,9 +90,9 @@ La introducción usa las cinco V, costos de movimiento, escalamiento y Amdahl. D
 |---|---|---|
 | 10-03 · 16:45–17:00 | Ficha de problema, presupuesto de recursos, manifiesto, perfil y claves territoriales | 10 % |
 | 10-10 · 16:30–16:45 | Contrato propio, Parquet, prueba de reejecución, controles de calidad, consultas equivalentes y cobertura | 10 % |
-| 10-17 · 16:30–17:00 | Plan y equivalencia Spark/DuckDB, consulta de ventanas, mapa y alcance espacial | 10 % |
+| 10-17 · 16:30–17:00 | Ejercicios Spark y Polars/pandas, comparación y equivalencia | 10 % |
 | 10-24 · 16:30–17:00 | Informe de benchmark propio, traza de eventos y análisis de recuperación | 20 % |
-| 10-31 · 16:30–17:00 | Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría | Hito formativo del bloque de proyecto (35 %) |
-| 11-07 · 16:00–16:30 | Paquete final corregido, informe de 8–12 páginas y registro de defensa individual | 35 % proyecto + 15 % sustentación |
+| 10-31 · 16:30–17:00 | Integración y validación formativa para el proyecto de Boyacá | Hito formativo |
+| 11-07 · 16:00–16:30 | Proyecto final por grupos y sustentación individual | 35 % proyecto + 15 % sustentación |
 
-El candidato del 31 de octubre recibe retroalimentación y no añade otra ponderación. El bloque E12–E13 se califica con 35 % sobre la versión final del 7 de noviembre, que incorpora E12 y las correcciones. La sustentación individual vale 15 %. Total del curso: 100 %. Los archivos parciales del sábado forman una entrega única por fin de semana.
+El trabajo formativo del 31 de octubre no añade otra ponderación. El proyecto de Boyacá y su informe valen 35 %; la sustentación individual, 15 %. Total del curso: 100 %.

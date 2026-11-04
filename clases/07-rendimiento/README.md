@@ -21,3 +21,5 @@ E = ejercicio general del curso (E01鈥揈13). P = pr谩ctica con datos PQRS (P01鈥
 **Sin entrega el viernes.** El profesor comparte material de referencia. Ejecuci贸n y entrega estudiantil: 2026-10-24.
 
 [Calendario](../../docs/calendario.md) 路 [Entregas sabatinas](../../docs/entregas-sabados.md) 路 [Talleres y evaluaci贸n](../../docs/mapa-ejercicios.md)
+
+**Presentaci贸n disponible:** [Rendimiento y escalabilidad, versi贸n pedag贸gica v6](07_Rendimiento_y_escalabilidad_pedagogica_v6.pptx). Uso efectivo por confirmar.

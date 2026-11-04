@@ -1,5 +1,7 @@
 # Calendario contractual y distribución por fechas
 
+> **Proyecto final vigente:** [Boyacá](../proyecto/Proyecto_final_Boyaca.md), desarrollado por grupos y sustentado individualmente. E12 y E13 son referencias, sin entregas finales adicionales.
+
 Calendario contractual: 12 sesiones del 2 de octubre al 7 de noviembre de 2026. Las entregas estudiantiles se concentran exclusivamente en los seis sábados.
 
 ## Carga contractual
@@ -37,8 +39,8 @@ Viernes: 20:00–20:15. Sábados: 09:30–09:45 y 15:00–15:15; almuerzo 12:00�
 | 2026-10-10 16:30–16:45 | E04–E06 / P02–P03: Contrato propio, Parquet, prueba de reejecución, controles de calidad, consultas equivalentes y cobertura |
 | 2026-10-17 16:30–17:00 | Dos ejercicios: procesamiento con Spark y procesamiento con Polars, con resultados equivalentes y comparación de rendimiento frente a pandas |
 | 2026-10-24 16:30–17:00 | E10–E11 / P04 / I01: Informe de benchmark propio, traza de eventos y análisis de recuperación |
-| 2026-10-31 16:30–17:00 | E12–E13: Pipeline candidato, detalle y agregado Parquet, consultas conciliadas, registros de reejecución y ficha de auditoría |
-| 2026-11-07 16:00–16:30 | E13 / sustentación individual: Paquete final corregido, informe de 8–12 páginas y registro de defensa individual |
+| 2026-10-31 16:30–17:00 | Trabajo formativo de integración y validación para el proyecto de Boyacá |
+| 2026-11-07 16:00–16:30 | Proyecto final de Boyacá por grupos y sustentación individual |
 
 El 31 de octubre es un hito formativo del proyecto. El 6 de noviembre es una clínica demostrativa del profesor y ensayo sin calificación ni entrega. La defensa individual evaluable y la entrega final se realizan el sábado 7 de noviembre. Con turnos de 15 minutos se disponen de hasta 23 equipos; los ensayos del viernes no se califican.
 
@@ -205,7 +207,7 @@ Clínica de proyectos y ensayo de defensa. 18:00–21:15. Demostración guiada p
 | Horario | Actividad |
 |---|---|
 | 18:00–18:45 | Clínica de bloqueos, recursos y calidad |
-| 18:45–20:00 | Explicación / demostración docente: E13: profesor demuestra correcciones y validación; discusión de casos |
+| 18:45–20:00 | Profesor demuestra correcciones y validación del proyecto de Boyacá; discusión de casos |
 | 20:00–20:15 | Coffee break |
 | 20:15–21:00 | Ensayo de defensa y discusión de límites |
 | 21:00–21:15 | Preparación de la entrega del sábado y organización de turnos; sin entrega |
@@ -227,4 +229,4 @@ Sustentación y cierre contractual. 08:00–16:30. Actividad estudiantil y entre
 | 15:15–16:00 | Retroalimentación y evaluación individual; completar correcciones finales |
 | 16:00–16:30 | Acta, entregas verificables y cierre contractual |
 
-Entrega en clase: Paquete final corregido, informe de 8–12 páginas y registro de defensa individual.
+Entrega en clase: proyecto final de Boyacá por grupos y sustentación individual, según el enunciado vigente.
