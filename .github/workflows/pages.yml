@@ -1,0 +1,39 @@
+# Publica site/ en GitHub Pages cada vez que se hace push a main (o a mano desde Actions).
+#
+# IMPORTANTE: GitHub solo lee workflows en la RAÍZ del repositorio.
+# Si el proyecto vive en big-data-postgraduate/proyecto/Proyecto_Boyaca, copie este archivo a
+#   big-data-postgraduate/.github/workflows/pages.yml
+# y deje SITIO apuntando a la carpeta site/ del proyecto (ruta desde la raíz del repo).
+name: Publicar resultados en GitHub Pages
+
+on:
+  push:
+    branches: [main, dev]
+  workflow_dispatch:
+
+env:
+  SITIO: proyecto/Proyecto_Boyaca/site   # si el proyecto está en la raíz del repo, cambie a: site
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.SITIO }}
+      - id: despliegue
+        uses: actions/deploy-pages@v4

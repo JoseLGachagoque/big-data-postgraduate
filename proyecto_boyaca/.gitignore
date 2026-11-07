@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+# bronze, silver, gold, rechazos, fixtures y salidas se regeneran con ./run_pipeline.sh
+data_lake/bronze/*
+data_lake/silver/*
+data_lake/gold/*
+data_lake/rejects/*
+tests/fixtures/*
+outputs/**/*
+!**/.gitkeep

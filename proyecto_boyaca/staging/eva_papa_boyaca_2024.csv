@@ -1,0 +1,180 @@
+codigo_municipio,municipio,anio,periodo,producto,estado_fisico,area_cosechada_ha,produccion_t
+15001,Tunja,2024,2024A,Papa todas las variedades,En fresco,1600.0,32000.0
+15001,Tunja,2024,2024B,Papa todas las variedades,En fresco,1450.0,29000.0
+15022,Almeida,2024,2024A,Papa todas las variedades,En fresco,9.0,81.0
+15022,Almeida,2024,2024B,Papa todas las variedades,En fresco,5.0,45.0
+15047,Aquitania,2024,2024A,Papa todas las variedades,En fresco,75.0,1875.0
+15047,Aquitania,2024,2024B,Papa todas las variedades,En fresco,15.0,270.0
+15051,Arcabuco,2024,2024A,Papa todas las variedades,En fresco,1400.0,35000.0
+15051,Arcabuco,2024,2024B,Papa todas las variedades,En fresco,1107.0,26568.0
+15087,Belén,2024,2024A,Papa todas las variedades,En fresco,280.0,5040.0
+15087,Belén,2024,2024B,Papa todas las variedades,En fresco,290.0,5220.0
+15092,Betéitiva,2024,2024A,Papa todas las variedades,En fresco,12.0,192.0
+15092,Betéitiva,2024,2024B,Papa todas las variedades,En fresco,20.0,320.0
+15104,Boyacá,2024,2024A,Papa todas las variedades,En fresco,210.0,4200.0
+15104,Boyacá,2024,2024B,Papa todas las variedades,En fresco,230.0,4600.0
+15109,Buenavista,2024,2024A,Papa todas las variedades,En fresco,22.0,396.0
+15109,Buenavista,2024,2024B,Papa todas las variedades,En fresco,20.0,360.0
+15114,Busbanzá,2024,2024A,Papa todas las variedades,En fresco,5.0,43.5
+15114,Busbanzá,2024,2024B,Papa todas las variedades,En fresco,10.0,180.0
+15131,Caldas,2024,2024A,Papa todas las variedades,En fresco,90.0,1620.0
+15131,Caldas,2024,2024B,Papa todas las variedades,En fresco,100.0,1900.0
+15162,Cerinza,2024,2024A,Papa todas las variedades,En fresco,55.0,825.0
+15162,Cerinza,2024,2024B,Papa todas las variedades,En fresco,90.0,1620.0
+15172,Chinavita,2024,2024A,Papa todas las variedades,En fresco,6.0,90.0
+15172,Chinavita,2024,2024B,Papa todas las variedades,En fresco,6.0,90.0
+15176,Chiquinquirá,2024,2024A,Papa todas las variedades,En fresco,256.0,6400.0
+15176,Chiquinquirá,2024,2024B,Papa todas las variedades,En fresco,340.0,8500.0
+15180,Chiscas,2024,2024A,Papa todas las variedades,En fresco,85.0,1530.0
+15180,Chiscas,2024,2024B,Papa todas las variedades,En fresco,45.0,810.0
+15183,Chita,2024,2024A,Papa todas las variedades,En fresco,30.0,450.0
+15183,Chita,2024,2024B,Papa todas las variedades,En fresco,310.0,4650.0
+15187,Chivatá,2024,2024A,Papa todas las variedades,En fresco,13.0,390.0
+15187,Chivatá,2024,2024B,Papa todas las variedades,En fresco,127.0,3810.0
+15189,Ciénega,2024,2024A,Papa todas las variedades,En fresco,180.0,3600.0
+15189,Ciénega,2024,2024B,Papa todas las variedades,En fresco,210.0,4200.0
+15204,Cómbita,2024,2024A,Papa todas las variedades,En fresco,600.0,12000.0
+15204,Cómbita,2024,2024B,Papa todas las variedades,En fresco,500.0,10000.0
+15215,Corrales,2024,2024A,Papa todas las variedades,En fresco,1.0,20.0
+15215,Corrales,2024,2024B,Papa todas las variedades,En fresco,1.0,20.0
+15224,Cucaita,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15224,Cucaita,2024,2024B,Papa todas las variedades,En fresco,110.0,2750.0
+15226,Cuítiva,2024,2024A,Papa todas las variedades,En fresco,15.3,382.5
+15226,Cuítiva,2024,2024B,Papa todas las variedades,En fresco,27.0,675.0
+15232,Chíquiza,2024,2024A,Papa todas las variedades,En fresco,650.0,13000.0
+15232,Chíquiza,2024,2024B,Papa todas las variedades,En fresco,550.0,11000.0
+15236,Chivor,2024,2024A,Papa todas las variedades,En fresco,1.4,22.4
+15236,Chivor,2024,2024B,Papa todas las variedades,En fresco,1.5,24.0
+15238,Duitama,2024,2024A,Papa todas las variedades,En fresco,15.0,300.0
+15238,Duitama,2024,2024B,Papa todas las variedades,En fresco,30.0,600.0
+15244,El Cocuy,2024,2024A,Papa todas las variedades,En fresco,120.0,1440.0
+15244,El Cocuy,2024,2024B,Papa todas las variedades,En fresco,230.0,2760.0
+15248,El Espino,2024,2024A,Papa todas las variedades,En fresco,5.0,40.0
+15248,El Espino,2024,2024B,Papa todas las variedades,En fresco,12.0,96.0
+15272,Firavitoba,2024,2024A,Papa todas las variedades,En fresco,95.0,1900.0
+15272,Firavitoba,2024,2024B,Papa todas las variedades,En fresco,108.0,2160.0
+15276,Floresta,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15276,Floresta,2024,2024B,Papa todas las variedades,En fresco,47.0,705.0
+15293,Gachantivá,2024,2024A,Papa todas las variedades,En fresco,80.0,1600.0
+15293,Gachantivá,2024,2024B,Papa todas las variedades,En fresco,25.0,500.0
+15296,Gámeza,2024,2024A,Papa todas las variedades,En fresco,160.0,2400.0
+15296,Gámeza,2024,2024B,Papa todas las variedades,En fresco,420.0,6300.0
+15299,Garagoa,2024,2024A,Papa todas las variedades,En fresco,3.0,21.0
+15299,Garagoa,2024,2024B,Papa todas las variedades,En fresco,2.0,14.0
+15317,Guacamayas,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15317,Guacamayas,2024,2024B,Papa todas las variedades,En fresco,10.0,100.0
+15332,Güicán de La Sierra,2024,2024A,Papa todas las variedades,En fresco,18.0,216.0
+15332,Güicán de La Sierra,2024,2024B,Papa todas las variedades,En fresco,25.0,300.0
+15362,Iza,2024,2024A,Papa todas las variedades,En fresco,5.0,100.0
+15362,Iza,2024,2024B,Papa todas las variedades,En fresco,9.0,180.0
+15367,Jenesano,2024,2024A,Papa todas las variedades,En fresco,460.0,10120.0
+15367,Jenesano,2024,2024B,Papa todas las variedades,En fresco,390.0,8580.0
+15368,Jericó,2024,2024A,Papa todas las variedades,En fresco,200.0,3000.0
+15368,Jericó,2024,2024B,Papa todas las variedades,En fresco,350.0,5250.0
+15377,Labranzagrande,2024,2024A,Papa todas las variedades,En fresco,7.0,70.0
+15377,Labranzagrande,2024,2024B,Papa todas las variedades,En fresco,3.0,30.0
+15403,La Uvita,2024,2024A,Papa todas las variedades,En fresco,10.0,250.0
+15403,La Uvita,2024,2024B,Papa todas las variedades,En fresco,20.0,500.0
+15407,Villa de Leyva,2024,2024A,Papa todas las variedades,En fresco,75.0,1275.0
+15407,Villa de Leyva,2024,2024B,Papa todas las variedades,En fresco,137.0,3014.0
+15425,Macanal,2024,2024A,Papa todas las variedades,En fresco,3.0,36.0
+15425,Macanal,2024,2024B,Papa todas las variedades,En fresco,8.0,104.0
+15442,Maripí,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15442,Maripí,2024,2024B,Papa todas las variedades,En fresco,8.0,138.4
+15464,Mongua,2024,2024A,Papa todas las variedades,En fresco,120.0,2880.0
+15464,Mongua,2024,2024B,Papa todas las variedades,En fresco,225.0,5400.0
+15466,Monguí,2024,2024A,Papa todas las variedades,En fresco,50.0,900.0
+15466,Monguí,2024,2024B,Papa todas las variedades,En fresco,47.0,940.0
+15476,Motavita,2024,2024A,Papa todas las variedades,En fresco,480.0,14400.0
+15476,Motavita,2024,2024B,Papa todas las variedades,En fresco,750.0,22500.0
+15491,Nobsa,2024,2024A,Papa todas las variedades,En fresco,6.0,150.0
+15491,Nobsa,2024,2024B,Papa todas las variedades,En fresco,6.0,150.0
+15494,Nuevo Colón,2024,2024A,Papa todas las variedades,En fresco,200.0,4400.0
+15494,Nuevo Colón,2024,2024B,Papa todas las variedades,En fresco,180.0,3960.0
+15500,Oicatá,2024,2024A,Papa todas las variedades,En fresco,70.0,1365.0
+15500,Oicatá,2024,2024B,Papa todas las variedades,En fresco,30.0,600.0
+15511,Pachavita,2024,2024A,Papa todas las variedades,En fresco,12.0,180.0
+15511,Pachavita,2024,2024B,Papa todas las variedades,En fresco,14.0,210.0
+15516,Paipa,2024,2024A,Papa todas las variedades,En fresco,46.5,744.0
+15516,Paipa,2024,2024B,Papa todas las variedades,En fresco,100.0,1600.0
+15522,Panqueba,2024,2024A,Papa todas las variedades,En fresco,10.0,200.0
+15522,Panqueba,2024,2024B,Papa todas las variedades,En fresco,15.0,300.0
+15531,Pauna,2024,2024A,Papa todas las variedades,En fresco,35.0,525.0
+15531,Pauna,2024,2024B,Papa todas las variedades,En fresco,10.0,150.0
+15537,Paz de Río,2024,2024A,Papa todas las variedades,En fresco,16.9,236.6
+15537,Paz de Río,2024,2024B,Papa todas las variedades,En fresco,27.0,540.0
+15542,Pesca,2024,2024A,Papa todas las variedades,En fresco,137.0,3425.0
+15542,Pesca,2024,2024B,Papa todas las variedades,En fresco,90.0,2250.0
+15550,Pisba,2024,2024B,Papa todas las variedades,En fresco,3.0,36.0
+15599,Ramiriquí,2024,2024A,Papa todas las variedades,En fresco,140.0,2940.0
+15599,Ramiriquí,2024,2024B,Papa todas las variedades,En fresco,150.0,3150.0
+15600,Ráquira,2024,2024A,Papa todas las variedades,En fresco,260.0,3900.0
+15600,Ráquira,2024,2024B,Papa todas las variedades,En fresco,200.0,3000.0
+15621,Rondón,2024,2024A,Papa todas las variedades,En fresco,8.0,112.0
+15621,Rondón,2024,2024B,Papa todas las variedades,En fresco,6.0,84.0
+15632,Saboyá,2024,2024A,Papa todas las variedades,En fresco,1500.0,30000.0
+15632,Saboyá,2024,2024B,Papa todas las variedades,En fresco,1850.0,37000.0
+15646,Samacá,2024,2024A,Papa todas las variedades,En fresco,380.0,9120.0
+15646,Samacá,2024,2024B,Papa todas las variedades,En fresco,700.0,16800.0
+15676,San Miguel de Sema,2024,2024A,Papa todas las variedades,En fresco,15.0,375.0
+15676,San Miguel de Sema,2024,2024B,Papa todas las variedades,En fresco,12.0,288.0
+15693,Santa Rosa de Viterbo,2024,2024A,Papa todas las variedades,En fresco,32.0,489.6
+15693,Santa Rosa de Viterbo,2024,2024B,Papa todas las variedades,En fresco,35.0,567.35
+15696,Santa Sofía,2024,2024A,Papa todas las variedades,En fresco,30.0,540.0
+15696,Santa Sofía,2024,2024B,Papa todas las variedades,En fresco,25.0,400.0
+15720,Sativanorte,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15720,Sativanorte,2024,2024B,Papa todas las variedades,En fresco,60.0,1200.0
+15723,Sativasur,2024,2024A,Papa todas las variedades,En fresco,8.0,120.0
+15723,Sativasur,2024,2024B,Papa todas las variedades,En fresco,10.0,150.0
+15740,Siachoque,2024,2024A,Papa todas las variedades,En fresco,3430.0,68600.0
+15740,Siachoque,2024,2024B,Papa todas las variedades,En fresco,3100.0,99200.0
+15753,Soatá,2024,2024A,Papa todas las variedades,En fresco,2.4,43.2
+15753,Soatá,2024,2024B,Papa todas las variedades,En fresco,15.2,273.6
+15755,Socotá,2024,2024A,Papa todas las variedades,En fresco,230.0,4600.0
+15755,Socotá,2024,2024B,Papa todas las variedades,En fresco,300.0,6000.0
+15757,Socha,2024,2024A,Papa todas las variedades,En fresco,8.0,160.0
+15757,Socha,2024,2024B,Papa todas las variedades,En fresco,10.0,200.0
+15759,Sogamoso,2024,2024A,Papa todas las variedades,En fresco,180.0,4500.0
+15759,Sogamoso,2024,2024B,Papa todas las variedades,En fresco,200.0,5000.0
+15761,Somondoco,2024,2024A,Papa todas las variedades,En fresco,25.0,550.0
+15761,Somondoco,2024,2024B,Papa todas las variedades,En fresco,25.0,625.0
+15762,Sora,2024,2024A,Papa todas las variedades,En fresco,150.0,2400.0
+15762,Sora,2024,2024B,Papa todas las variedades,En fresco,130.0,2600.0
+15763,Sotaquirá,2024,2024A,Papa todas las variedades,En fresco,62.0,1364.0
+15763,Sotaquirá,2024,2024B,Papa todas las variedades,En fresco,460.0,10120.0
+15764,Soracá,2024,2024A,Papa todas las variedades,En fresco,550.0,13750.0
+15764,Soracá,2024,2024B,Papa todas las variedades,En fresco,400.0,10000.0
+15774,Susacón,2024,2024A,Papa todas las variedades,En fresco,260.0,6240.0
+15774,Susacón,2024,2024B,Papa todas las variedades,En fresco,72.0,1584.0
+15776,Sutamarchán,2024,2024A,Papa todas las variedades,En fresco,110.0,1540.0
+15776,Sutamarchán,2024,2024B,Papa todas las variedades,En fresco,80.0,1280.0
+15778,Sutatenza,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15790,Tasco,2024,2024A,Papa todas las variedades,En fresco,30.0,690.0
+15790,Tasco,2024,2024B,Papa todas las variedades,En fresco,30.0,690.0
+15804,Tibaná,2024,2024A,Papa todas las variedades,En fresco,68.0,1258.0
+15804,Tibaná,2024,2024B,Papa todas las variedades,En fresco,170.0,3145.0
+15806,Tibasosa,2024,2024A,Papa todas las variedades,En fresco,45.0,1350.0
+15806,Tibasosa,2024,2024B,Papa todas las variedades,En fresco,20.0,600.0
+15808,Tinjacá,2024,2024A,Papa todas las variedades,En fresco,11.0,275.0
+15808,Tinjacá,2024,2024B,Papa todas las variedades,En fresco,20.0,480.0
+15810,Tipacoque,2024,2024B,Papa todas las variedades,En fresco,0.75,11.25
+15814,Toca,2024,2024A,Papa todas las variedades,En fresco,800.0,20000.0
+15814,Toca,2024,2024B,Papa todas las variedades,En fresco,1150.0,28750.0
+15816,Togüí,2024,2024A,Papa todas las variedades,En fresco,0.0,0.0
+15816,Togüí,2024,2024B,Papa todas las variedades,En fresco,5.0,70.0
+15820,Tópaga,2024,2024A,Papa todas las variedades,En fresco,24.0,384.0
+15820,Tópaga,2024,2024B,Papa todas las variedades,En fresco,19.0,304.0
+15822,Tota,2024,2024A,Papa todas las variedades,En fresco,350.0,6300.0
+15822,Tota,2024,2024B,Papa todas las variedades,En fresco,350.0,7350.0
+15835,Turmequé,2024,2024A,Papa todas las variedades,En fresco,270.0,6750.0
+15835,Turmequé,2024,2024B,Papa todas las variedades,En fresco,280.0,6160.0
+15837,Tuta,2024,2024A,Papa todas las variedades,En fresco,45.0,1125.0
+15837,Tuta,2024,2024B,Papa todas las variedades,En fresco,140.0,3500.0
+15839,Tutazá,2024,2024A,Papa todas las variedades,En fresco,447.0,10281.0
+15839,Tutazá,2024,2024B,Papa todas las variedades,En fresco,450.0,9900.0
+15842,Úmbita,2024,2024A,Papa todas las variedades,En fresco,900.0,18000.0
+15842,Úmbita,2024,2024B,Papa todas las variedades,En fresco,1100.0,25300.0
+15861,Ventaquemada,2024,2024A,Papa todas las variedades,En fresco,2150.0,47300.0
+15861,Ventaquemada,2024,2024B,Papa todas las variedades,En fresco,1550.0,31000.0
+15879,Viracachá,2024,2024A,Papa todas las variedades,En fresco,324.0,4924.8
+15879,Viracachá,2024,2024B,Papa todas las variedades,En fresco,517.0,7858.4
